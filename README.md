@@ -1,4 +1,4 @@
 HappyStation
 ============
 
-Weddings portal
+Web application for weddings blog.
