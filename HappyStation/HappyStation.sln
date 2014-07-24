@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyStation.Web", "HappySt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyStation.Core", "HappyStation.Core\HappyStation.Core.csproj", "{CA7688E4-6848-4E74-AFB4-F0B5EC1E553F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyStation.ConsoleTests", "HappyStation.ConsoleTests\HappyStation.ConsoleTests.csproj", "{3F2FDC5B-7BFF-4757-B4FD-EC1845430876}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CA7688E4-6848-4E74-AFB4-F0B5EC1E553F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA7688E4-6848-4E74-AFB4-F0B5EC1E553F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA7688E4-6848-4E74-AFB4-F0B5EC1E553F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F2FDC5B-7BFF-4757-B4FD-EC1845430876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2FDC5B-7BFF-4757-B4FD-EC1845430876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2FDC5B-7BFF-4757-B4FD-EC1845430876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2FDC5B-7BFF-4757-B4FD-EC1845430876}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

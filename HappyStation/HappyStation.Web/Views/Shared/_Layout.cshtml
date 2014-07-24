@@ -12,22 +12,26 @@
     <!--[if lte IE 8]><script src="/Scripts/site/html5shiv.js"></script><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="/Content/ie/v8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="/Content/ie/v9.css" /><![endif]-->
-    @Scripts.Render("~/bundles/jquery")
 
-    <script src="/Scripts/site/skel.min.js"></script>
-    <script src="/Scripts/site/skel-panels.min.js"></script>
-    <script src="/Scripts/site/init.js"></script>
-
+    @Styles.Render("~/bundles/site")
     <noscript>
-        <link rel="stylesheet" href="/Content/skel-noscript.css" />
-        <link rel="stylesheet" href="/Content/style.css" />
-        <link rel="stylesheet" href="/Content/style-desktop.css" />
+
+        @*<link rel="stylesheet" href="/Content/skel-noscript.css" />
+            <link rel="stylesheet" href="/Content/style.css" />
+            <link rel="stylesheet" href="/Content/style-desktop.css" />*@
     </noscript>
 
 </head>
 <body>
 
+    @Html.Partial("_Header")
+
     @RenderBody()
+
+    @Html.Partial("_Footer")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/init")
 
     @RenderSection("scripts", required: false)
 </body>

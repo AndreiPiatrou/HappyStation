@@ -30,3 +30,7 @@ D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\System.Web.WebPages.Razor.
 D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.csprojResolveAssemblyReference.cache
 D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.dll
 D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.pdb
+D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.Resources.Strings.resources
+D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.csproj.GenerateResource.Cache
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\HappyStation.Core.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\HappyStation.Core.pdb

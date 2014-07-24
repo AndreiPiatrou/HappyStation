@@ -76,7 +76,7 @@
 
 	#titleBar
 	{
-		background: #202020 url(images/img01.jpg) repeat;
+		background: #202020 url("/Content/images/img01.jpg") repeat;
 	}
 
 		#titleBar .title
@@ -105,7 +105,7 @@
 				position: absolute;
 				left: 10px;
 				top: 15px;
-				background: url('images/toggle.svg') 0px 0px no-repeat;
+				background: url("/Content/images/toggle.svg") 0px 0px no-repeat;
 				opacity: 0.5;
 			}
 
@@ -116,7 +116,7 @@
 
 	#navPanel
 	{
-		background: #202020 url(images/img01.jpg) repeat;
+		background: #202020 url("/Content/images/img01.jpg") repeat;
 		box-shadow: inset -10px 0px 20px 0px rgba(0,0,0,0.5);
 	}
 
