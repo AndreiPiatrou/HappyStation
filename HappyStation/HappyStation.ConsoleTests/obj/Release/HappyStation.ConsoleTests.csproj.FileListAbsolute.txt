@@ -1,0 +1,12 @@
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Release\HappyStation.ConsoleTests.exe.config
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Release\HappyStation.ConsoleTests.exe
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Release\HappyStation.ConsoleTests.pdb
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Release\EntityFramework.dll
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Release\EntityFramework.SqlServer.dll
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Release\HappyStation.Core.dll
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Release\HappyStation.Core.pdb
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Release\EntityFramework.xml
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Release\EntityFramework.SqlServer.xml
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\obj\Release\HappyStation.ConsoleTests.csprojResolveAssemblyReference.cache
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\obj\Release\HappyStation.ConsoleTests.exe
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\obj\Release\HappyStation.ConsoleTests.pdb

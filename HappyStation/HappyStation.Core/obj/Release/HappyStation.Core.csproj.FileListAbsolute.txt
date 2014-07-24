@@ -1,0 +1,10 @@
+D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\HappyStation.Core.dll.config
+D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\HappyStation.Core.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\HappyStation.Core.pdb
+D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\EntityFramework.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\EntityFramework.SqlServer.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\EntityFramework.xml
+D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\EntityFramework.SqlServer.xml
+D:\dev\HappyStation\HappyStation\HappyStation.Core\obj\Release\HappyStation.Core.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Core\obj\Release\HappyStation.Core.pdb
+D:\dev\HappyStation\HappyStation\HappyStation.Core\obj\Release\HappyStation.Core.csprojResolveAssemblyReference.cache
