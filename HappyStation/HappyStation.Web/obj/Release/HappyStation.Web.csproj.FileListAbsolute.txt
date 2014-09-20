@@ -73,3 +73,9 @@ D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\WebMatrix.Data.xml
 D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\WebMatrix.WebData.xml
 D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\Org.Mentalis.Security.Cryptography.xml
 D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\Mono.Math.xml
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\System.Web.Mvc.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\AutoMapper.Net4.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\AutoMapper.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\AutoMapper.xml
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\HappyStation.Common.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\HappyStation.Common.pdb

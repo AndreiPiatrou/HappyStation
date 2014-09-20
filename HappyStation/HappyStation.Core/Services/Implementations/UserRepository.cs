@@ -2,7 +2,7 @@
 
 namespace HappyStation.Core.Services.Implementations
 {
-    public class UserRepository : Repository<User>
+    public class UserRepository : RepositoryBase<User>
     {
         public UserRepository(DatabaseContext.DatabaseContext databaseContext)
             : base(databaseContext)

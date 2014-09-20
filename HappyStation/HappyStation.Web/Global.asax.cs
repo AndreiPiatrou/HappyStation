@@ -3,6 +3,8 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
+using Autofac;
+
 using HappyStation.Web.App_Start;
 
 namespace HappyStation.Web
@@ -11,8 +13,11 @@ namespace HappyStation.Web
     {
         protected void Application_Start()
         {
+            IContainer container = IocConfig.Configure();
+
+            MapperConfig.Register(container);
             AreaRegistration.RegisterAllAreas();
-            IocConfig.RegisterDependencies();
+            IocConfig.Configure();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

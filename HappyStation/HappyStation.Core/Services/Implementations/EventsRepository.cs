@@ -2,7 +2,7 @@
 
 namespace HappyStation.Core.Services.Implementations
 {
-    public class EventsRepository : Repository<Event>
+    public class EventsRepository : RepositoryBase<Event>
     {
         public EventsRepository(DatabaseContext.DatabaseContext databaseContext)
             : base(databaseContext)

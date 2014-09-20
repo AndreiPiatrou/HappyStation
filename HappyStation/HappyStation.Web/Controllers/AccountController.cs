@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Web.Mvc;
 
 using HappyStation.Core.Entities;
@@ -14,17 +15,16 @@ namespace HappyStation.Web.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly AuthorizationRoot authorizationRoot;
-        private readonly UserRepository userRepository;
-        private readonly Dictionary<string, IClient> clients;
-
         public AccountController(AuthorizationRoot authorizationRoot, UserRepository userRepository)
         {
+            Contract.Requires(authorizationRoot != null);
+            Contract.Requires(userRepository != null);
+
             this.authorizationRoot = authorizationRoot;
             this.userRepository = userRepository;
 
             clients = new Dictionary<string, IClient>();
-            foreach (var client in authorizationRoot.Clients)
+            foreach (var client in this.authorizationRoot.Clients)
             {
                 clients.Add(client.Name.ToLower(), client);
             }
@@ -41,6 +41,17 @@ namespace HappyStation.Web.Controllers
             {
                 Session["providerName"] = value;
             }
+        }
+
+        public ActionResult Login()
+        {
+            ViewData.Model = new[]
+            {
+                "facebook",
+                "twitter",
+                "vkontakte"
+            };
+            return View();
         }
 
         public ActionResult ExternalLogin(string providerName)
@@ -66,10 +77,9 @@ namespace HappyStation.Web.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            var user = CreateUserByInfo(info);
-
             OAuthWebSecurity.CreateOrUpdateAccount(ProviderName, info.Id, User.Identity.Name);
             OAuthWebSecurity.Login(ProviderName, info.Id, true);
+            userRepository.CreateOrUpdate(CreateUserByInfo(info));
 
             return RedirectToAction("Index", "Home");
         }
@@ -99,5 +109,9 @@ namespace HappyStation.Web.Controllers
 
             return user;
         }
+
+        private readonly AuthorizationRoot authorizationRoot;
+        private readonly UserRepository userRepository;
+        private readonly Dictionary<string, IClient> clients;
     }
 }

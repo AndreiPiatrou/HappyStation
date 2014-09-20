@@ -28,5 +28,7 @@ namespace HappyStation.Core.DatabaseContext
         public DbSet<PhotoAlbum> PhotoAlbums { get; set; }
 
         public DbSet<User> Users { get; set; }
+
+        public DbSet<Service> Services { get; set; }
     }
 }

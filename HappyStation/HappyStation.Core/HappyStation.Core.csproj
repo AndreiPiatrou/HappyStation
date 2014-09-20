@@ -57,14 +57,17 @@
     <Compile Include="Entities\News.cs" />
     <Compile Include="Entities\Photo.cs" />
     <Compile Include="Entities\PhotoAlbum.cs" />
+    <Compile Include="Entities\Service.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Implementations\CommentsRepository.cs" />
     <Compile Include="Services\Implementations\EventsRepository.cs" />
+    <Compile Include="Services\Implementations\ServicesRepository.cs" />
     <Compile Include="Services\Implementations\UserRepository.cs" />
     <Compile Include="Services\IRepository.cs" />
     <Compile Include="Services\Implementations\NewsRepository.cs" />
-    <Compile Include="Services\Implementations\Repository.cs" />
+    <Compile Include="Services\Implementations\RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

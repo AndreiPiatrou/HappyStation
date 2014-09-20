@@ -1,0 +1,24 @@
+﻿@model CommentVewModel
+
+@{
+    Layout = null;
+}
+
+<div class="3u">
+    <section>
+        <h2>
+            @Strings.LastComment
+        </h2>
+
+        <div class="balloon">
+            <blockquote>
+                &ldquo;&nbsp;&nbsp;
+                @Model.Text
+                &nbsp;&nbsp;&rdquo;
+            </blockquote>
+            <br />
+            <br />
+            <strong>&ndash;&nbsp;&nbsp;@Model.UserName</strong>
+        </div>
+    </section>
+</div>

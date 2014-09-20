@@ -1,0 +1,23 @@
+﻿@model IEnumerable<ServiceViewModel>
+
+@{
+    Layout = null;
+}
+
+<div id="marketing" class="container">
+    <div class="row">
+        @foreach (ServiceViewModel service in Model)
+        {
+            <div class="3u">
+                <section>
+                    <header>
+                        <h2>@service.Title</h2>
+                    </header>
+                    <p class="subtitle">@service.ShortDescription</p>
+                    <p><a href="@Url.Action("Service", new { id = service.Id })"><img s><img src="@service.Image" alt="@service.Title"></a></p>
+                    <a href="@Url.Action("Service", new { id = service.Id })" class="button">@Strings.More</a>
+                </section>
+            </div>
+        }
+    </div>
+</div>

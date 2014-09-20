@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3DD22A
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyStation.Common", "HappyStation.Common\HappyStation.Common.csproj", "{94E5216D-0B54-455C-8C47-3DC2E7C69403}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,10 @@ Global
 		{3F2FDC5B-7BFF-4757-B4FD-EC1845430876}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F2FDC5B-7BFF-4757-B4FD-EC1845430876}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F2FDC5B-7BFF-4757-B4FD-EC1845430876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94E5216D-0B54-455C-8C47-3DC2E7C69403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E5216D-0B54-455C-8C47-3DC2E7C69403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E5216D-0B54-455C-8C47-3DC2E7C69403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E5216D-0B54-455C-8C47-3DC2E7C69403}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

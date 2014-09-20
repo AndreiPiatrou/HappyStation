@@ -126,10 +126,25 @@
   <data name="Gallery" xml:space="preserve">
     <value>Галерея</value>
   </data>
+  <data name="LastComment" xml:space="preserve">
+    <value>Последний комментарий</value>
+  </data>
+  <data name="LastNews" xml:space="preserve">
+    <value>Последние новости</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Happy Station</value>
+  </data>
   <data name="MainPage" xml:space="preserve">
     <value>Главная</value>
   </data>
+  <data name="More" xml:space="preserve">
+    <value>Больше</value>
+  </data>
   <data name="News" xml:space="preserve">
     <value>Новости</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Услуги</value>
   </data>
 </root>

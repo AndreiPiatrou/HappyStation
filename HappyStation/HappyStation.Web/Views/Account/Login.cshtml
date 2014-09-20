@@ -1,0 +1,13 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+@foreach (var providerName in Model)
+{
+    @Html.ActionLink(string.Format("Login with {0}", providerName), "ExternalLogin", new { @providerName = providerName })
+}

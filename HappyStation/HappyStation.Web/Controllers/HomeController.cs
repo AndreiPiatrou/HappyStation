@@ -1,7 +1,6 @@
 ﻿using System.Web.Mvc;
 
 using HappyStation.Core.DatabaseContext;
-using HappyStation.Core.Services;
 using HappyStation.Core.Services.Implementations;
 using HappyStation.Web.Resources;
 
@@ -33,6 +32,12 @@ namespace HappyStation.Web.Controllers
             ViewBag.News = newsRepository.GetBy();
             ViewBag.Events = eventsRepository.GetBy();
 
+            return View();
+        }
+
+        [Authorize]
+        public ActionResult Admin()
+        {
             return View();
         }
 

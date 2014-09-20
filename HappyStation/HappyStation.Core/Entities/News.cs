@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace HappyStation.Core.Entities
+﻿namespace HappyStation.Core.Entities
 {
     public class News : DatabaseEntity
     {
@@ -8,6 +6,6 @@ namespace HappyStation.Core.Entities
 
         public string Title { get; set; }
 
-        public IEnumerable<Comment> Comments { get; set; }
+        public string Image { get; set; }
     }
 }

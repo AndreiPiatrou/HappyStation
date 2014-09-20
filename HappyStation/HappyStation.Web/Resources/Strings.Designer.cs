@@ -88,6 +88,33 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Последний комментарий.
+        /// </summary>
+        public static string LastComment {
+            get {
+                return ResourceManager.GetString("LastComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Последние новости.
+        /// </summary>
+        public static string LastNews {
+            get {
+                return ResourceManager.GetString("LastNews", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Happy Station.
+        /// </summary>
+        public static string Logo {
+            get {
+                return ResourceManager.GetString("Logo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Главная.
         /// </summary>
         public static string MainPage {
@@ -97,11 +124,29 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Больше.
+        /// </summary>
+        public static string More {
+            get {
+                return ResourceManager.GetString("More", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Новости.
         /// </summary>
         public static string News {
             get {
                 return ResourceManager.GetString("News", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Услуги.
+        /// </summary>
+        public static string Services {
+            get {
+                return ResourceManager.GetString("Services", resourceCulture);
             }
         }
     }
