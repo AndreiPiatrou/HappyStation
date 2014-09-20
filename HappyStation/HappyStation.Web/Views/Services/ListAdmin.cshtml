@@ -5,13 +5,20 @@
     Layout = "/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>Services</h2>
-
-<ul>
-    @foreach (var service in Model)
-    {
-        <li>
-            @Html.ActionLink(service.Title, "Service", "Services", new { @id = service.Id }, null)
-        </li>
-    }
-</ul>
+<div id="main" class="container">
+    <div class="9u skel-cell-important">
+        <section>
+            <header>
+                <h2>Service list</h2>
+                <ul class="style1">
+                    @foreach (var service in Model)
+                    {
+                        <li>
+                            @Html.ActionLink(service.Title, "Service", "Services", new { @id = service.Id }, null)
+                        </li>
+                    }
+                </ul>
+            </header>
+        </section>
+    </div>
+</div>
