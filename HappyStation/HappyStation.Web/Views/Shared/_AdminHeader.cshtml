@@ -1,7 +1,4 @@
-﻿@using HappyStation.Web.Resources
-
-
-<div id="header">
+﻿<div id="header">
     <div class="container">
 
         <!-- Logo -->
@@ -12,11 +9,11 @@
         <!-- Nav -->
         <nav id="nav">
             <ul>
-                <li class="active">@Html.ActionLink(Strings.MainPage, "Index", "Home")</li>
-                <li>@Html.ActionLink(Strings.News, "Index", "News")</li>
-                <li>@Html.ActionLink(Strings.Services, "Index", "Services")</li>
-                <li>@Html.ActionLink(Strings.Gallery, "Index", "Gallery")</li>
-                <li>@Html.ActionLink(Strings.About, "About", "Home")</li>
+                @Html.MenuLink(Strings.MainPage, "Index", "Home")
+                @Html.MenuLink(Strings.News, "ListAdmin", "News")
+                @Html.MenuLink(Strings.Services, "ListAdmin", "Services")
+                @Html.MenuLink(Strings.Gallery, "Index", "Gallery")
+                @Html.MenuLink(Strings.About, "About", "Home")
             </ul>
         </nav>
     </div>

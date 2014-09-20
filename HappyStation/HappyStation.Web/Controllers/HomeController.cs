@@ -26,7 +26,6 @@ namespace HappyStation.Web.Controllers
             ViewBag.Title = Strings.MainPage;
         }
 
-        [HttpGet]
         public ActionResult Index()
         {
             ViewBag.News = newsRepository.GetBy();
@@ -35,7 +34,7 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
-        [Authorize]
+        //[Authorize]
         public ActionResult Admin()
         {
             return View();

@@ -219,6 +219,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Settings\ApplicaitonSettings.cs" />
     <Compile Include="ViewModels\CommentVewModel.cs" />
     <Compile Include="ViewModels\NewsViewModel.cs" />
     <Compile Include="ViewModels\ServiceViewModel.cs" />
@@ -347,6 +348,8 @@
     <Content Include="Views\Shared\_AdminHeader.cshtml" />
     <Content Include="Views\Home\Admin.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\News\ListAdmin.cshtml" />
+    <Content Include="Views\Services\ListAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

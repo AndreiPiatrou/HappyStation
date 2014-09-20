@@ -1,0 +1,17 @@
+﻿@model IEnumerable<NewsViewModel>
+
+@{
+    ViewBag.Title = "News list";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>News list</h2>
+
+<ul>
+    @foreach (var news in Model)
+    {
+        <li>
+            @Html.ActionLink(news.Title, "News", "News", new { @id = news.Id }, null)
+        </li>
+    }
+</ul>

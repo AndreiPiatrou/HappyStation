@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ServiceViewModel>
+
+@{
+    ViewBag.Title = "Services list";
+    Layout = "/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Services</h2>
+
+<ul>
+    @foreach (var service in Model)
+    {
+        <li>
+            @Html.ActionLink(service.Title, "Service", "Services", new { @id = service.Id }, null)
+        </li>
+    }
+</ul>
