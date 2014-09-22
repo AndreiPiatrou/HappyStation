@@ -1,5 +1,10 @@
 ﻿@model ServiceViewModel
 
+@{
+    ViewBag.Title = Model.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
 <div id="main" class="container">
     <div class="row">
 
@@ -34,7 +39,9 @@
             <section>
                 <header>
                     <h2>@Model.Title</h2>
-                    <span class="byline">@Model.ShortDescription</span>
+                    <span class="byline">
+                        @Model.ShortDescription
+                    </span>
                 </header>
                 @Model.Description
             </section>

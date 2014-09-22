@@ -36,6 +36,7 @@ namespace HappyStation.Core.Services.Implementations
             {
                 Db.Set<T>().Remove(entity);
             }
+            Db.SaveChanges();
 
             return entity != null;
         }

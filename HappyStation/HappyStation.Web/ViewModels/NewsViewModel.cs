@@ -1,6 +1,6 @@
 ﻿namespace HappyStation.Web.ViewModels
 {
-    public class NewsViewModel
+    public class NewsViewModel : IViewModelBase
     {
         public int Id { get; set; }
 

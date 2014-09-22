@@ -14,7 +14,13 @@
                         <h2>@service.Title</h2>
                     </header>
                     <p class="subtitle">@service.ShortDescription</p>
-                    <p><a href="@Url.Action("Service", new { id = service.Id })"><img s><img src="@service.Image" alt="@service.Title"></a></p>
+                    <p>
+                        <a href="@Url.Action("Service", new { id = service.Id })">
+                            <div class="service-main">
+                                <img src="@service.Image" alt="@service.Title" />
+                            </div>
+                        </a>
+                    </p>
                     <a href="@Url.Action("Service", new { id = service.Id })" class="button">@Strings.More</a>
                 </section>
             </div>

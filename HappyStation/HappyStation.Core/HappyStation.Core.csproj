@@ -59,6 +59,7 @@
     <Compile Include="Entities\PhotoAlbum.cs" />
     <Compile Include="Entities\Service.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Implementations\CommentsRepository.cs" />

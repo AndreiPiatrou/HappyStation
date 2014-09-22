@@ -120,8 +120,32 @@
   <data name="About" xml:space="preserve">
     <value>О нас</value>
   </data>
+  <data name="Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="AdminPanel" xml:space="preserve">
+    <value>Панель администратора</value>
+  </data>
   <data name="Contacts" xml:space="preserve">
     <value>Контакты</value>
+  </data>
+  <data name="CreateNews" xml:space="preserve">
+    <value>Создание новости</value>
+  </data>
+  <data name="CreateService" xml:space="preserve">
+    <value>Создание услуги</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="EditNews" xml:space="preserve">
+    <value>Редактирование новости</value>
+  </data>
+  <data name="EditService" xml:space="preserve">
+    <value>Редактирование услуги</value>
   </data>
   <data name="Gallery" xml:space="preserve">
     <value>Галерея</value>
@@ -143,6 +167,15 @@
   </data>
   <data name="News" xml:space="preserve">
     <value>Новости</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Следующая</value>
+  </data>
+  <data name="Previos" xml:space="preserve">
+    <value>Предыдущая</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
   </data>
   <data name="Services" xml:space="preserve">
     <value>Услуги</value>

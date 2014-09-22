@@ -1,0 +1,46 @@
+﻿@model NewsViewModel
+
+@{
+    ViewBag.Title = Model.Id > 0 ? @Strings.EditNews : @Strings.CreateNews;
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div id="main" class="container">
+    <div class="9ut">
+        <h2>@ViewBag.Title</h2>
+
+        @using (Html.BeginForm("Save", "News", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary()
+
+            @Html.HiddenFor(m => m.Id)
+
+            <fieldset>
+                <ol>
+                    <li>
+                        @Html.LabelFor(m => m.Title)
+                        @Html.EditorFor(m => m.Title)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.Text)
+                        @Html.EditorFor(m => m.Text)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.Image)
+                        @if (!string.IsNullOrEmpty(Model.Image))
+                        {
+                            <img src="@Model.Image" class="ui-icon-image" alt="@Model.Image" />
+                        }
+
+                        <input type="file" name="image"/>
+
+                    </li>
+                </ol>
+                <input type="submit" value="@Strings.Save" />
+            </fieldset>
+        }
+    </div>
+</div>

@@ -1,0 +1,54 @@
+﻿@model ServiceViewModel
+@{
+    ViewBag.Title = Model.Id > 0 ? @Strings.EditService : @Strings.CreateService;
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div id="main" class="container">
+    <div class="9ut">
+        <h2>@ViewBag.Title</h2>
+
+        @using (Html.BeginForm("Save", "Services", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary()
+
+            @Html.HiddenFor(m => m.Id)
+
+            <fieldset>
+                <ol>
+                    <li>
+                        @Html.LabelFor(m => m.Title)
+                        @Html.EditorFor(m => m.Title)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.ShortDescription)
+                        @Html.EditorFor(m => m.ShortDescription)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.Description)
+                        @Html.EditorFor(m => m.Description)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.IsHot)
+                        @Html.EditorFor(m => m.IsHot)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.Image)
+                        @if (!string.IsNullOrEmpty(Model.Image))
+                        {
+                            <img src="@Model.Image" class="ui-icon-image" alt="@Model.Image" />
+                        }
+                        
+                        <input type="file" name="image" />
+
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.Price)
+                        @Html.EditorFor(m => m.Price)
+                    </li>
+                </ol>
+                <input type="submit" value="@Strings.Save" />
+            </fieldset>
+        }
+    </div>
+</div>

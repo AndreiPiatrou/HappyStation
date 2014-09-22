@@ -7,6 +7,7 @@ using AutoMapper;
 
 using HappyStation.Core.DatabaseContext;
 using HappyStation.Core.Services.Implementations;
+using HappyStation.Web.Services;
 using HappyStation.Web.Settings;
 
 using OAuth2;
@@ -40,8 +41,9 @@ namespace HappyStation.Web.App_Start
             builder.RegisterType<UserRepository>().AsSelf().InstancePerLifetimeScope();
             builder.RegisterType<EventsRepository>().AsSelf().InstancePerLifetimeScope();
             builder.RegisterType<CommentsRepository>().AsSelf().InstancePerLifetimeScope();
+            builder.RegisterType<FileUploadService>().AsSelf().InstancePerLifetimeScope();
 
-            builder.RegisterType<ApplicaitonSettings>().AsSelf().InstancePerLifetimeScope();
+            builder.RegisterType<ApplicationSettings>().AsSelf().InstancePerLifetimeScope();
             builder.Register(c => Mapper.Engine);
         }
     }
