@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
 
 namespace HappyStation.Web.ViewModels
 {
@@ -18,5 +19,15 @@ namespace HappyStation.Web.ViewModels
         public int Price { get; set; }
 
         public bool IsHot { get; set; }
+
+        public string DescriptionPreview
+        {
+            get
+            {
+                return Description.Length > 200
+                    ? Description.Take(200) + "..."
+                    : Description;
+            }
+        }
     }
 }

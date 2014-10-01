@@ -21,7 +21,8 @@ namespace HappyStation.Web
             bundles.Add(new ScriptBundle("~/bundles/init").Include(
                 "~/Scripts/site/skel.min.js",
                 "~/Scripts/site/skel-panels.min.js",
-                "~/Scripts/site/init.js"));
+                "~/Scripts/site/init.js",
+                "~/Scripts/site/main.js"));
         }
     }
 }

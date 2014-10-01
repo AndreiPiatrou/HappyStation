@@ -20,16 +20,19 @@ namespace HappyStation.Web.Controllers
         public NewsController(NewsRepository newsRepository,
             IMappingEngine mapper,
             ApplicationSettings settings,
-            FileUploadService fileUploadService)
+            FileUploadService fileUploadService,
+            InstagramService instagramService)
             : base(fileUploadService)
         {
             Contract.Requires(newsRepository != null);
             Contract.Requires(mapper != null);
             Contract.Requires(settings != null);
+            Contract.Requires(instagramService != null);
 
             this.newsRepository = newsRepository;
             this.mapper = mapper;
             this.settings = settings;
+            this.instagramService = instagramService;
         }
 
         public ActionResult Index()
@@ -88,6 +91,7 @@ namespace HappyStation.Web.Controllers
         private readonly NewsRepository newsRepository;
         private readonly IMappingEngine mapper;
         private readonly ApplicationSettings settings;
+        private readonly InstagramService instagramService;
 
         [HttpPost]
         public ActionResult Save(NewsViewModel model, HttpPostedFileBase image)
@@ -112,6 +116,14 @@ namespace HappyStation.Web.Controllers
             newsRepository.CreateOrUpdate(news);
 
             return RedirectToAction("ListAdmin");
+        }
+
+        public ActionResult GetInstagramFeed()
+        {
+            ViewData.Model = instagramService.GetFeed(9);
+            ViewBag.InstagramLink = "http://instagram.com/" + settings.InstagramUserName;
+
+            return View();
         }
     }
 }

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<InstagramFeedViewModel>
+
+@{
+    Layout = null;
+}
+
+<ul class="style5">
+    @foreach (var feed in Model)
+    {
+        <li>
+            <a href="@feed.Link" target="_blank">
+                <img class="instagram-preview" src="@feed.Preview" alt="@feed.Title" title="@feed.Title" />
+            </a>
+        </li>
+    }
+</ul>
+
+<a href="@ViewBag.InstagramLink" target="_blank" class="button">@Strings.More</a>

@@ -34,7 +34,7 @@ namespace HappyStation.Web.Controllers
 
         public ActionResult Index()
         {
-            throw new NotImplementedException();
+            return RedirectToAction("List");
         }
 
         [HttpGet]
@@ -52,16 +52,18 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult List(int pageNum = 1)
+        {
+            FillListViewModel(pageNum);
+
+            return View();
+        }
+
+        [HttpGet]
         public ActionResult ListAdmin(int pageNum = 1)
         {
-            var skip = (pageNum - 1) * settings.ItemsPerPage;
-            var services = servicesRepository.GetBy(skip, settings.ItemsPerPage + 1).Select(s => mapper.Map<ServiceViewModel>(s)).ToList();
-
-            ViewData.Model = services.Take(settings.ItemsPerPage);
-            ViewBag.HasPrevPage = pageNum > 1;
-            ViewBag.HasNextPage = services.Count > settings.ItemsPerPage;
-            ViewBag.PreviosPage = pageNum - 1;
-            ViewBag.NextPage = pageNum + 1;
+            FillListViewModel(pageNum);
 
             return View();
         }
@@ -106,6 +108,18 @@ namespace HappyStation.Web.Controllers
             servicesRepository.Delete(id);
 
             return RedirectToAction("ListAdmin");
+        }
+
+        private void FillListViewModel(int pageNum)
+        {
+            var skip = (pageNum - 1) * settings.ItemsPerPage;
+            var services = servicesRepository.GetBy(skip, settings.ItemsPerPage + 1).Select(s => mapper.Map<ServiceViewModel>(s)).ToList();
+
+            ViewData.Model = services.Take(settings.ItemsPerPage);
+            ViewBag.HasPrevPage = pageNum > 1;
+            ViewBag.HasNextPage = services.Count > settings.ItemsPerPage;
+            ViewBag.PreviosPage = pageNum - 1;
+            ViewBag.NextPage = pageNum + 1;
         }
 
         private readonly ServicesRepository servicesRepository;

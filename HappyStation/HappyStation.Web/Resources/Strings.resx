@@ -157,7 +157,7 @@
     <value>Последние новости</value>
   </data>
   <data name="Logo" xml:space="preserve">
-    <value>Happy Station</value>
+    <value>Happy Moment</value>
   </data>
   <data name="MainPage" xml:space="preserve">
     <value>Главная</value>
@@ -170,6 +170,9 @@
   </data>
   <data name="Next" xml:space="preserve">
     <value>Следующая</value>
+  </data>
+  <data name="OurInstagram" xml:space="preserve">
+    <value>Наш Instagram</value>
   </data>
   <data name="Previos" xml:space="preserve">
     <value>Предыдущая</value>

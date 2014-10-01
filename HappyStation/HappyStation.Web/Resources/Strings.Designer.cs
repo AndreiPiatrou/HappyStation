@@ -178,7 +178,7 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Happy Station.
+        ///   Looks up a localized string similar to Happy Moment.
         /// </summary>
         public static string Logo {
             get {
@@ -219,6 +219,15 @@ namespace HappyStation.Web.Resources {
         public static string Next {
             get {
                 return ResourceManager.GetString("Next", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Наш Instagram.
+        /// </summary>
+        public static string OurInstagram {
+            get {
+                return ResourceManager.GetString("OurInstagram", resourceCulture);
             }
         }
         

@@ -79,3 +79,4 @@ D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\AutoMapper.dll
 D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\AutoMapper.xml
 D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\HappyStation.Common.dll
 D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\HappyStation.Common.pdb
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\InstaSharp.dll

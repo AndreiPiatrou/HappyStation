@@ -111,7 +111,7 @@ br.clear {
 
 section,
 article {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
     section > :last-child,
@@ -2200,11 +2200,40 @@ blockquote {
 }
 
 .service-main {
-    width: 282px;
     height: 150px;
+    overflow: hidden;
+}
+
+.service-list-item {
+    height: 150px;
+    width: 280px;
     overflow: hidden;
 }
 
 tr:nth-child(even) {
     background-color: #e4eaef;
+}
+
+.horizontal-list {
+    margin-top: 1em;
+    display: table;
+    width: 100%;
+}
+
+    .horizontal-list > li {
+        width: 30%;
+        display: inline-block;
+        margin-bottom: 2em;
+        margin-right: 2em;
+        zoom: 1;
+        *display: inline;
+    }
+
+.container-secondary {
+    width: 1000px;
+}
+
+.instagram-preview {
+    width: 80px;
+    height: 80px;
 }
