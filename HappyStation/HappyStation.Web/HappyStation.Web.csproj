@@ -235,9 +235,18 @@
     <Compile Include="ViewModels\InstagramFeedViewModel.cs" />
     <Compile Include="ViewModels\IViewModelBase.cs" />
     <Compile Include="ViewModels\NewsViewModel.cs" />
+    <Compile Include="ViewModels\PhotoAlbumViewModel.cs" />
+    <Compile Include="ViewModels\PhotoViewModel.cs" />
     <Compile Include="ViewModels\ServiceViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\fancybox\blank.gif" />
+    <Content Include="Content\fancybox\fancybox_buttons.png" />
+    <Content Include="Content\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="Content\fancybox\fancybox_loading.gif" />
+    <Content Include="Content\fancybox\fancybox_overlay.png" />
+    <Content Include="Content\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="Content\fancybox\fancybox_sprite.png" />
     <Content Include="Content\ie\html5shiv.js" />
     <Content Include="Content\ie\PIE.htc" />
     <Content Include="Content\ie\v8.css" />
@@ -260,6 +269,9 @@
     <Content Include="Content\images\preloader.gif" />
     <Content Include="Content\images\spacer.gif" />
     <Content Include="Content\images\toggle.svg" />
+    <Content Include="Content\jquery.fancybox-buttons.css" />
+    <Content Include="Content\jquery.fancybox-thumbs.css" />
+    <Content Include="Content\jquery.fancybox.css" />
     <Content Include="Content\skel-noscript.css" />
     <Content Include="Content\style-1000px.css" />
     <Content Include="Content\style-desktop.css" />
@@ -323,6 +335,12 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.11.1.js" />
     <Content Include="Scripts\jquery-ui.min-1.11.1.js" />
+    <Content Include="Scripts\jquery.fancybox-buttons.js" />
+    <Content Include="Scripts\jquery.fancybox-media.js" />
+    <Content Include="Scripts\jquery.fancybox-thumbs.js" />
+    <Content Include="Scripts\jquery.fancybox.js" />
+    <Content Include="Scripts\jquery.fancybox.pack.js" />
+    <Content Include="Scripts\jquery.mousewheel-3.0.6.pack.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -370,6 +388,11 @@
     <Content Include="Views\News\News.cshtml" />
     <Content Include="Views\Services\List.cshtml" />
     <Content Include="Views\News\GetInstagramFeed.cshtml" />
+    <Content Include="Views\Gallery\EditAlbum.cshtml" />
+    <Content Include="Views\Gallery\ListAdmin.cshtml" />
+    <Content Include="Views\Gallery\Album.cshtml" />
+    <Content Include="Views\News\List.cshtml" />
+    <Content Include="Views\Gallery\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

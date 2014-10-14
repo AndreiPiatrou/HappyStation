@@ -1,7 +1,10 @@
 (function ($) {
     
     $(document).ready(function () {
+
         partialContantsLoading();
+
+        $(".fancybox").fancybox();
     });
 
     function partialContantsLoading() {

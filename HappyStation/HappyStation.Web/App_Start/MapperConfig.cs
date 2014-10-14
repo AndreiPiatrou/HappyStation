@@ -21,6 +21,10 @@ namespace HappyStation.Web.App_Start
                                   map.CreateMap<NewsViewModel, News>();
                                   map.CreateMap<Comment, CommentVewModel>();
                                   map.CreateMap<CommentVewModel, Comment>();
+                                  map.CreateMap<Photo, PhotoViewModel>();
+                                  map.CreateMap<PhotoViewModel, Photo>();
+                                  map.CreateMap<PhotoAlbum, PhotoAlbumViewModel>();
+                                  map.CreateMap<PhotoAlbumViewModel, PhotoAlbum>();
                               });
         }
     }

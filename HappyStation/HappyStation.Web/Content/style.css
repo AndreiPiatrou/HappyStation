@@ -2237,3 +2237,8 @@ tr:nth-child(even) {
     width: 80px;
     height: 80px;
 }
+
+.photo-album {
+    width: auto;
+    height: 100%;
+}

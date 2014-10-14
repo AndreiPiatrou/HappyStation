@@ -88,6 +88,24 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Редактирование альбома.
+        /// </summary>
+        public static string AlbumEdit {
+            get {
+                return ResourceManager.GetString("AlbumEdit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Альбомы.
+        /// </summary>
+        public static string Albums {
+            get {
+                return ResourceManager.GetString("Albums", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Контакты.
         /// </summary>
         public static string Contacts {

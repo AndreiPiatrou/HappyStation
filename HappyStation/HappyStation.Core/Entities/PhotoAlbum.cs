@@ -4,8 +4,7 @@ namespace HappyStation.Core.Entities
 {
     public class PhotoAlbum : DatabaseEntity
     {
-        // TODO: Add entity reference.
-        public IEnumerable<Photo> Photos { get; set; }
+        public List<Photo> Photos { get; set; }
 
         public string Title { get; set; }
     }

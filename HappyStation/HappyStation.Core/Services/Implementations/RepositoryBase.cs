@@ -41,14 +41,14 @@ namespace HappyStation.Core.Services.Implementations
             return entity != null;
         }
 
-        public T Get(int id)
+        public virtual T Get(int id)
         {
             Contract.Ensures(id > 0);
 
             return Db.Set<T>().FirstOrDefault(e => e.Id == id);
         }
 
-        public IEnumerable<T> GetBy(int skip = 0, int take = Numbers.MaxGetCount)
+        public virtual IEnumerable<T> GetBy(int skip = 0, int take = Numbers.MaxGetCount)
         {
             Contract.Ensures(take > 0);
 

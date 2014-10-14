@@ -72,6 +72,20 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
+        public ActionResult List(int pageNum = 1)
+        {
+            var skip = (pageNum - 1) * settings.ItemsPerPage;
+            var news = newsRepository.GetBy(skip, settings.ItemsPerPage + 1).Select(n => mapper.Map<NewsViewModel>(n)).ToList();
+
+            ViewData.Model = news.Take(settings.ItemsPerPage);
+            ViewBag.HasPrevPage = pageNum > 1;
+            ViewBag.HasNextPage = news.Count > settings.ItemsPerPage;
+            ViewBag.PreviosPage = pageNum - 1;
+            ViewBag.NextPage = pageNum + 1;
+
+            return View();
+        }
+
         public ActionResult Delete(int id)
         {
             newsRepository.Delete(id);
@@ -87,11 +101,6 @@ namespace HappyStation.Web.Controllers
 
             return View(model);
         }
-
-        private readonly NewsRepository newsRepository;
-        private readonly IMappingEngine mapper;
-        private readonly ApplicationSettings settings;
-        private readonly InstagramService instagramService;
 
         [HttpPost]
         public ActionResult Save(NewsViewModel model, HttpPostedFileBase image)
@@ -125,5 +134,10 @@ namespace HappyStation.Web.Controllers
 
             return View();
         }
+
+        private readonly NewsRepository newsRepository;
+        private readonly IMappingEngine mapper;
+        private readonly ApplicationSettings settings;
+        private readonly InstagramService instagramService;
     }
 }

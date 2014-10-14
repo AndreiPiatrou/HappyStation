@@ -43,6 +43,8 @@ namespace HappyStation.Web.App_Start
             builder.RegisterType<CommentsRepository>().AsSelf().InstancePerLifetimeScope();
             builder.RegisterType<FileUploadService>().AsSelf().InstancePerLifetimeScope();
             builder.RegisterType<InstagramService>().AsSelf().InstancePerLifetimeScope();
+            builder.RegisterType<PhotoService>().AsSelf().InstancePerLifetimeScope();
+            builder.RegisterType<PhotoAlbumService>().AsSelf().InstancePerLifetimeScope();
 
             builder.RegisterType<ApplicationSettings>().AsSelf().InstancePerLifetimeScope();
             builder.Register(c => Mapper.Engine);
