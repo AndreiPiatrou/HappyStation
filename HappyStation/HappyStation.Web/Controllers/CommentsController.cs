@@ -5,6 +5,7 @@ using System.Web.Mvc;
 
 using AutoMapper;
 
+using HappyStation.Core.Entities;
 using HappyStation.Core.Services.Implementations;
 using HappyStation.Web.Services;
 using HappyStation.Web.Settings;
@@ -51,15 +52,11 @@ namespace HappyStation.Web.Controllers
 
         public ActionResult LastComment()
         {
-            ViewData.Model = mapper.Map<CommentVewModel>(commentsRepository.GetLast());
-
+            ViewData.Model = mapper.Map<CommentVewModel>(commentsRepository.GetLast() ?? new Comment());
+            
             return View();
         }
-
-        private readonly CommentsRepository commentsRepository;
-        private readonly IMappingEngine mapper;
-        private readonly ApplicationSettings settings;
-
+        
         public ActionResult Edit()
         {
             throw new NotImplementedException();
@@ -67,7 +64,7 @@ namespace HappyStation.Web.Controllers
 
         public ActionResult Comment(int id)
         {
-            throw new NotImplementedException();
+            return View();
         }
 
         [Authorize]
@@ -77,5 +74,22 @@ namespace HappyStation.Web.Controllers
 
             return RedirectToAction("ListAdmin");
         }
+
+        [Authorize]
+        public ActionResult AcceptComment(int id)
+        {
+            var comment = commentsRepository.Get(id);
+            if (comment != null)
+            {
+                comment.IsAccepted = true;
+                commentsRepository.CreateOrUpdate(comment);
+            }
+
+            return RedirectToAction("ListAdmin");
+        }
+
+        private readonly CommentsRepository commentsRepository;
+        private readonly IMappingEngine mapper;
+        private readonly ApplicationSettings settings;
     }
 }

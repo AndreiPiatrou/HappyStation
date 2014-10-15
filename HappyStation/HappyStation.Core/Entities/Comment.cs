@@ -9,5 +9,7 @@ namespace HappyStation.Core.Entities
 
         [Required]
         public string Text { get; set; }
+
+        public bool IsAccepted { get; set; }
     }
 }

@@ -1,12 +1,19 @@
 ﻿@model dynamic
 
 @{
-    ViewBag.Title= Strings.AdminPanel;
+    ViewBag.Title = Strings.AdminPanel;
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div id="main" class="container">
     <div class="9ut">
-        <h1>@ViewBag.Title</h1>
+        <h2>@ViewBag.Title</h2>
+
+        <ul class="style2">
+            <li>
+                @Html.ActionLink(Strings.ContentImages, "ListAdmin", "ContentImages")
+            </li>
+        </ul>
+
     </div>
 </div>

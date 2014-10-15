@@ -17,6 +17,11 @@ namespace HappyStation.Web.Controllers
             return uploadService.SaveImage(fileToSave, HttpContext);
         }
 
+        protected bool DeleteFile(string fileName)
+        {
+            return uploadService.DeleteFile(Request.MapPath("~" + fileName));
+        }
+
         private readonly FileUploadService uploadService;
     }
 }

@@ -212,6 +212,7 @@
     <Compile Include="App_Start\WebSecurityConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CommentsController.cs" />
+    <Compile Include="Controllers\ContentImagesController.cs" />
     <Compile Include="Controllers\ControllerBase.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HandMadeController.cs" />
@@ -234,6 +235,7 @@
     <Compile Include="Settings\ApplicationSettings.cs" />
     <Compile Include="Settings\SocialNetworkSettings.cs" />
     <Compile Include="ViewModels\CommentVewModel.cs" />
+    <Compile Include="ViewModels\ContentImageViewModel.cs" />
     <Compile Include="ViewModels\HandMadeViewModel.cs" />
     <Compile Include="ViewModels\InstagramFeedViewModel.cs" />
     <Compile Include="ViewModels\IViewModelBase.cs" />
@@ -752,6 +754,7 @@
     <Content Include="Views\Contacts\WeInSocialNetworks.cshtml" />
     <Content Include="Views\Contacts\Contacts.cshtml" />
     <Content Include="Views\HandMade\LastHandMades.cshtml" />
+    <Content Include="Views\ContentImages\ListAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

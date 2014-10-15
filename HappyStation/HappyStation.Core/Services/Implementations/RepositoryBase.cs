@@ -27,6 +27,21 @@ namespace HappyStation.Core.Services.Implementations
             return entity;
         }
 
+        public IEnumerable<T> CreateOrUpdate(IEnumerable<T> entities)
+        {
+            Contract.Ensures(entities != null);
+
+            var orUpdate = entities as T[] ?? entities.ToArray();
+            foreach (var entity in orUpdate.ToList())
+            {
+                Db.Set<T>().AddOrUpdate(entity);
+            }
+
+            Db.SaveChanges();
+
+            return orUpdate;
+        }
+
         public bool Delete(int id)
         {
             Contract.Ensures(id > 0);

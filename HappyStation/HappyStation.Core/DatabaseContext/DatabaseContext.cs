@@ -32,5 +32,7 @@ namespace HappyStation.Core.DatabaseContext
         public DbSet<Service> Services { get; set; }
 
         public DbSet<HandMade> HandMades { get; set; }
+
+        public DbSet<ContentImage> ContentImages { get; set; }
     }
 }

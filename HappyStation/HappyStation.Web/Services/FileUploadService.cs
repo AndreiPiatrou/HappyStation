@@ -33,6 +33,24 @@ namespace HappyStation.Web.Services
             return Path.Combine(rootFilePath, filename);
         }
 
+        public bool DeleteFile(string fileName)
+        {
+            try
+            {
+                if (!File.Exists(fileName))
+                {
+                    return false;
+                }
+
+                File.Delete(fileName);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
         private string GenerateFileName()
         {
             return Guid.NewGuid() + ".jpg";
