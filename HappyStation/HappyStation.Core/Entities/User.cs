@@ -10,12 +10,9 @@ namespace HappyStation.Core.Entities
         public string Name { get; set; }
 
         [EmailAddress]
+        [Required]
         public string Email { get; set; }
-
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
-        [DataType(DataType.Password)]
-        public string Password { get; set; }
-
+        
         public string VkId { get; set; }
 
         public string FbId { get; set; }

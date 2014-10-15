@@ -106,6 +106,15 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Комментарии.
+        /// </summary>
+        public static string Comments {
+            get {
+                return ResourceManager.GetString("Comments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Контакты.
         /// </summary>
         public static string Contacts {
@@ -169,6 +178,15 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Выйти.
+        /// </summary>
+        public static string Exit {
+            get {
+                return ResourceManager.GetString("Exit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Галерея.
         /// </summary>
         public static string Gallery {
@@ -192,6 +210,15 @@ namespace HappyStation.Web.Resources {
         public static string LastNews {
             get {
                 return ResourceManager.GetString("LastNews", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Войти.
+        /// </summary>
+        public static string Login {
+            get {
+                return ResourceManager.GetString("Login", resourceCulture);
             }
         }
         
@@ -273,6 +300,15 @@ namespace HappyStation.Web.Resources {
         public static string Services {
             get {
                 return ResourceManager.GetString("Services", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Пользователь с таким именем не зарегистрирован.
+        /// </summary>
+        public static string UserNotFound {
+            get {
+                return ResourceManager.GetString("UserNotFound", resourceCulture);
             }
         }
     }

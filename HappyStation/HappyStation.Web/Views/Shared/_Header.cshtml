@@ -16,6 +16,12 @@
                 @Html.MenuLink(Strings.Services, "List", "Services")
                 @Html.MenuLink(Strings.Gallery, "List", "Gallery")
                 @Html.MenuLink(Strings.About, "About", "Home")
+
+                @if (Request.IsAuthenticated)
+                {
+                    @Html.MenuLink(Strings.AdminPanel, "Admin", "Home")
+                }
+                
             </ul>
         </nav>
     </div>

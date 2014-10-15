@@ -1,0 +1,2 @@
+Add-Migration  will scaffold the next migration based on changes you have made to your model since the last migration was created
+Update-Database -ProjectName HappyStation.Core -StartUpProjectName HappyStation.Web -Verbose

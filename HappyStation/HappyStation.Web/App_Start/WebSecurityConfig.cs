@@ -6,7 +6,7 @@ namespace HappyStation.Web.App_Start
     {
         public static void Configure()
         {
-            WebSecurity.InitializeDatabaseConnection("DefaultConnection", "Users", "Id", "Name", autoCreateTables: true);
+            WebSecurity.InitializeDatabaseConnection("DefaultConnection", "Users", "Id", "Email", autoCreateTables: true);
         }
     }
 }

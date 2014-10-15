@@ -1,3 +1,9 @@
+using System.Linq;
+
+using HappyStation.Core.Entities;
+
+using WebMatrix.WebData;
+
 namespace HappyStation.Core.Migrations
 {
     using System.Data.Entity.Migrations;
@@ -7,24 +13,37 @@ namespace HappyStation.Core.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(DatabaseContext.DatabaseContext context)
         {
-            // TODO: Add admin users feelling.
+            WebSecurityConfig.Initialize();
 
-            //  This method will be called after migrating to the latest version.
+            AddUsers(context);
+        }
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+        private void AddUsers(DatabaseContext.DatabaseContext context)
+        {
+            if (context.Users.Any())
+            {
+                return;
+            }
+
+            context.Users.Add(new User
+            {
+                Email = "19graff91@gmail.com",
+            });
+
+            context.Users.Add(new User
+            {
+                Email = "admin@admin.com",
+            });
+
+            context.SaveChanges();
+
+            WebSecurity.CreateAccount("19graff91@gmail.com", "19happymoments91");
+            WebSecurity.CreateAccount("admin@admin.com", "19admin91");
         }
     }
 }

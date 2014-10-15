@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace HappyStation.Web.ViewModels
@@ -11,7 +12,7 @@ namespace HappyStation.Web.ViewModels
 
         public string ShortDescription { get; set; }
 
-        [AllowHtml]
+        [UIHint("tinymce_jquery_full"), AllowHtml]
         public string Description { get; set; }
 
         public string Image { get; set; }

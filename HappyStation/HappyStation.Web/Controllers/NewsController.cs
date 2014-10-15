@@ -58,6 +58,7 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
+        [Authorize]
         public ActionResult ListAdmin(int pageNum = 1)
         {
             var skip = (pageNum - 1) * settings.ItemsPerPage;
@@ -85,14 +86,14 @@ namespace HappyStation.Web.Controllers
 
             return View();
         }
-
+        [Authorize]
         public ActionResult Delete(int id)
         {
             newsRepository.Delete(id);
 
             return RedirectToAction("ListAdmin");
         }
-
+        [Authorize]
         public ActionResult Edit(int id = 0)
         {
             var model = id < 1
@@ -103,6 +104,7 @@ namespace HappyStation.Web.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public ActionResult Save(NewsViewModel model, HttpPostedFileBase image)
         {
             if (!ModelState.IsValid)

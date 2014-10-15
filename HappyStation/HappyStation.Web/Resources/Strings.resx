@@ -132,6 +132,9 @@
   <data name="Albums" xml:space="preserve">
     <value>Альбомы</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Комментарии</value>
+  </data>
   <data name="Contacts" xml:space="preserve">
     <value>Контакты</value>
   </data>
@@ -153,6 +156,9 @@
   <data name="EditService" xml:space="preserve">
     <value>Редактирование услуги</value>
   </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
   <data name="Gallery" xml:space="preserve">
     <value>Галерея</value>
   </data>
@@ -161,6 +167,9 @@
   </data>
   <data name="LastNews" xml:space="preserve">
     <value>Последние новости</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Войти</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Happy Moment</value>
@@ -188,5 +197,8 @@
   </data>
   <data name="Services" xml:space="preserve">
     <value>Услуги</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>Пользователь с таким именем не зарегистрирован</value>
   </data>
 </root>

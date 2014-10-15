@@ -61,6 +61,7 @@ namespace HappyStation.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public ActionResult ListAdmin(int pageNum = 1)
         {
             FillListViewModel(pageNum);
@@ -69,6 +70,7 @@ namespace HappyStation.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public ActionResult Edit(int id = 0)
         {
             var model = id < 1
@@ -79,30 +81,31 @@ namespace HappyStation.Web.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public ActionResult Save(ServiceViewModel model, HttpPostedFileBase image)
         {
             if (!ModelState.IsValid)
             {
                 return View("Edit", model);
             }
-
-            var service = new Service();
-            if (!model.IsNew())
-            {
-                service = servicesRepository.Get(model.Id);
-            }
-
-            service = mapper.Map(model, service);
+            
+            var newService = mapper.Map<Service>(model);
             if (image != null)
             {
-                service.Image = UploadFile(image);
+                newService.Image = UploadFile(image);
+            }
+            else
+            {
+                var oldservice = servicesRepository.Get(model.Id);
+                newService.Image = oldservice.Image;
             }
 
-            servicesRepository.CreateOrUpdate(service);
+            servicesRepository.CreateOrUpdate(newService);
 
             return RedirectToAction("ListAdmin");
         }
 
+        [Authorize]
         public ActionResult Delete(int id)
         {
             servicesRepository.Delete(id);

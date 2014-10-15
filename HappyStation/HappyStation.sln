@@ -18,6 +18,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3DD22A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyStation.Common", "HappyStation.Common\HappyStation.Common.csproj", "{94E5216D-0B54-455C-8C47-3DC2E7C69403}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "notes", "notes", "{81D458BB-CF1B-4A6A-99B9-1FE104B08F75}"
+	ProjectSection(SolutionItems) = preProject
+		ef.txt = ef.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

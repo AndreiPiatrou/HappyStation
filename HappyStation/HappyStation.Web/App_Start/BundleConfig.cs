@@ -7,7 +7,8 @@ namespace HappyStation.Web
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                "~/Scripts/jquery-{version}.js"));
+                "~/Scripts/jquery-{version}.js",
+                "~/Scripts/tinymce/jquery.tinymce.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                 "~/Scripts/jquery.unobtrusive*",
@@ -26,6 +27,7 @@ namespace HappyStation.Web
                 "~/Scripts/site/skel-panels.min.js",
                 "~/Scripts/site/init.js",
                 "~/Scripts/site/main.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/fancybox").Include(
                 "~/Scripts/jquery.fancybox.js",
                 "~/Scripts/jquery.fancybox-buttons.js",

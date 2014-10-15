@@ -2201,6 +2201,7 @@ blockquote {
 
 .service-main {
     height: 150px;
+    max-width: 300px;
     overflow: hidden;
 }
 
@@ -2242,3 +2243,97 @@ tr:nth-child(even) {
     width: auto;
     height: 100%;
 }
+
+.grow img {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+    .grow img:hover {
+        height: 120%;
+    }
+
+#login-form {
+    width: 300px;
+}
+
+    #login-form h3 {
+        background-color: #282830;
+        border-radius: 5px 5px 0 0;
+        color: #fff;
+        font-size: 14px;
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    #login-form fieldset {
+        background: #fff;
+        border-radius: 0 0 5px 5px;
+        position: relative;
+    }
+
+        #login-form fieldset:before {
+            background-color: #fff;
+            content: "";
+            height: 8px;
+            left: 50%;
+            margin: -4px 0 0 -4px;
+            position: absolute;
+            top: 0;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            width: 8px;
+        }
+
+    #login-form input {
+        font-size: 14px;
+    }
+
+        #login-form input[type="email"],
+        #login-form input[type="password"] {
+            border: 1px solid #dcdcdc;
+            padding: 12px 10px;
+            width: 250px;
+        }
+
+        #login-form input[type="email"] {
+            border-radius: 3px 3px 0 0;
+        }
+
+        #login-form input[type="password"] {
+            border-top: none;
+            border-radius: 0px 0px 3px 3px;
+        }
+
+        #login-form input[type="submit"] {
+            background: #1dabb8;
+            border-radius: 3px;
+            color: #fff;
+            float: right;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 12px 20px;
+        }
+
+            #login-form input[type="submit"]:hover {
+                background: #198d98;
+            }
+
+    #login-form input {
+        border: none;
+        font-family: inherit;
+        font-size: inherit;
+        margin: 0;
+        -webkit-appearance: none;
+    }
+
+        #login-form input:focus {
+            outline: none;
+        }

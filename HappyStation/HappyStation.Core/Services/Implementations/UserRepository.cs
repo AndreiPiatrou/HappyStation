@@ -1,4 +1,6 @@
-﻿using HappyStation.Core.Entities;
+﻿using System.Linq;
+
+using HappyStation.Core.Entities;
 
 namespace HappyStation.Core.Services.Implementations
 {
@@ -7,6 +9,11 @@ namespace HappyStation.Core.Services.Implementations
         public UserRepository(DatabaseContext.DatabaseContext databaseContext)
             : base(databaseContext)
         {
+        }
+
+        public User GetByLogin(string login)
+        {
+            return Db.Users.FirstOrDefault(u => u.Email == login);
         }
     }
 }

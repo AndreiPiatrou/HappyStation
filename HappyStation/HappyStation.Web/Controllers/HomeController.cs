@@ -34,7 +34,7 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
-        //[Authorize]
+        [Authorize]
         public ActionResult Admin()
         {
             return View();

@@ -4,12 +4,16 @@ using System.Web.Mvc;
 
 using HappyStation.Core.Entities;
 using HappyStation.Core.Services.Implementations;
+using HappyStation.Web.Resources;
+using HappyStation.Web.ViewModels;
 
 using Microsoft.Web.WebPages.OAuth;
 
 using OAuth2;
 using OAuth2.Client;
 using OAuth2.Models;
+
+using WebMatrix.WebData;
 
 namespace HappyStation.Web.Controllers
 {
@@ -43,15 +47,29 @@ namespace HappyStation.Web.Controllers
             }
         }
 
+        [HttpGet]
         public ActionResult Login()
         {
-            ViewData.Model = new[]
+            return View(new LoginViewModel());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(LoginViewModel model)
+        {
+            var user = userRepository.GetByLogin(model.Email);
+            if (user == null)
             {
-                "facebook",
-                "twitter",
-                "vkontakte"
-            };
-            return View();
+                ModelState.AddModelError(string.Empty, Strings.UserNotFound);
+                return View(model);
+            }
+
+            if (WebSecurity.Login(model.Email, model.Password, true))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            return View(model);
         }
 
         public ActionResult ExternalLogin(string providerName)
@@ -80,6 +98,13 @@ namespace HappyStation.Web.Controllers
             OAuthWebSecurity.CreateOrUpdateAccount(ProviderName, info.Id, User.Identity.Name);
             OAuthWebSecurity.Login(ProviderName, info.Id, true);
             userRepository.CreateOrUpdate(CreateUserByInfo(info));
+
+            return RedirectToAction("Index", "Home");
+        }
+
+        public ActionResult LogOff()
+        {
+            WebSecurity.Logout();
 
             return RedirectToAction("Index", "Home");
         }
