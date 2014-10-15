@@ -196,6 +196,15 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Своими руками.
+        /// </summary>
+        public static string HandMade {
+            get {
+                return ResourceManager.GetString("HandMade", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Последний комментарий.
         /// </summary>
         public static string LastComment {
@@ -309,6 +318,24 @@ namespace HappyStation.Web.Resources {
         public static string UserNotFound {
             get {
                 return ResourceManager.GetString("UserNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Мы в социальных сетях.
+        /// </summary>
+        public static string WeInSocialNetworks {
+            get {
+                return ResourceManager.GetString("WeInSocialNetworks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Написать письмо.
+        /// </summary>
+        public static string WriteALetter {
+            get {
+                return ResourceManager.GetString("WriteALetter", resourceCulture);
             }
         }
     }

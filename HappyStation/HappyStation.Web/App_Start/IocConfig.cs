@@ -21,7 +21,7 @@ namespace HappyStation.Web.App_Start
             var builder = new ContainerBuilder();
 
             OnConfigure(builder);
-            builder.RegisterControllers(typeof(MvcApplication).Assembly).InstancePerRequest();
+            builder.RegisterControllers(typeof(MvcApplication).Assembly).InstancePerDependency();
             builder.RegisterAssemblyModules(typeof(MvcApplication).Assembly);
             builder.RegisterModule<AutofacWebTypesModule>();
 
@@ -45,6 +45,7 @@ namespace HappyStation.Web.App_Start
             builder.RegisterType<InstagramService>().AsSelf().InstancePerLifetimeScope();
             builder.RegisterType<PhotoService>().AsSelf().InstancePerLifetimeScope();
             builder.RegisterType<PhotoAlbumService>().AsSelf().InstancePerLifetimeScope();
+            builder.RegisterType<HandMadesService>().AsSelf().InstancePerLifetimeScope();
 
             builder.RegisterType<ApplicationSettings>().AsSelf().InstancePerLifetimeScope();
             builder.Register(c => Mapper.Engine);

@@ -162,6 +162,9 @@
   <data name="Gallery" xml:space="preserve">
     <value>Галерея</value>
   </data>
+  <data name="HandMade" xml:space="preserve">
+    <value>Своими руками</value>
+  </data>
   <data name="LastComment" xml:space="preserve">
     <value>Последний комментарий</value>
   </data>
@@ -200,5 +203,11 @@
   </data>
   <data name="UserNotFound" xml:space="preserve">
     <value>Пользователь с таким именем не зарегистрирован</value>
+  </data>
+  <data name="WeInSocialNetworks" xml:space="preserve">
+    <value>Мы в социальных сетях</value>
+  </data>
+  <data name="WriteALetter" xml:space="preserve">
+    <value>Написать письмо</value>
   </data>
 </root>

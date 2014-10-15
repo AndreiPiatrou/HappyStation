@@ -66,6 +66,30 @@ namespace HappyStation.Web.Settings
             }
         }
 
+        public string FacebookLink
+        {
+            get
+            {
+                return Read<string>(FasebookLinkKey);
+            }
+        }
+
+        public string VkontakteLink
+        {
+            get
+            {
+                return Read<string>(VkontakteLinkKey);
+            }
+        }
+
+        public string InstagramLink
+        {
+            get
+            {
+                return Read<string>(InstagramLinkKey);
+            }
+        }
+
         private T Read<T>(string propertyName) where T : IConvertible
         {
             return (T)Convert.ChangeType(ConfigurationManager.AppSettings[propertyName], typeof(T));
@@ -88,6 +112,10 @@ namespace HappyStation.Web.Settings
         private const string InstagramAccesstokenKey = "InstagramAccesstoken";
         private const string InstagramUserIdKey = "InstagramUserId";
         private const string InstagramUserNameKey = "InstagramUserName";
+
+        private const string FasebookLinkKey = "FacebookLink";
+        private const string VkontakteLinkKey = "VkontakteLink";
+        private const string InstagramLinkKey = "InstagrammLink";
 
         private readonly AuthorizationRoot root;
         private SocialNetworkSettings instagramSettings;

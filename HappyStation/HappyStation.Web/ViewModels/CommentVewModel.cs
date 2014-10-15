@@ -1,6 +1,6 @@
 ﻿namespace HappyStation.Web.ViewModels
 {
-    public class CommentVewModel
+    public class CommentVewModel : IViewModelBase
     {
         public int Id { get; set; }
 

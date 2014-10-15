@@ -214,9 +214,11 @@
     <Compile Include="Controllers\CommentsController.cs" />
     <Compile Include="Controllers\ControllerBase.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
+    <Compile Include="Controllers\HandMadeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Extensions\ObjectExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -232,6 +234,7 @@
     <Compile Include="Settings\ApplicationSettings.cs" />
     <Compile Include="Settings\SocialNetworkSettings.cs" />
     <Compile Include="ViewModels\CommentVewModel.cs" />
+    <Compile Include="ViewModels\HandMadeViewModel.cs" />
     <Compile Include="ViewModels\InstagramFeedViewModel.cs" />
     <Compile Include="ViewModels\IViewModelBase.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
@@ -252,6 +255,7 @@
     <Content Include="Content\ie\PIE.htc" />
     <Content Include="Content\ie\v8.css" />
     <Content Include="Content\ie\v9.css" />
+    <Content Include="Content\images\fb.png" />
     <Content Include="Content\images\img01.jpg" />
     <Content Include="Content\images\img02.jpg" />
     <Content Include="Content\images\img03.jpg" />
@@ -266,10 +270,12 @@
     <Content Include="Content\images\img12.jpg" />
     <Content Include="Content\images\img12.png" />
     <Content Include="Content\images\img13.jpg" />
+    <Content Include="Content\images\instagram.png" />
     <Content Include="Content\images\mobileUI-site-nav-opener-bg.svg" />
     <Content Include="Content\images\preloader.gif" />
     <Content Include="Content\images\spacer.gif" />
     <Content Include="Content\images\toggle.svg" />
+    <Content Include="Content\images\vk.png" />
     <Content Include="Content\jquery.fancybox-buttons.css" />
     <Content Include="Content\jquery.fancybox-thumbs.css" />
     <Content Include="Content\jquery.fancybox.css" />
@@ -735,7 +741,7 @@
     <Content Include="Views\News\Edit.cshtml" />
     <Content Include="Views\News\News.cshtml" />
     <Content Include="Views\Services\List.cshtml" />
-    <Content Include="Views\News\GetInstagramFeed.cshtml" />
+    <Content Include="Views\Contacts\GetInstagramFeed.cshtml" />
     <Content Include="Views\Gallery\EditAlbum.cshtml" />
     <Content Include="Views\Gallery\ListAdmin.cshtml" />
     <Content Include="Views\Gallery\Album.cshtml" />
@@ -743,6 +749,9 @@
     <Content Include="Views\Gallery\List.cshtml" />
     <Content Include="Views\Comments\ListAdmin.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Html.cshtml" />
+    <Content Include="Views\Contacts\WeInSocialNetworks.cshtml" />
+    <Content Include="Views\Contacts\Contacts.cshtml" />
+    <Content Include="Views\HandMade\LastHandMades.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

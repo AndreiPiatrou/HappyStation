@@ -32,7 +32,6 @@ namespace HappyStation.Web.Controllers
             this.newsRepository = newsRepository;
             this.mapper = mapper;
             this.settings = settings;
-            this.instagramService = instagramService;
         }
 
         public ActionResult Index()
@@ -129,17 +128,8 @@ namespace HappyStation.Web.Controllers
             return RedirectToAction("ListAdmin");
         }
 
-        public ActionResult GetInstagramFeed()
-        {
-            ViewData.Model = instagramService.GetFeed(9);
-            ViewBag.InstagramLink = "http://instagram.com/" + settings.InstagramUserName;
-
-            return View();
-        }
-
         private readonly NewsRepository newsRepository;
         private readonly IMappingEngine mapper;
         private readonly ApplicationSettings settings;
-        private readonly InstagramService instagramService;
     }
 }
