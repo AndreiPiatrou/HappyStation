@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Web.Mvc;
 
 namespace HappyStation.Web.ViewModels
 {
@@ -6,6 +8,7 @@ namespace HappyStation.Web.ViewModels
     {
         public int Id { get; set; }
 
+        [UIHint("Html"), AllowHtml]
         public string Text { get; set; }
 
         public string Title { get; set; }

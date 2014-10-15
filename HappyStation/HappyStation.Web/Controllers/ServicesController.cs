@@ -94,7 +94,7 @@ namespace HappyStation.Web.Controllers
             {
                 newService.Image = UploadFile(image);
             }
-            else
+            else if(!model.IsNew())
             {
                 var oldservice = servicesRepository.Get(model.Id);
                 newService.Image = oldservice.Image;

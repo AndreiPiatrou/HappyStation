@@ -12,7 +12,7 @@ namespace HappyStation.Web.ViewModels
 
         public string ShortDescription { get; set; }
 
-        [UIHint("tinymce_jquery_full"), AllowHtml]
+        [UIHint("Html"), AllowHtml]
         public string Description { get; set; }
 
         public string Image { get; set; }

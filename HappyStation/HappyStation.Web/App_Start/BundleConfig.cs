@@ -8,7 +8,8 @@ namespace HappyStation.Web
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                 "~/Scripts/jquery-{version}.js",
-                "~/Scripts/tinymce/jquery.tinymce.js"));
+                "~/Scripts/modernizr-{version}.js",
+                "~/Scripts/ckeditor/ckeditor.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                 "~/Scripts/jquery.unobtrusive*",

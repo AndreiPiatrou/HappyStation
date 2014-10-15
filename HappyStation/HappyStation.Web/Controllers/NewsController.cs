@@ -113,15 +113,15 @@ namespace HappyStation.Web.Controllers
             }
 
             var news = new News();
-            if (!model.IsNew())
-            {
-                news = newsRepository.Get(model.Id);
-            }
-
             news = mapper.Map(model, news);
             if (image != null)
             {
                 news.Image = UploadFile(image);
+            }
+            else if (!model.IsNew())
+            {
+                var oldNews = newsRepository.Get(model.Id);
+                news.Image = oldNews.Image;
             }
 
             newsRepository.CreateOrUpdate(news);

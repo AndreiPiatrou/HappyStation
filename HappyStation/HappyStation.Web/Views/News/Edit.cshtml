@@ -30,7 +30,9 @@
                         @Html.LabelFor(m => m.Image)
                         @if (!string.IsNullOrEmpty(Model.Image))
                         {
-                            <img src="@Model.Image" class="ui-icon-image" alt="@Model.Image" />
+                            <div class="service-main">
+                                <img src="@Model.Image" class="photo-album" alt="@Model.Image" />
+                            </div>
                         }
 
                         <input type="file" name="image"/>
