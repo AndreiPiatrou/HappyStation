@@ -10,7 +10,7 @@ using HappyStation.Web.ViewModels;
 
 using Newtonsoft.Json;
 
-namespace HappyStation.Web.Services
+namespace HappyStation.Web.ControllerServices
 {
     public class InstagramService
     {

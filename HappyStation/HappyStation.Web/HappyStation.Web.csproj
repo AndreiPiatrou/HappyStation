@@ -241,8 +241,8 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Services\FileUploadService.cs" />
-    <Compile Include="Services\InstagramService.cs" />
+    <Compile Include="ControllerServices\FileUploadService.cs" />
+    <Compile Include="ControllerServices\InstagramService.cs" />
     <Compile Include="Settings\ApplicationSettings.cs" />
     <Compile Include="Settings\SocialNetworkSettings.cs" />
     <Compile Include="ViewModels\CommentVewModel.cs" />

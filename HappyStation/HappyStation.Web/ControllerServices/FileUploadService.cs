@@ -5,7 +5,7 @@ using System.Web;
 
 using HappyStation.Web.Settings;
 
-namespace HappyStation.Web.Services
+namespace HappyStation.Web.ControllerServices
 {
     public class FileUploadService
     {

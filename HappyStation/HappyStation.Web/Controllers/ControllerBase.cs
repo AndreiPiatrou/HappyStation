@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-using HappyStation.Web.Services;
+using HappyStation.Web.ControllerServices;
 
 namespace HappyStation.Web.Controllers
 {

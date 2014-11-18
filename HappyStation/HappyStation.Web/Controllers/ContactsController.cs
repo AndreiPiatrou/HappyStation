@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.Contracts;
 using System.Web.Mvc;
 
-using HappyStation.Web.Services;
+using HappyStation.Web.ControllerServices;
 using HappyStation.Web.Settings;
 
 namespace HappyStation.Web.Controllers

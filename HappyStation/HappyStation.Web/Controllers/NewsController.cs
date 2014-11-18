@@ -9,8 +9,8 @@ using AutoMapper;
 using HappyStation.Core.Constants;
 using HappyStation.Core.Entities;
 using HappyStation.Core.Services.Implementations;
+using HappyStation.Web.ControllerServices;
 using HappyStation.Web.Extensions;
-using HappyStation.Web.Services;
 using HappyStation.Web.Settings;
 using HappyStation.Web.ViewModels;
 
@@ -59,7 +59,7 @@ namespace HappyStation.Web.Controllers
             return View(newsRepository.GetLastHandMade(count).Select(n => mapper.Map<NewsViewModel>(n)));
         }
 
-        [Authorize]
+        [Authorize, Route("news/admin/{pagenum=1}")]
         public ActionResult ListAdmin(int pageNum = 1)
         {
             var skip = (pageNum - 1) * settings.ItemsPerPage;
@@ -74,7 +74,7 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
-        [Route("allnews/{pageNum=1}")]
+        [HttpGet, Route("news/{pageNum=1}")]
         public ActionResult List(int pageNum = 1)
         {
             var skip = (pageNum - 1) * settings.ItemsPerPage;

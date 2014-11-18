@@ -8,8 +8,8 @@ using AutoMapper;
 using HappyStation.Core.Constants;
 using HappyStation.Core.Entities;
 using HappyStation.Core.Services.Implementations;
+using HappyStation.Web.ControllerServices;
 using HappyStation.Web.Extensions;
-using HappyStation.Web.Services;
 using HappyStation.Web.Settings;
 using HappyStation.Web.ViewModels;
 
@@ -48,15 +48,15 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
-        [HttpGet, Route("allservices/{pageNum=1}")]
-        public ActionResult List(int pageNum)
+        [HttpGet, Route("services/{pageNum=1}")]
+        public ActionResult List(int pageNum = 1)
         {
             FillListViewModel(pageNum);
 
             return View();
         }
 
-        [HttpGet, Authorize]
+        [HttpGet, Authorize, Route("services/admin/{pagenum=1}")]
         public ActionResult ListAdmin(int pageNum = 1)
         {
             FillListViewModel(pageNum);

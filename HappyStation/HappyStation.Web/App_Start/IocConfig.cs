@@ -7,7 +7,7 @@ using AutoMapper;
 
 using HappyStation.Core.DatabaseContext;
 using HappyStation.Core.Services.Implementations;
-using HappyStation.Web.Services;
+using HappyStation.Web.ControllerServices;
 using HappyStation.Web.Settings;
 
 using OAuth2;

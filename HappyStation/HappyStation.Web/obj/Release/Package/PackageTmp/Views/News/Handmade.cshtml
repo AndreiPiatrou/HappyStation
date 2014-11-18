@@ -1,4 +1,4 @@
-﻿@model IEnumerable<HandMadeViewModel>
+﻿@model IEnumerable<NewsViewModel>
 
 @{
     Layout = null;
@@ -10,9 +10,9 @@
             <h2>@Strings.HandMade</h2>
         </header>
         <ul class="style1">
-            @foreach (var handMade in Model)
+            @foreach (var news in Model)
             {
-                <li>@Html.ActionLink(handMade.Title, "HandMade", "HandMade")"</li>
+                <li>@Html.ActionLink(news.Title, "News", "News", new { @id = news.Id }, null)</li>
             }
         </ul>
     </section>

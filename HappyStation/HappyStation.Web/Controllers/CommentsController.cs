@@ -7,7 +7,7 @@ using AutoMapper;
 
 using HappyStation.Core.Entities;
 using HappyStation.Core.Services.Implementations;
-using HappyStation.Web.Services;
+using HappyStation.Web.ControllerServices;
 using HappyStation.Web.Settings;
 using HappyStation.Web.ViewModels;
 
@@ -30,7 +30,7 @@ namespace HappyStation.Web.Controllers
             this.settings = settings;
         }
 
-        [Authorize]
+        [HttpGet, Authorize, Route("comments/admin/{pagenum=1}")]
         public ActionResult ListAdmin(int pageNum = 1)
         {
             var skip = (pageNum - 1) * settings.ItemsPerPage;
@@ -109,7 +109,7 @@ namespace HappyStation.Web.Controllers
             return View(model);
         }
 
-        [HttpPost, Authorize, Route("commnent/save")]
+        [HttpPost, Authorize, Route("comment/save")]
         public ActionResult Save(CommentVewModel model)
         {
             if (ModelState.IsValid)

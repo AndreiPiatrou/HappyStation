@@ -7,8 +7,8 @@ using AutoMapper;
 
 using HappyStation.Core.Entities;
 using HappyStation.Core.Services.Implementations;
+using HappyStation.Web.ControllerServices;
 using HappyStation.Web.Extensions;
-using HappyStation.Web.Services;
 using HappyStation.Web.Settings;
 using HappyStation.Web.ViewModels;
 
@@ -16,7 +16,6 @@ namespace HappyStation.Web.Controllers
 {
     public class GalleryController : ControllerBase
     {
-
         public GalleryController(FileUploadService uploadService,
             PhotoAlbumService photoAlbumService,
             IMappingEngine mapper,
@@ -36,8 +35,7 @@ namespace HappyStation.Web.Controllers
             this.photoService = photoService;
         }
 
-        [HttpGet]
-        [Authorize]
+        [HttpGet, Authorize]
         public ActionResult EditAlbum(int id = 0)
         {
             var model = new PhotoAlbumViewModel();
@@ -52,8 +50,7 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
-        [HttpPost]
-        [Authorize]
+        [HttpPost, Authorize]
         public ActionResult Save(PhotoAlbumViewModel model, HttpPostedFileBase[] newPhotos)
         {
             if (!ModelState.IsValid)
@@ -80,7 +77,7 @@ namespace HappyStation.Web.Controllers
             return RedirectToAction("ListAdmin");
         }
 
-        [Authorize]
+        [Authorize, Route("albums/admin/{pagenum=1}")]
         public ActionResult ListAdmin(int pageNum = 1)
         {
             var skip = (pageNum - 1) * settings.ItemsPerPage;
@@ -95,6 +92,7 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
+        [HttpGet, Route("albums/{pageNum=1}")]
         public ActionResult List(int pageNum = 1)
         {
             var skip = (pageNum - 1) * settings.ItemsPerPage;
@@ -117,6 +115,7 @@ namespace HappyStation.Web.Controllers
             return RedirectToAction("ListAdmin");
         }
 
+        [HttpGet, Route("album/{id}")]
         public ActionResult Album(int id)
         {
             var album = photoAlbumService.Get(id);
