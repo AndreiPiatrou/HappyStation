@@ -1,0 +1,41 @@
+﻿@model LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="main" class="container">
+    <div class="row">
+
+        <div class="3u">
+
+        </div>
+
+        <div class="9u skel-cell-important">
+            <section>
+                <header>
+                    <h2>
+                        @ViewBag.Title
+                    </h2>
+                </header>
+            </section>
+            <div id="marketing" class="row container-secondary">
+                <div id="login-form">
+                    <fieldset>
+                        @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary()
+
+                            <input type="email" required placeholder="Email" name="Email" value="@Model.Email" />
+                            <input type="password" required placeholder="Password" name="Password" />
+
+                            <input type="submit" value="@Strings.Login" />
+                        }
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

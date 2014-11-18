@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
 using System.Diagnostics.Contracts;
@@ -68,6 +69,13 @@ namespace HappyStation.Core.Services.Implementations
             Contract.Ensures(take > 0);
 
             return Db.Set<T>().OrderByDescending(e => e.CreatedAt).Skip(skip).Take(take);
+        }
+
+        public IEnumerable<T> GetRandom(int count = Numbers.MaxGetCount)
+        {
+            Contract.Requires(count > 0);
+
+            return Db.Set<T>().OrderBy(e => Guid.NewGuid()).Take(count);
         }
     }
 }

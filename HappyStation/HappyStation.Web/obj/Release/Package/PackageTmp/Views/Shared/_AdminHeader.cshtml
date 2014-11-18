@@ -1,0 +1,20 @@
+﻿<div id="header">
+    <div class="container">
+
+        <!-- Logo -->
+        <div id="logo">
+            <h1><a href="@Url.Action("Index", "Home")">@Strings.Logo</a></h1>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                @Html.MenuLink(Strings.News, "ListAdmin", "News")
+                @Html.MenuLink(Strings.Services, "ListAdmin", "Services")
+                @Html.MenuLink(Strings.Gallery, "ListAdmin", "Gallery")
+                @Html.MenuLink(Strings.Comments, "ListAdmin", "Comments")
+                @Html.MenuLink(Strings.Exit, "LogOff", "Account")
+            </ul>
+        </nav>
+    </div>
+</div>

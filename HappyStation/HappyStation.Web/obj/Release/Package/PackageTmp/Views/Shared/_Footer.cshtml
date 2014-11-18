@@ -1,0 +1,25 @@
+﻿<div id="featured">
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            @Html.Action("LastComment", "Comments")
+
+            @Html.Action("WeInSocialNetworks", "Contacts")
+
+            <div class="3u">
+                <section>
+                    <h2>@Strings.OurInstagram</h2>
+                    <div id="partialContents" style="text-align: center" data-url="@Url.Action("GetInstagramFeed", "Contacts")">
+                        <img src="~/Content/images/preloader.gif" />
+                    </div>
+
+                </section>
+            </div>
+
+            @Html.Action("Contacts", "Contacts")
+        </div>
+    </div>
+</div>
+<!-- /Footer -->

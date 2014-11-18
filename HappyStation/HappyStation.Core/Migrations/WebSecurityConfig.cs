@@ -6,15 +6,12 @@ namespace HappyStation.Core.Migrations
     {
         public static void Initialize()
         {
-            if (!WebSecurity.Initialized)
-            {
-                WebSecurity.InitializeDatabaseConnection(
-                    "DefaultConnection",
-                    "Users",
-                    "Id",
-                    "Email",
-                    autoCreateTables: true);
-            }
+            WebSecurity.InitializeDatabaseConnection(
+                "DefaultConnection",
+                "Users",
+                "Id",
+                "Email",
+                autoCreateTables: true);
         }
     }
 }

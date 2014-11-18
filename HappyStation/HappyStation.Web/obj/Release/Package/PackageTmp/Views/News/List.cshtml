@@ -1,0 +1,82 @@
+﻿@model IEnumerable<NewsViewModel>
+
+@{
+    ViewBag.Title = Strings.News;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="main" class="container">
+    <div class="row">
+
+        <div class="3u">
+            <section class="sidebar">
+                <header>
+                    <h2>Feugiat Tempus</h2>
+                </header>
+                <ul class="style1">
+                    <li><a href="#">Maecenas luctus lectus at sapien</a></li>
+                    <li><a href="#">Etiam rhoncus volutpat erat</a></li>
+                    <li><a href="#">Donec dictum metus in sapien</a></li>
+                    <li><a href="#">Nulla luctus eleifend purus</a></li>
+                    <li><a href="#">Maecenas luctus lectus at sapien</a></li>
+                </ul>
+            </section>
+            <section class="sidebar">
+                <header>
+                    <h2>Nulla luctus eleifend</h2>
+                </header>
+                <ul class="style1">
+                    <li><a href="#">Maecenas luctus lectus at sapien</a></li>
+                    <li><a href="#">Donec dictum metus in sapien</a></li>
+                    <li><a href="#">Integer gravida nibh quis urna</a></li>
+                    <li><a href="#">Etiam posuere augue sit amet nisl</a></li>
+                    <li><a href="#">Mauris vulputate dolor sit amet nibh</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="9u skel-cell-important">
+            <section>
+                <header>
+                    <h2>
+                        @ViewBag.Title
+                    </h2>
+                </header>
+            </section>
+            <div id="marketing" class="row container-secondary">
+                <ul class="horizontal-list">
+                    @foreach (NewsViewModel service in Model)
+                    {
+                        <li class="3u">
+                            <section>
+                                <header>
+                                    <h2>@service.Title</h2>
+                                </header>
+                                <p class="subtitle">@service.ShortText</p>
+                                <p>
+                                    <a href="@Url.Action("News", new { id = service.Id })">
+                                        <div class="service-main">
+                                            <img src="@service.Image" alt="@service.Title" />
+                                        </div>
+                                    </a>
+                                </p>
+                                <a href="@Url.Action("News", new { id = service.Id })" class="button">@Strings.More</a>
+                            </section>
+                        </li>
+                    }
+                </ul>
+            </div>
+
+            @if (ViewBag.HasPrevPage)
+            {
+                @Html.ActionLink(Strings.Previos, "List", "News", new { @pageNum = ViewBag.PreviosPage }, new { @class = "button" })
+            }
+
+            @if (ViewBag.HasNextPage)
+            {
+                @Html.ActionLink(Strings.Next, "List", "News", new { @pageNum = ViewBag.NextPage }, new { @class = "button" })
+            }
+
+        </div>
+    </div>
+</div>

@@ -1,4 +1,6 @@
+using System;
 using System.Linq;
+using System.Threading;
 
 using HappyStation.Core.Entities;
 
@@ -33,17 +35,20 @@ namespace HappyStation.Core.Migrations
             context.Users.Add(new User
             {
                 Email = "19graff91@gmail.com",
+                CreatedAt = DateTime.Now
             });
 
             context.Users.Add(new User
             {
                 Email = "admin@admin.com",
+                CreatedAt = DateTime.Now
             });
 
             context.SaveChanges();
 
             WebSecurity.CreateAccount("19graff91@gmail.com", "19happymoments91");
             WebSecurity.CreateAccount("admin@admin.com", "19admin91");
+
         }
     }
 }

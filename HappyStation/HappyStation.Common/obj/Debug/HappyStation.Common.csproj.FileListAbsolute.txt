@@ -1,0 +1,8 @@
+D:\dev\HappyStation\HappyStation\HappyStation.Common\bin\Debug\HappyStation.Common.dll.config
+D:\dev\HappyStation\HappyStation\HappyStation.Common\bin\Debug\HappyStation.Common.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Common\bin\Debug\HappyStation.Common.pdb
+D:\dev\HappyStation\HappyStation\HappyStation.Common\bin\Debug\System.Web.Mvc.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Common\bin\Debug\System.Web.Mvc.xml
+D:\dev\HappyStation\HappyStation\HappyStation.Common\obj\Debug\HappyStation.Common.csprojResolveAssemblyReference.cache
+D:\dev\HappyStation\HappyStation\HappyStation.Common\obj\Debug\HappyStation.Common.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Common\obj\Debug\HappyStation.Common.pdb

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace HappyStation.Core.Entities
 {
@@ -9,10 +10,9 @@ namespace HappyStation.Core.Entities
         [StringLength(255)]
         public string Name { get; set; }
 
-        [EmailAddress]
-        [Required]
+        [Required, EmailAddress]
         public string Email { get; set; }
-        
+
         public string VkId { get; set; }
 
         public string FbId { get; set; }

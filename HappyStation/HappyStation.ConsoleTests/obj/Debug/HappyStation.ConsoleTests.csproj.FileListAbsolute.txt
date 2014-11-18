@@ -10,3 +10,17 @@ D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\HappyStatio
 D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\HappyStation.Core.pdb
 D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\EntityFramework.xml
 D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\EntityFramework.SqlServer.xml
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\WebMatrix.WebData.dll
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\WebMatrix.Data.dll
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\System.Web.WebPages.dll
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\System.Web.Helpers.dll
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\System.Web.Razor.dll
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\WebMatrix.WebData.xml
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\WebMatrix.Data.xml
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\System.Web.WebPages.xml
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\System.Web.Helpers.xml
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\System.Web.Razor.xml
+D:\dev\HappyStation\HappyStation\HappyStation.ConsoleTests\bin\Debug\System.Web.WebPages.Deployment.xml

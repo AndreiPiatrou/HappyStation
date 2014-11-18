@@ -75,8 +75,8 @@ D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\WebMatrix.WebData.xml
 D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\Org.Mentalis.Security.Cryptography.xml
 D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\Mono.Math.xml
 D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Release\HappyStation.Web.csproj.App.config
-D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Release\HappyStation.Web.csprojResolveAssemblyReference.cache
 D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Release\HappyStation.Web.Resources.Strings.resources
 D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Release\HappyStation.Web.csproj.GenerateResource.Cache
 D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Release\HappyStation.Web.dll
 D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Release\HappyStation.Web.pdb
+D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Release\HappyStation.Web.csprojResolveAssemblyReference.cache

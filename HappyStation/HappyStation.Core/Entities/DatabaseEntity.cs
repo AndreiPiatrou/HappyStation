@@ -5,9 +5,10 @@ namespace HappyStation.Core.Entities
 {
     public class DatabaseEntity
     {
-        protected DatabaseEntity()
+        public DatabaseEntity()
         {
             CreatedAt = DateTime.Now;
+            IsDeleted = false;
         }
 
         [Key]

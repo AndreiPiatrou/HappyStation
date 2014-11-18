@@ -1,0 +1,19 @@
+﻿@model IEnumerable<HandMadeViewModel>
+
+@{
+    Layout = null;
+}
+
+<div class="3u">
+    <section class="sidebar">
+        <header>
+            <h2>@Strings.HandMade</h2>
+        </header>
+        <ul class="style1">
+            @foreach (var handMade in Model)
+            {
+                <li>@Html.ActionLink(handMade.Title, "HandMade", "HandMade")"</li>
+            }
+        </ul>
+    </section>
+</div>

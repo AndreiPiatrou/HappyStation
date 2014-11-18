@@ -1,6 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System.Diagnostics.Contracts;
+using System.Web.Mvc;
 
-using HappyStation.Core.DatabaseContext;
 using HappyStation.Core.Services.Implementations;
 using HappyStation.Web.Resources;
 
@@ -8,18 +8,11 @@ namespace HappyStation.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly NewsRepository newsRepository;
-        private readonly EventsRepository eventsRepository;
-
-        public HomeController()
-        {
-            var dataContext = new DatabaseContext();
-            newsRepository = new NewsRepository(dataContext);
-            eventsRepository = new EventsRepository(dataContext);
-        }
-
         public HomeController(NewsRepository newsRepository, EventsRepository eventsRepository)
         {
+            Contract.Requires(newsRepository != null);
+            Contract.Requires(eventsRepository != null);
+
             this.newsRepository = newsRepository;
             this.eventsRepository = eventsRepository;
 
@@ -42,7 +35,11 @@ namespace HappyStation.Web.Controllers
 
         public ActionResult About()
         {
-            throw new System.NotImplementedException();
+            return View();
         }
+
+        private readonly NewsRepository newsRepository;
+        private readonly EventsRepository eventsRepository;
+
     }
 }

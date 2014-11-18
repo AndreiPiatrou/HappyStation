@@ -1,0 +1,27 @@
+﻿@model ServiceViewModel
+
+@{
+    ViewBag.Title = Model.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="main" class="container">
+    <div class="row">
+
+        @Html.Action("LastHandMades", "HandMade")
+
+        <div class="9u skel-cell-important">
+            <section>
+                <header>
+                    <h2>@Model.Title</h2>
+                    <span class="byline">
+                        @Model.ShortDescription
+                    </span>
+                </header>
+                <div>
+                    @Html.Raw(Model.Description)
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

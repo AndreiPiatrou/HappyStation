@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 using AutoMapper;
 
+using HappyStation.Core.Constants;
 using HappyStation.Core.Entities;
 using HappyStation.Core.Services.Implementations;
 using HappyStation.Web.Extensions;
@@ -60,8 +61,7 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
-        [HttpGet]
-        [Authorize]
+        [HttpGet, Authorize]
         public ActionResult ListAdmin(int pageNum = 1)
         {
             FillListViewModel(pageNum);
@@ -69,8 +69,7 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
-        [HttpGet]
-        [Authorize]
+        [HttpGet, Authorize]
         public ActionResult Edit(int id = 0)
         {
             var model = id < 1
@@ -80,21 +79,20 @@ namespace HappyStation.Web.Controllers
             return View(model);
         }
 
-        [HttpPost]
-        [Authorize]
+        [HttpPost, Authorize]
         public ActionResult Save(ServiceViewModel model, HttpPostedFileBase image)
         {
             if (!ModelState.IsValid)
             {
                 return View("Edit", model);
             }
-            
+
             var newService = mapper.Map<Service>(model);
             if (image != null)
             {
                 newService.Image = UploadFile(image);
             }
-            else if(!model.IsNew())
+            else if (!model.IsNew())
             {
                 var oldservice = servicesRepository.Get(model.Id);
                 newService.Image = oldservice.Image;
@@ -111,6 +109,14 @@ namespace HappyStation.Web.Controllers
             servicesRepository.Delete(id);
 
             return RedirectToAction("ListAdmin");
+        }
+
+        [HttpGet]
+        public ActionResult PreviewList(int count = Numbers.MaxGetCount)
+        {
+            ViewData.Model = servicesRepository.GetRandom(count).Select(s => mapper.Map<ServiceViewModel>(s));
+
+            return View();
         }
 
         private void FillListViewModel(int pageNum)

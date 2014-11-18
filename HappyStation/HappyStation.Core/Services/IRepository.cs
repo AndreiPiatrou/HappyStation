@@ -11,5 +11,6 @@ namespace HappyStation.Core.Services
         bool Delete(int id);
         T Get(int id);
         IEnumerable<T> GetBy(int skip = 0, int take = Numbers.MaxGetCount);
+        IEnumerable<T> GetRandom(int count = Numbers.MaxGetCount);
     }
 }

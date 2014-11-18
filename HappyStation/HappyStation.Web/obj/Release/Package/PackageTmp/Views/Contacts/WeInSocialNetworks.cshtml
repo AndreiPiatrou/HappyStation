@@ -1,0 +1,30 @@
+﻿@model dynamic
+
+@{
+    Layout = null;
+}
+
+<div class="3u">
+    <section>
+        <h2>@Strings.WeInSocialNetworks</h2>
+        <ul class="style5">
+            <li>
+                <p>
+                    <a target="_blank" href="@ViewBag.FacebookLink">
+                        <img src="~/Content/images/fb.png" alt="facebook" />
+                    </a>
+                </p>
+            </li>
+            <li>
+                <a target="_blank" href="@ViewBag.VkontakteLink">
+                    <img src="~/Content/images/vk.png" alt=" vkontakte" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="@ViewBag.InstagramLink">
+                    <img src="~/Content/images/instagram.png" alt="instagram" />
+                </a>
+            </li>
+        </ul>
+    </section>
+</div>
