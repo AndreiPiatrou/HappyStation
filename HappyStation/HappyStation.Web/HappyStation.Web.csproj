@@ -774,6 +774,7 @@
     <Content Include="Views\ContentImages\ListAdmin.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Services\PreviewList.cshtml" />
+    <Content Include="Views\News\PreviewList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

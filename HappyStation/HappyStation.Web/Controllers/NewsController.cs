@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 using AutoMapper;
 
+using HappyStation.Core.Constants;
 using HappyStation.Core.Entities;
 using HappyStation.Core.Services.Implementations;
 using HappyStation.Web.Extensions;
@@ -85,6 +86,7 @@ namespace HappyStation.Web.Controllers
 
             return View();
         }
+
         [Authorize]
         public ActionResult Delete(int id)
         {
@@ -92,6 +94,7 @@ namespace HappyStation.Web.Controllers
 
             return RedirectToAction("ListAdmin");
         }
+
         [Authorize]
         public ActionResult Edit(int id = 0)
         {
@@ -102,8 +105,7 @@ namespace HappyStation.Web.Controllers
             return View(model);
         }
 
-        [HttpPost]
-        [Authorize]
+        [HttpPost, Authorize]
         public ActionResult Save(NewsViewModel model, HttpPostedFileBase image)
         {
             if (!ModelState.IsValid)
@@ -126,6 +128,14 @@ namespace HappyStation.Web.Controllers
             newsRepository.CreateOrUpdate(news);
 
             return RedirectToAction("ListAdmin");
+        }
+
+        [HttpGet]
+        public ActionResult PreviewList(int count = Numbers.MaxGetCount)
+        {
+            ViewData.Model = newsRepository.GetBy(0, count).Select(n => mapper.Map<NewsViewModel>(n));
+
+            return View();
         }
 
         private readonly NewsRepository newsRepository;

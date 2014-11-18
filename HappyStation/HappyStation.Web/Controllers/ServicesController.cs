@@ -114,7 +114,7 @@ namespace HappyStation.Web.Controllers
         [HttpGet]
         public ActionResult PreviewList(int count = Numbers.MaxGetCount)
         {
-            ViewData.Model = servicesRepository.GetRandom(count).Select(s => mapper.Map<ServiceViewModel>(s));
+            ViewData.Model = servicesRepository.GetBy(0, count).Select(s => mapper.Map<ServiceViewModel>(s));
 
             return View();
         }
