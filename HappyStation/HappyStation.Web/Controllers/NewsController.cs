@@ -47,11 +47,16 @@ namespace HappyStation.Web.Controllers
             return View(mapper.Map<NewsViewModel>(news));
         }
 
+        [HttpGet, Route("hottestnews/{count=4}")]
         public ActionResult HottestNews(int count = 4)
         {
-            ViewData.Model = newsRepository.GetHottest(count).Select(n => mapper.Map<NewsViewModel>(n));
+            return View(newsRepository.GetHottest(count).Select(n => mapper.Map<NewsViewModel>(n)));
+        }
 
-            return View();
+        [HttpGet, Route("handmade/{count=4}")]
+        public ActionResult Handmade(int count = 4)
+        {
+            return View(newsRepository.GetLastHandMade(count).Select(n => mapper.Map<NewsViewModel>(n)));
         }
 
         [Authorize]
@@ -102,7 +107,7 @@ namespace HappyStation.Web.Controllers
             return View(model);
         }
 
-        [HttpPost, Authorize, Route("news/{id}/save")]
+        [HttpPost, Authorize, Route("news/save")]
         public ActionResult Save(NewsViewModel model, HttpPostedFileBase image)
         {
             if (!ModelState.IsValid)

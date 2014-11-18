@@ -2337,3 +2337,8 @@ tr:nth-child(even) {
         #login-form input:focus {
             outline: none;
         }
+
+
+.comment {
+    margin-bottom: 2em !important;
+}

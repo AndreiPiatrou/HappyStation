@@ -48,14 +48,49 @@ namespace HappyStation.Web.Controllers
         public ActionResult LastComment()
         {
             ViewData.Model = mapper.Map<CommentVewModel>(commentsRepository.GetLast() ?? new Comment());
-            
+
             return View();
         }
-        
+
+        [HttpGet, Authorize, Route("comment/{id}")]
+        public ActionResult Comment(int id)
+        {
+            var comment = commentsRepository.Get(id);
+            if (comment == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(mapper.Map<CommentVewModel>(comment));
+        }
+
+        [HttpGet, Route("comments/{pagenum=1}")]
+        public ActionResult List(int pageNum)
+        {
+            var skip = (pageNum - 1) * settings.ItemsPerPage;
+            var commants = commentsRepository.GetBy(skip, settings.ItemsPerPage + 1).Select(s => mapper.Map<CommentVewModel>(s)).ToList();
+
+            ViewData.Model = commants.Take(settings.ItemsPerPage);
+            ViewBag.HasPrevPage = pageNum > 1;
+            ViewBag.HasNextPage = commants.Count > settings.ItemsPerPage;
+            ViewBag.PreviosPage = pageNum - 1;
+            ViewBag.NextPage = pageNum + 1;
+
+            return View();
+        }
+
+        [Authorize, Route("comment/{id}/delete")]
+        public ActionResult Delete(int id)
+        {
+            commentsRepository.Delete(id);
+
+            return RedirectToAction("ListAdmin");
+        }
+
         [HttpGet, Authorize, Route("comment/{id}/edit")]
         public ActionResult Edit(int id = 0)
         {
-            CommentVewModel model = null;
+            CommentVewModel model;
             if (id < 0)
             {
                 model = new CommentVewModel();
@@ -74,21 +109,21 @@ namespace HappyStation.Web.Controllers
             return View(model);
         }
 
-        [HttpGet, Route("comment/{id}")]
-        public ActionResult Comment(int id)
+        [HttpPost, Authorize, Route("commnent/save")]
+        public ActionResult Save(CommentVewModel model)
         {
-            return View();
-        }
+            if (ModelState.IsValid)
+            {
+                return View("Edit", model);
+            }
 
-        [Authorize]
-        public ActionResult Delete(int id)
-        {
-            commentsRepository.Delete(id);
+            var comment = mapper.Map<Comment>(model);
+            commentsRepository.CreateOrUpdate(comment);
 
             return RedirectToAction("ListAdmin");
         }
 
-        [Authorize]
+        [Authorize, Route("comment/{id}/accept")]
         public ActionResult AcceptComment(int id)
         {
             var comment = commentsRepository.Get(id);

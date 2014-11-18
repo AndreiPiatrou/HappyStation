@@ -1,0 +1,48 @@
+﻿@model IEnumerable<CommentVewModel>
+
+@{
+    ViewBag.Title = Strings.Comments;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="main" class="container">
+    <div class="row">
+
+        @Html.Action("PreviewList", "Services")
+
+        <div class="9u skel-cell-important">
+            <section>
+                <header>
+                    <h2>
+                        @ViewBag.Title
+                    </h2>
+                </header>
+            </section>
+            <div id="marketing" class="row container-secondary">
+                <ul class="style3">
+                    @foreach (CommentVewModel comment in Model)
+                    {
+                        <li>
+                            <section class="comment">
+                                <h3>@comment.UserName</h3>
+                                <p class="subtitle">
+                                    &rdquo;&nbsp;@comment.Text&nbsp;&bdquo;
+                                </p>
+                            </section>
+                        </li>
+                    }
+                </ul>
+            </div>
+
+            @if (ViewBag.HasPrevPage)
+            {
+                @Html.ActionLink(Strings.Previos, "List", "Comments", new { @pageNum = ViewBag.PreviosPage }, new { @class = "button" })
+            }
+
+            @if (ViewBag.HasNextPage)
+            {
+                @Html.ActionLink(Strings.Next, "List", "Comments", new { @pageNum = ViewBag.NextPage }, new { @class = "button" })
+            }
+
+        </div>
+    </div>
+</div>

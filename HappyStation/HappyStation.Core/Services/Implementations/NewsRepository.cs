@@ -14,7 +14,12 @@ namespace HappyStation.Core.Services.Implementations
 
         public IEnumerable<News> GetHottest(int count = 4)
         {
-            return Db.News.OrderByDescending(n => n.Id).Take(count);
+            return Db.News.Where(n => n.Type == NewsType.News).OrderByDescending(n => n.Id).Take(count);
+        }
+
+        public IEnumerable<News> GetLastHandMade(int count = 4)
+        {
+            return Db.News.Where(n => n.Type == NewsType.Handmade).OrderByDescending(n => n.Id).Take(count);
         }
     }
 }

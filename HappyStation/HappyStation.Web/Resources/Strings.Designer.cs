@@ -124,6 +124,15 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Редактирование комментария.
+        /// </summary>
+        public static string CommentsEdit {
+            get {
+                return ResourceManager.GetString("CommentsEdit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Контакты.
         /// </summary>
         public static string Contacts {

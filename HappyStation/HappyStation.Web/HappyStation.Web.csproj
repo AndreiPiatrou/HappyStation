@@ -227,7 +227,6 @@
     <Compile Include="Controllers\ContentImagesController.cs" />
     <Compile Include="Controllers\ControllerBase.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
-    <Compile Include="Controllers\HandMadeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
@@ -248,7 +247,6 @@
     <Compile Include="Settings\SocialNetworkSettings.cs" />
     <Compile Include="ViewModels\CommentVewModel.cs" />
     <Compile Include="ViewModels\ContentImageViewModel.cs" />
-    <Compile Include="ViewModels\HandMadeViewModel.cs" />
     <Compile Include="ViewModels\InstagramFeedViewModel.cs" />
     <Compile Include="ViewModels\IViewModelBase.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
@@ -770,11 +768,13 @@
     <Content Include="Views\Shared\EditorTemplates\Html.cshtml" />
     <Content Include="Views\Contacts\WeInSocialNetworks.cshtml" />
     <Content Include="Views\Contacts\Contacts.cshtml" />
-    <Content Include="Views\HandMade\LastHandMades.cshtml" />
     <Content Include="Views\ContentImages\ListAdmin.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Services\PreviewList.cshtml" />
     <Content Include="Views\News\PreviewList.cshtml" />
+    <Content Include="Views\News\Handmade.cshtml" />
+    <Content Include="Views\Comments\Edit.cshtml" />
+    <Content Include="Views\Comments\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

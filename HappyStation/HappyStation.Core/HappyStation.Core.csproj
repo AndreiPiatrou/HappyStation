@@ -97,6 +97,7 @@
     <Compile Include="Entities\Event.cs" />
     <Compile Include="Entities\HandMade.cs" />
     <Compile Include="Entities\News.cs" />
+    <Compile Include="Entities\NewsType.cs" />
     <Compile Include="Entities\Photo.cs" />
     <Compile Include="Entities\PhotoAlbum.cs" />
     <Compile Include="Entities\Service.cs" />

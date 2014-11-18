@@ -86,7 +86,7 @@ namespace HappyStation.Web.Controllers
             return View(model);
         }
 
-        [HttpPost, Authorize, Route("service/{id}/save")]
+        [HttpPost, Authorize, Route("service/save")]
         public ActionResult Save(ServiceViewModel model, HttpPostedFileBase image)
         {
             if (!ModelState.IsValid)
