@@ -77,7 +77,7 @@ namespace HappyStation.Web.Controllers
             return RedirectToAction("ListAdmin");
         }
 
-        [Authorize, Route("albums/admin/{pagenum=1}")]
+        [HttpGet, Authorize, Route("albums/admin/{pagenum=1}")]
         public ActionResult ListAdmin(int pageNum = 1)
         {
             var skip = (pageNum - 1) * settings.ItemsPerPage;
