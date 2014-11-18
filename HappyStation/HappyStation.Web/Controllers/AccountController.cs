@@ -47,14 +47,13 @@ namespace HappyStation.Web.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet, Route("login")]
         public ActionResult Login()
         {
             return View(new LoginViewModel());
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
+        [HttpPost, ValidateAntiForgeryToken, Route("login")]
         public ActionResult Login(LoginViewModel model)
         {
             var user = userRepository.GetByLogin(model.Email);
@@ -102,6 +101,7 @@ namespace HappyStation.Web.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [Route("logout")]
         public ActionResult LogOff()
         {
             WebSecurity.Logout();

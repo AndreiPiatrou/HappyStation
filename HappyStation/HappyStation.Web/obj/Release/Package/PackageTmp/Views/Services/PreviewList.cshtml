@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ServiceViewModel>
+
+@{
+    Layout = null;
+}
+
+<div class="3u">
+    <section class="sidebar">
+        <header>
+            <h2>@Strings.Services</h2>
+        </header>
+        <ul class="style1">
+            @foreach (var serivce in Model)
+            {
+                <li>@Html.ActionLink(serivce.Title, "Service", "Services", new { @id = serivce.Id }, null)</li>
+            }
+        </ul>
+    </section>
+</div>

@@ -35,11 +35,7 @@ namespace HappyStation.Web.Controllers
             this.settings = settings;
         }
 
-        public ActionResult Index()
-        {
-            throw new NotImplementedException();
-        }
-
+        [Route("news/{id}")]
         public ActionResult News(int id)
         {
             var news = newsRepository.Get(id);
@@ -73,6 +69,7 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
+        [Route("allnews/{pageNum=1}")]
         public ActionResult List(int pageNum = 1)
         {
             var skip = (pageNum - 1) * settings.ItemsPerPage;
@@ -87,7 +84,7 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
-        [Authorize]
+        [Authorize, Route("news/{id}/delete")]
         public ActionResult Delete(int id)
         {
             newsRepository.Delete(id);
@@ -95,7 +92,7 @@ namespace HappyStation.Web.Controllers
             return RedirectToAction("ListAdmin");
         }
 
-        [Authorize]
+        [Authorize, Route("news/{id}/edit")]
         public ActionResult Edit(int id = 0)
         {
             var model = id < 1
@@ -105,7 +102,7 @@ namespace HappyStation.Web.Controllers
             return View(model);
         }
 
-        [HttpPost, Authorize]
+        [HttpPost, Authorize, Route("news/{id}/save")]
         public ActionResult Save(NewsViewModel model, HttpPostedFileBase image)
         {
             if (!ModelState.IsValid)

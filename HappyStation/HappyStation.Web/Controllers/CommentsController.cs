@@ -30,11 +30,6 @@ namespace HappyStation.Web.Controllers
             this.settings = settings;
         }
 
-        public ActionResult Index()
-        {
-            throw new NotImplementedException();
-        }
-
         [Authorize]
         public ActionResult ListAdmin(int pageNum = 1)
         {
@@ -57,11 +52,29 @@ namespace HappyStation.Web.Controllers
             return View();
         }
         
-        public ActionResult Edit()
+        [HttpGet, Authorize, Route("comment/{id}/edit")]
+        public ActionResult Edit(int id = 0)
         {
-            throw new NotImplementedException();
+            CommentVewModel model = null;
+            if (id < 0)
+            {
+                model = new CommentVewModel();
+            }
+            else
+            {
+                var domainEntity = commentsRepository.Get(id);
+                if (domainEntity == null)
+                {
+                    return HttpNotFound();
+                }
+
+                model = mapper.Map<CommentVewModel>(domainEntity);
+            }
+
+            return View(model);
         }
 
+        [HttpGet, Route("comment/{id}")]
         public ActionResult Comment(int id)
         {
             return View();

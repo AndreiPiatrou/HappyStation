@@ -1,0 +1,20 @@
+﻿@model IEnumerable<NewsViewModel>
+
+@{
+    Layout = null;
+}
+
+
+<div class="3u">
+    <section class="sidebar">
+        <header>
+            <h2>@Strings.News</h2>
+        </header>
+        <ul class="style1">
+            @foreach (var news in Model)
+            {
+                <li>@Html.ActionLink(news.Title, "News", "News", new { @id = news.Id }, null)</li>
+            }
+        </ul>
+    </section>
+</div>

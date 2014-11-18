@@ -1,2 +1,4 @@
 Add-Migration  will scaffold the next migration based on changes you have made to your model since the last migration was created
 Update-Database -ProjectName HappyStation.Core -StartUpProjectName HappyStation.Web -Verbose
+
+Update-Database -ProjectName HappyStation.Core -StartUpProjectName HappyStation.Web -Verbose -ConnectionString "Data Source=SQL5006.Smarterasp.net;Initial Catalog=DB_9B7EEC_happymoments;User Id=DB_9B7EEC_happymoments_admin;Password=19Kroplya91;" -ConnectionProviderName System.Data.SqlClient

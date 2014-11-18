@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics.Contracts;
+﻿using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -33,11 +32,6 @@ namespace HappyStation.Web.Controllers
             this.settings = settings;
         }
 
-        public ActionResult Index()
-        {
-            return RedirectToAction("List");
-        }
-
         [HttpGet]
         public ActionResult HotestServices(int count = 4)
         {
@@ -46,6 +40,7 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
+        [Route("service/{id}")]
         public ActionResult Service(int id)
         {
             ViewData.Model = mapper.Map<ServiceViewModel>(servicesRepository.Get(id));
@@ -53,8 +48,8 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
-        [HttpGet]
-        public ActionResult List(int pageNum = 1)
+        [HttpGet, Route("allservices/{pageNum=1}")]
+        public ActionResult List(int pageNum)
         {
             FillListViewModel(pageNum);
 
@@ -69,17 +64,29 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
-        [HttpGet, Authorize]
+        [HttpGet, Authorize, Route("service/{id}/edit")]
         public ActionResult Edit(int id = 0)
         {
-            var model = id < 1
-                ? new ServiceViewModel()
-                : mapper.Map<ServiceViewModel>(servicesRepository.Get(id));
+            ServiceViewModel model = null;
+            if (id < 0)
+            {
+                model = new ServiceViewModel();
+            }
+            else
+            {
+                var domainEntity = servicesRepository.Get(id);
+                if (domainEntity == null)
+                {
+                    return HttpNotFound();
+                }
+
+                model = mapper.Map<ServiceViewModel>(domainEntity);
+            }
 
             return View(model);
         }
 
-        [HttpPost, Authorize]
+        [HttpPost, Authorize, Route("service/{id}/save")]
         public ActionResult Save(ServiceViewModel model, HttpPostedFileBase image)
         {
             if (!ModelState.IsValid)
@@ -103,7 +110,7 @@ namespace HappyStation.Web.Controllers
             return RedirectToAction("ListAdmin");
         }
 
-        [Authorize]
+        [Authorize, Route("service/{id}/delete")]
         public ActionResult Delete(int id)
         {
             servicesRepository.Delete(id);

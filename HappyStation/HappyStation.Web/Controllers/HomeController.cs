@@ -27,12 +27,13 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
-        [Authorize]
+        [Authorize, Route("admin")]
         public ActionResult Admin()
         {
             return View();
         }
 
+        [Route("aboutus")]
         public ActionResult About()
         {
             return View();
