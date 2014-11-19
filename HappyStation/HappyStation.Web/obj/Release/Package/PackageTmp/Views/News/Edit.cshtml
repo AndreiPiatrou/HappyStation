@@ -27,6 +27,10 @@
                         @Html.EditorFor(m => m.Text)
                     </li>
                     <li>
+                        @Html.LabelFor(m => m.Type)
+                        @Html.EnumDropDownListFor(model => model.Type)
+                    </li>
+                    <li>
                         @Html.LabelFor(m => m.Image)
                         @if (!string.IsNullOrEmpty(Model.Image))
                         {
@@ -35,7 +39,7 @@
                             </div>
                         }
 
-                        <input type="file" name="image"/>
+                        <input type="file" name="image" />
 
                     </li>
                 </ol>
