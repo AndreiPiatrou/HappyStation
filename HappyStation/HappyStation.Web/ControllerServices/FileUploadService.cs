@@ -35,6 +35,8 @@ namespace HappyStation.Web.ControllerServices
 
         public bool DeleteFile(string fileName)
         {
+            Contract.Requires(!string.IsNullOrEmpty(fileName));
+
             try
             {
                 if (!File.Exists(fileName))

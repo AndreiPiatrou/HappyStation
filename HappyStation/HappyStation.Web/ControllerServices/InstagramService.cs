@@ -29,7 +29,7 @@ namespace HappyStation.Web.ControllerServices
                                       settings.InstagramUserId + "/media/recent?access_token=" +
                                       settings.UserInstagramAccessToken);
             request.Method = "GET";
-            String json = String.Empty;
+            var json = String.Empty;
             using (var response = (HttpWebResponse)request.GetResponse())
             {
                 var dataStream = response.GetResponseStream();
