@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.Contracts;
+﻿using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -59,20 +60,24 @@ namespace HappyStation.Web.Controllers
             }
 
             var album = mapper.Map<PhotoAlbum>(model);
-            foreach (var httpPostedFileBase in newPhotos)
+            var photos = newPhotos.Where(p => p != null).Select(httpPostedFileBase => new Photo
             {
-                album.Photos.Add(new Photo
-                {
-                    Path = UploadFile(httpPostedFileBase)
-                });
-            }
+                Path = UploadFile(httpPostedFileBase)
+            }).ToList();
+
             if (!model.IsNew())
             {
-                var oldAlbum = photoAlbumService.Get(model.Id);
-                album.Photos.AddRange(oldAlbum.Photos);
+                var oldAlbum = photoAlbumService.AddNewPhoto(model.Id, photos);
+                if (oldAlbum != null)
+                {
+                    oldAlbum.Title = model.Title;
+                    photoAlbumService.CreateOrUpdate(oldAlbum);
+                }
             }
-
-            photoAlbumService.CreateOrUpdate(album);
+            else
+            {
+                photoAlbumService.CreateOrUpdate(album);
+            }
 
             return RedirectToAction("ListAdmin");
         }
@@ -128,6 +133,7 @@ namespace HappyStation.Web.Controllers
 
             return View();
         }
+
         [Authorize]
         public ActionResult DeletePhoto(int id, int albumId)
         {

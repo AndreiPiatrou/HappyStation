@@ -12,13 +12,11 @@
 
         <div class="balloon">
             <blockquote>
-                &ldquo;&nbsp;&nbsp;
-                @Model.Text
-                &nbsp;&nbsp;&rdquo;
+                @Html.Raw(Model.ShortText)
             </blockquote>
-            <br />
-            <br />
             <strong>&ndash;&nbsp;&nbsp;@Model.UserName</strong>
         </div>
     </section>
+
+    @Html.ActionLink(Strings.Comments, "List", "Comments", new { @class = "button" })
 </div>

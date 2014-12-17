@@ -2149,7 +2149,8 @@ ul.style5 {
 }
 
     #marketing header h2 {
-        font-size: 1.6em;
+        font-size: 1.55em;
+        height: 35px;
     }
 
 /*********************************************************************************/
@@ -2231,7 +2232,7 @@ tr:nth-child(even) {
     }
 
 .container-secondary {
-    width: 1000px;
+    /*width: 1000px;*/
 }
 
 .instagram-preview {
@@ -2341,4 +2342,35 @@ tr:nth-child(even) {
 
 .comment {
     margin-bottom: 2em !important;
+}
+
+.header-image {
+    display: inherit;
+}
+
+    .header-image img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .header-image a {
+        max-height: 50px;
+    }
+
+.bw {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+    .bw:hover {
+        -webkit-filter: grayscale(100%);
+    }
+
+
+.news-preview {
+    max-height: 80px;
+    max-width: 80px;
 }

@@ -12,7 +12,17 @@
         <ul class="style1">
             @foreach (var serivce in Model)
             {
-                <li>@Html.ActionLink(serivce.Title, "Service", "Services", new { @id = serivce.Id }, null)</li>
+                if (Request.Url != null && Request.Url.AbsolutePath == Url.Action("Service", "Services", new
+                 {
+                     @id = serivce.Id
+                 }))
+                {
+                    <li>@serivce.Title</li>
+                }
+                else
+                {
+                    <li>@Html.ActionLink(serivce.Title, "Service", "Services", new { @id = serivce.Id }, null)</li>
+                }
             }
         </ul>
     </section>

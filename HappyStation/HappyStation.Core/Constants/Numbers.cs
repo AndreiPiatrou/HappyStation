@@ -2,6 +2,6 @@
 {
     public static class Numbers
     {
-        public const int MaxGetCount = 20;
+        public const int MaxGetCount = 22;
     }
 }

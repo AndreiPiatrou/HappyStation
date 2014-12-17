@@ -34,5 +34,7 @@ namespace HappyStation.Core.DatabaseContext
         public DbSet<HandMade> HandMades { get; set; }
 
         public DbSet<ContentImage> ContentImages { get; set; }
+
+        public DbSet<PageContent> PageContents { get; set; }
     }
 }

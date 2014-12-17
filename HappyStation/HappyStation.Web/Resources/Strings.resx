@@ -136,7 +136,7 @@
     <value>Одобрить</value>
   </data>
   <data name="Comments" xml:space="preserve">
-    <value>Комментарии</value>
+    <value>Отзывы</value>
   </data>
   <data name="CommentsEdit" xml:space="preserve">
     <value>Редактирование комментария</value>
@@ -184,7 +184,7 @@
     <value>Войти</value>
   </data>
   <data name="Logo" xml:space="preserve">
-    <value>Happy Moment</value>
+    <value>Happy Moments</value>
   </data>
   <data name="MainPage" xml:space="preserve">
     <value>Главная</value>
@@ -198,11 +198,20 @@
   <data name="Next" xml:space="preserve">
     <value>Следующая</value>
   </data>
+  <data name="OnlineChatAdmin" xml:space="preserve">
+    <value>Админка Онлайн чата</value>
+  </data>
   <data name="OurInstagram" xml:space="preserve">
     <value>Наш Instagram</value>
   </data>
+  <data name="PageContent" xml:space="preserve">
+    <value>Контент страниц</value>
+  </data>
   <data name="Previos" xml:space="preserve">
     <value>Предыдущая</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Прайс</value>
   </data>
   <data name="Save" xml:space="preserve">
     <value>Сохранить</value>

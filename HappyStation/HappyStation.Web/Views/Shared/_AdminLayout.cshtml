@@ -11,7 +11,10 @@
 
     <!--[if lte IE 8]><script src="/Scripts/site/html5shiv.js"></script><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="/Content/ie/v8.css" /><![endif]-->
-    <!--[if lte IE 9]><link rel="stylesheet" href="/Content/ie/v9.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/Content/ie/v9.css"/><![endif]-->
+    <script type="text/javascript">
+        CKEDITOR_BASEPATH = "@Url.Content("~/Scripts/ckeditor/")";
+    </script>
     @Styles.Render("~/bundles/site")
     @Scripts.Render("~/bundles/jquery")
     <noscript>

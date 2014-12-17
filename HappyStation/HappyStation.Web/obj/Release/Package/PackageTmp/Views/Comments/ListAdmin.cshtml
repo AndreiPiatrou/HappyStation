@@ -21,7 +21,7 @@
                 {
                     <tr>
                         <td width="40%">
-                            @Html.ActionLink(comment.Text, "Comment", "Comments", new { @id = comment.Id }, null)
+                            @Html.ActionLink(comment.UserName, "Comment", "Comments", new { @id = comment.Id }, null)
                         </td>
                         <td width="20%">
                             @Html.ActionLink(Strings.Edit, "Edit", "Comments", new { @id = comment.Id }, null)

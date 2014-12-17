@@ -25,5 +25,25 @@ namespace HappyStation.Core.Services.Implementations
 
             return Db.Set<PhotoAlbum>().Include("Photos").OrderByDescending(e => e.CreatedAt).Skip(skip).Take(take);
         }
+
+        public PhotoAlbum AddNewPhoto(int id, IEnumerable<Photo> newPhoto)
+        {
+            var album = Get(id);
+
+            if (album == null)
+            {
+                return null;
+            }
+
+            foreach (var photo in newPhoto)
+            {
+                photo.Album = album;
+                album.Photos.Add(photo);
+            }
+
+            CreateOrUpdate(album);
+
+            return album;
+        }
     }
 }

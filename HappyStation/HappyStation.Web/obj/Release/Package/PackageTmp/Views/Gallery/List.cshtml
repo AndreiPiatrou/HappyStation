@@ -8,7 +8,7 @@
 <div id="main" class="container">
     <div class="row">
 
-       @Html.Action("PreviewList", "Services")
+        @Html.Action("PreviewList", "Services")
 
         <div class="9u skel-cell-important">
             <section>
@@ -20,7 +20,7 @@
             </section>
             <div id="marketing" class="row container-secondary">
                 <ul class="horizontal-list">
-                    @foreach (PhotoAlbumViewModel album in Model)
+                    @foreach (PhotoAlbumViewModel album in Model.Where(a => a.Photos.Any()))
                     {
                         <li class="3u">
                             <section>
@@ -29,7 +29,7 @@
                                 </header>
                                 <p>
                                     <a href="@Url.Action("Album", new { id = album.Id })">
-                                        <div class="service-main grow pic">
+                                        <div class="service-main bw pic">
                                             <img class="photo-album" src="@album.Photos.First().Path" alt="@album.Photos.First().Title" />
                                         </div>
                                     </a>

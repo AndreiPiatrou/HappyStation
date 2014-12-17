@@ -25,7 +25,7 @@
                             <section class="comment">
                                 <h3>@comment.UserName</h3>
                                 <p class="subtitle">
-                                    &rdquo;&nbsp;@comment.Text&nbsp;&bdquo;
+                                    @Html.Raw(comment.Text)
                                 </p>
                             </section>
                         </li>

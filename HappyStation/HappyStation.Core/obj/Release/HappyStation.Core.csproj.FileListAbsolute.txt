@@ -26,3 +26,5 @@ D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\WebMatrix.WebData
 D:\dev\HappyStation\HappyStation\HappyStation.Core\obj\Release\HappyStation.Core.csprojResolveAssemblyReference.cache
 D:\dev\HappyStation\HappyStation\HappyStation.Core\obj\Release\HappyStation.Core.dll
 D:\dev\HappyStation\HappyStation\HappyStation.Core\obj\Release\HappyStation.Core.pdb
+D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\WebGrease.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\Newtonsoft.Json.dll

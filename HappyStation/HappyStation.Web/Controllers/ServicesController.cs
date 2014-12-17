@@ -64,11 +64,11 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
-        [HttpGet, Authorize, Route("service/{id}/edit")]
+        [Authorize, Route("service/{id=0}/edit")]
         public ActionResult Edit(int id = 0)
         {
-            ServiceViewModel model = null;
-            if (id < 0)
+            ServiceViewModel model;
+            if (id < 1)
             {
                 model = new ServiceViewModel();
             }

@@ -1,14 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="IIS Web Application Name" description="" value="graffinchik-001-site1" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="AppHostConfig" match="^HappyStation\.Web$" />
-    <parameterEntry kind="ProviderPath" scope="contentPath" match="^D:\\dev\\HappyStation\\HappyStation\\HappyStation\.Web\\obj\\Release\\Package\\PackageTmp$" />
-  </parameter>
-  <parameter name="IIS Web Application Pool Name" description="" value="ASP.NET v4.0" tags="">
-    <parameterEntry kind="DeploymentObjectAttribute" scope="application" match="application[@applicationPool='Clr4IntegratedAppPool']/@applicationPool" />
-  </parameter>
-  <parameter name="IisVirtualDirectoryPhysicalPath" description="" value="D:\dev\HappyStation\HappyStation\HappyStation.Web_deploy" tags="PhysicalPath">
-    <parameterEntry kind="DestinationVirtualDirectory" scope=".*" match="^D:\\dev\\HappyStation\\HappyStation\\HappyStation\.Web$" />
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\dev\\HappyStation\\HappyStation\\HappyStation\.Web\\obj\\Release\\Package\\PackageTmp$" />
   </parameter>
   <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=SQL5006.Smarterasp.net;Initial Catalog=DB_9B7EEC_happymoments;User Id=DB_9B7EEC_happymoments_admin;Password=19Kroplya91;" tags="">
     <parameterEntry kind="XmlFile" scope="D:\\dev\\HappyStation\\HappyStation\\HappyStation\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />

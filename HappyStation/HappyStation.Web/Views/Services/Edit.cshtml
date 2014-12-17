@@ -33,6 +33,10 @@
                         @Html.EditorFor(m => m.IsHot)
                     </li>
                     <li>
+                        @Html.LabelFor(m => m.Order)
+                        @Html.EditorFor(m => m.Order)
+                    </li>
+                    <li>
                         @Html.LabelFor(m => m.Image)
                         @if (!string.IsNullOrEmpty(Model.Image))
                         {

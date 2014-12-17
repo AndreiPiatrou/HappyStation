@@ -18,5 +18,7 @@ namespace HappyStation.Core.Entities
         public int Price { get; set; }
 
         public bool IsHot { get; set; }
+
+        public int? Order { get; set; }
     }
 }

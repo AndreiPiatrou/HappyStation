@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics.Contracts;
+﻿using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -74,7 +73,7 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
-        [HttpGet, Route("news/{pageNum=1}")]
+        [HttpGet, Route("newslist/{pageNum=1}")]
         public ActionResult List(int pageNum = 1)
         {
             var skip = (pageNum - 1) * settings.ItemsPerPage;
@@ -97,7 +96,7 @@ namespace HappyStation.Web.Controllers
             return RedirectToAction("ListAdmin");
         }
 
-        [Authorize, Route("news/{id}/edit")]
+        [Authorize, Route("news/{id=0}/edit")]
         public ActionResult Edit(int id = 0)
         {
             var model = id < 1

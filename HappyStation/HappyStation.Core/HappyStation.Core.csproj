@@ -79,6 +79,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
     <Reference Include="WebMatrix.Data, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.3.2.2\lib\net45\WebMatrix.Data.dll</HintPath>
@@ -98,6 +101,8 @@
     <Compile Include="Entities\HandMade.cs" />
     <Compile Include="Entities\News.cs" />
     <Compile Include="Entities\NewsType.cs" />
+    <Compile Include="Entities\PageContent.cs" />
+    <Compile Include="Entities\PageContentType.cs" />
     <Compile Include="Entities\Photo.cs" />
     <Compile Include="Entities\PhotoAlbum.cs" />
     <Compile Include="Entities\Service.cs" />
@@ -110,6 +115,7 @@
     <Compile Include="Services\Implementations\ContentImagesService.cs" />
     <Compile Include="Services\Implementations\EventsRepository.cs" />
     <Compile Include="Services\Implementations\HandMadesService.cs" />
+    <Compile Include="Services\Implementations\PageContentRepository.cs" />
     <Compile Include="Services\Implementations\PhotoAlbumService.cs" />
     <Compile Include="Services\Implementations\PhotoService.cs" />
     <Compile Include="Services\Implementations\ServicesRepository.cs" />

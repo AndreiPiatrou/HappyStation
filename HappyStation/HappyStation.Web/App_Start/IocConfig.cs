@@ -47,6 +47,7 @@ namespace HappyStation.Web.App_Start
             builder.RegisterType<PhotoAlbumService>().AsSelf().InstancePerLifetimeScope();
             builder.RegisterType<HandMadesService>().AsSelf().InstancePerLifetimeScope();
             builder.RegisterType<ContentImagesService>().AsSelf().InstancePerLifetimeScope();
+            builder.RegisterType<PageContentRepository>().AsSelf().InstancePerLifetimeScope();
 
             builder.RegisterType<ApplicationSettings>().AsSelf().InstancePerLifetimeScope();
             builder.Register(c => Mapper.Engine);

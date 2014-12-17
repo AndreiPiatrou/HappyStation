@@ -27,6 +27,8 @@ namespace HappyStation.Web.App_Start
                                   map.CreateMap<PhotoAlbumViewModel, PhotoAlbum>();
                                   map.CreateMap<ContentImage, ContentImageViewModel>();
                                   map.CreateMap<ContentImageViewModel, ContentImage>();
+                                  map.CreateMap<PageContent, PageContentViewModel>();
+                                  map.CreateMap<PageContentViewModel, PageContent>();
                               });
         }
     }

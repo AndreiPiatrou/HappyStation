@@ -87,11 +87,11 @@ namespace HappyStation.Web.Controllers
             return RedirectToAction("ListAdmin");
         }
 
-        [HttpGet, Authorize, Route("comment/{id}/edit")]
+        [HttpGet, Authorize, Route("comment/{id=0}/edit")]
         public ActionResult Edit(int id = 0)
         {
             CommentVewModel model;
-            if (id < 0)
+            if (id < 1)
             {
                 model = new CommentVewModel();
             }
@@ -112,7 +112,7 @@ namespace HappyStation.Web.Controllers
         [HttpPost, Authorize, Route("comment/save")]
         public ActionResult Save(CommentVewModel model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return View("Edit", model);
             }

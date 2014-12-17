@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web.Mvc;
 
 using HappyStation.Core.Entities;
@@ -21,14 +21,21 @@ namespace HappyStation.Web.ViewModels
         [Required]
         public NewsType Type { get; set; }
 
+        [AllowHtml]
         public string ShortText
         {
             get
             {
-                return Text.Length > 200
-                    ? Text.Take(200) + "..."
-                    : Text;
+                var text = StripTagsRegex(Text);
+                return text.Length > 80
+                    ? text.Substring(0, 79) + "..."
+                    : text;
             }
+        }
+
+        private static string StripTagsRegex(string source)
+        {
+            return Regex.Replace(source, "<.*?>", string.Empty);
         }
     }
 }

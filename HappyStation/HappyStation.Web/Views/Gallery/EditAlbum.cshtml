@@ -33,7 +33,7 @@
                                 <li>
                                     <div class="service-main">
                                         <img class="photo-album" src="@photo.Path" alt="@photo.Title" />
-                                        @Html.ActionLink(Strings.Delete, "DeletePhoto", "Gallery", new { @id = photo.Id }, null)
+                                        @Html.ActionLink(Strings.Delete, "DeletePhoto", "Gallery", new { @id = photo.Id, @albumId = Model.Id }, null)
                                     </div>
                                 </li>
                             }

@@ -21,6 +21,8 @@ namespace HappyStation.Web.ViewModels
 
         public bool IsHot { get; set; }
 
+        public int? Order { get; set; }
+
         public string DescriptionPreview
         {
             get

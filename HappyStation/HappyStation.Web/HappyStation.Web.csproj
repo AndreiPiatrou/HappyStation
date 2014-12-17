@@ -8,7 +8,7 @@
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{10D27497-D165-401D-B31A-2702B1EAA54F}</ProjectGuid>
-    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HappyStation.Web</RootNamespace>
@@ -229,6 +229,7 @@
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\PageContentController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Extensions\ObjectExtensions.cs" />
@@ -251,6 +252,7 @@
     <Compile Include="ViewModels\IViewModelBase.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\NewsViewModel.cs" />
+    <Compile Include="ViewModels\PageContentViewModel.cs" />
     <Compile Include="ViewModels\PhotoAlbumViewModel.cs" />
     <Compile Include="ViewModels\PhotoViewModel.cs" />
     <Compile Include="ViewModels\ServiceViewModel.cs" />
@@ -263,10 +265,12 @@
     <Content Include="Content\fancybox\fancybox_overlay.png" />
     <Content Include="Content\fancybox\fancybox_sprite%402x.png" />
     <Content Include="Content\fancybox\fancybox_sprite.png" />
+    <Content Include="Content\favicon.ico" />
     <Content Include="Content\ie\html5shiv.js" />
     <Content Include="Content\ie\PIE.htc" />
     <Content Include="Content\ie\v8.css" />
     <Content Include="Content\ie\v9.css" />
+    <Content Include="Content\images\banner.jpg" />
     <Content Include="Content\images\fb.png" />
     <Content Include="Content\images\img01.jpg" />
     <Content Include="Content\images\img02.jpg" />
@@ -335,9 +339,12 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\PublishProfiles\default_Settings_FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\happymoments.pubxml" />
     <None Include="Properties\PublishProfiles\weddings - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\weddings - Web Deploy.pubxml" />
     <Content Include="images\banner.jpg" />
+    <Content Include="images\banner_old.jpg" />
+    <Content Include="images\home.png" />
     <Content Include="images\pics04.jpg" />
     <Content Include="images\pics05.jpg" />
     <Content Include="images\pics06.jpg" />
@@ -775,6 +782,9 @@
     <Content Include="Views\News\Handmade.cshtml" />
     <Content Include="Views\Comments\Edit.cshtml" />
     <Content Include="Views\Comments\List.cshtml" />
+    <Content Include="Views\Home\Price.cshtml" />
+    <Content Include="Views\PageContent\ListAdmin.cshtml" />
+    <Content Include="Views\PageContent\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

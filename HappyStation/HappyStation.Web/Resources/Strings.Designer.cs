@@ -115,7 +115,7 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Комментарии.
+        ///   Looks up a localized string similar to Отзывы.
         /// </summary>
         public static string Comments {
             get {
@@ -259,7 +259,7 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Happy Moment.
+        ///   Looks up a localized string similar to Happy Moments.
         /// </summary>
         public static string Logo {
             get {
@@ -304,6 +304,15 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Админка Онлайн чата.
+        /// </summary>
+        public static string OnlineChatAdmin {
+            get {
+                return ResourceManager.GetString("OnlineChatAdmin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Наш Instagram.
         /// </summary>
         public static string OurInstagram {
@@ -313,11 +322,29 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Контент страниц.
+        /// </summary>
+        public static string PageContent {
+            get {
+                return ResourceManager.GetString("PageContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Предыдущая.
         /// </summary>
         public static string Previos {
             get {
                 return ResourceManager.GetString("Previos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Прайс.
+        /// </summary>
+        public static string Price {
+            get {
+                return ResourceManager.GetString("Price", resourceCulture);
             }
         }
         

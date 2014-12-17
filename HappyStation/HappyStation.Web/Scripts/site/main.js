@@ -1,15 +1,8 @@
 (function ($) {
-    
-    $(document).ready(function () {
-
-        partialContantsLoading();
-
-        $(".fancybox").fancybox();
-    });
 
     function partialContantsLoading() {
-        $('#partialContents').each(function (index, item) {
-            var url = $(item).data('url');
+        $("#partialContents").each(function (index, item) {
+            var url = $(item).data("url");
             if (url && url.length > 0) {
                 $.ajax({
                     url: url
@@ -20,6 +13,13 @@
             }
         });
     }
+
+    $(document).ready(function () {
+
+        partialContantsLoading();
+
+        $(".fancybox").fancybox();
+    });
 
 })(jQuery);
 
