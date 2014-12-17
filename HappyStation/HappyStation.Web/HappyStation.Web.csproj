@@ -334,6 +334,7 @@
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="Global.asax" />
+    <Content Include="google2351df21e8a8a281.html" />
     <Content Include="HappyStation.Web.publishSettings" />
     <None Include="Properties\PublishProfiles\Default_Settings.pubxml">
       <SubType>Designer</SubType>
