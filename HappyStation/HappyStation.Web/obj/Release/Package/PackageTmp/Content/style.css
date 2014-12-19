@@ -2056,10 +2056,18 @@ ul.style5 {
             outline: 0;
             color: #333;
         }
+        #nav > ul > li > a:hover {
+            color: #e95d3c;
+        }
 
     #nav li.active a {
         background: #e95d3c;
         border-radius: 5px;
+        color: #FFF;
+    }
+
+    #nav li.active a:hover {
+        background: #de3d27;
         color: #FFF;
     }
 

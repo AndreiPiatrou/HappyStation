@@ -27,7 +27,7 @@
                                 <header>
                                     <h2>@news.Title</h2>
                                 </header>
-                                <p class="subtitle">@Html.Raw(news.ShortText)</p>
+                                <p class="subtitle">@Html.Raw(news.Description)</p>
                                 <p>
                                     <a href="@Url.Action("News", new { id = news.Id })">
                                         <div class="service-main">

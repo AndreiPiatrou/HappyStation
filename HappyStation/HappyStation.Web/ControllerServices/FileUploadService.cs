@@ -23,7 +23,7 @@ namespace HappyStation.Web.ControllerServices
             var data = new byte[fileToSave.ContentLength];
             fileToSave.InputStream.Read(data, 0, fileToSave.ContentLength);
 
-            var filename = GenerateFileName();
+            var filename = GenerateFileName(fileToSave.FileName);
             var filePathOriginal = context.Server.MapPath(rootFilePath);
             CheckDirectoryExisting(filePathOriginal);
 
@@ -53,9 +53,12 @@ namespace HappyStation.Web.ControllerServices
             }
         }
 
-        private string GenerateFileName()
+        private string GenerateFileName(string originalFileName)
         {
-            return Guid.NewGuid() + ".jpg";
+            Contract.Requires(!string.IsNullOrEmpty(originalFileName));
+
+            var originalExtension = Path.GetExtension(originalFileName);
+            return Guid.NewGuid() + "_" + Path.GetFileNameWithoutExtension(originalFileName) + (string.IsNullOrEmpty(originalExtension) ? ".jpg" : originalExtension);
         }
 
         private void CheckDirectoryExisting(string directoryPath)

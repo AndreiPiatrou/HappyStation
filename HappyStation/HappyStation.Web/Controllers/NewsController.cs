@@ -52,8 +52,8 @@ namespace HappyStation.Web.Controllers
             return View(newsRepository.GetHottest(count).Select(n => mapper.Map<NewsViewModel>(n)));
         }
 
-        [HttpGet, Route("handmade/{count=4}")]
-        public ActionResult Handmade(int count = 4)
+        [HttpGet, Route("handmade/{count=20}")]
+        public ActionResult Handmade(int count = 20)
         {
             return View(newsRepository.GetLastHandMade(count).Select(n => mapper.Map<NewsViewModel>(n)));
         }
@@ -77,7 +77,7 @@ namespace HappyStation.Web.Controllers
         public ActionResult List(int pageNum = 1)
         {
             var skip = (pageNum - 1) * settings.ItemsPerPage;
-            var news = newsRepository.GetBy(skip, settings.ItemsPerPage + 1).Select(n => mapper.Map<NewsViewModel>(n)).ToList();
+            var news = newsRepository.GetNewsOnly(skip, settings.ItemsPerPage + 1).Select(n => mapper.Map<NewsViewModel>(n)).ToList();
 
             ViewData.Model = news.Take(settings.ItemsPerPage);
             ViewBag.HasPrevPage = pageNum > 1;
@@ -134,7 +134,7 @@ namespace HappyStation.Web.Controllers
         [HttpGet]
         public ActionResult PreviewList(int count = Numbers.MaxGetCount)
         {
-            ViewData.Model = newsRepository.GetBy(0, count).Select(n => mapper.Map<NewsViewModel>(n));
+            ViewData.Model = newsRepository.GetNewsOnly(0, count).Select(n => mapper.Map<NewsViewModel>(n));
 
             return View();
         }

@@ -16,10 +16,12 @@ namespace HappyStation.Core.Entities
         [Required]
         public string Title { get; set; }
 
-        [Required]
         public string Image { get; set; }
 
         [DefaultValue(NewsType.News)]
         public NewsType Type { get; set; }
+
+        [Required]
+        public string Description { get; set; }
     }
 }

@@ -272,6 +272,7 @@
     <Content Include="Content\ie\v9.css" />
     <Content Include="Content\images\banner.jpg" />
     <Content Include="Content\images\fb.png" />
+    <Content Include="Content\images\file.png" />
     <Content Include="Content\images\img01.jpg" />
     <Content Include="Content\images\img02.jpg" />
     <Content Include="Content\images\img03.jpg" />
@@ -336,11 +337,14 @@
     <Content Include="Global.asax" />
     <Content Include="google2351df21e8a8a281.html" />
     <Content Include="HappyStation.Web.publishSettings" />
+    <Content Include="yandex_44898336d4022cc4.html" />
     <None Include="Properties\PublishProfiles\Default_Settings.pubxml">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\PublishProfiles\default_Settings_FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\happymoments.pubxml" />
+    <None Include="Properties\PublishProfiles\happymoments.pubxml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\PublishProfiles\weddings - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\weddings - Web Deploy.pubxml" />
     <Content Include="images\banner.jpg" />
@@ -361,6 +365,7 @@
     <Content Include="images\pics16.jpg" />
     <Content Include="images\spacer.gif" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="robots.txt" />
     <Content Include="Scripts\ckeditor\adapters\jquery.js" />
     <Content Include="Scripts\ckeditor\ckeditor.js" />
     <Content Include="Scripts\ckeditor\config.js" />
@@ -735,6 +740,7 @@
     <Content Include="Scripts\site\skel-panels.min.js" />
     <Content Include="Scripts\site\skel.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="sitemap.xml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

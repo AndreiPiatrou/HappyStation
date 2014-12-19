@@ -1,6 +1,6 @@
 using System;
+using System.Data.Entity.Migrations;
 using System.Linq;
-using System.Threading;
 
 using HappyStation.Core.Entities;
 
@@ -8,8 +8,6 @@ using WebMatrix.WebData;
 
 namespace HappyStation.Core.Migrations
 {
-    using System.Data.Entity.Migrations;
-
     internal sealed class Configuration : DbMigrationsConfiguration<DatabaseContext.DatabaseContext>
     {
         public Configuration()

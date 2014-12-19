@@ -20,7 +20,7 @@ namespace HappyStation.Core.Services.Implementations
 
         public T CreateOrUpdate(T entity)
         {
-            Contract.Ensures(entity != null);
+            Contract.Requires(entity != null);
 
             Db.Set<T>().AddOrUpdate(entity);
             Db.SaveChanges();
@@ -30,7 +30,7 @@ namespace HappyStation.Core.Services.Implementations
 
         public IEnumerable<T> CreateOrUpdate(IEnumerable<T> entities)
         {
-            Contract.Ensures(entities != null);
+            Contract.Requires(entities != null);
 
             var orUpdate = entities as T[] ?? entities.ToArray();
             foreach (var entity in orUpdate.ToList())
@@ -45,7 +45,7 @@ namespace HappyStation.Core.Services.Implementations
 
         public bool Delete(int id)
         {
-            Contract.Ensures(id > 0);
+            Contract.Requires(id > 0);
 
             var entity = Db.Set<T>().FirstOrDefault(e => e.Id == id);
             if (entity != null)
@@ -59,14 +59,14 @@ namespace HappyStation.Core.Services.Implementations
 
         public virtual T Get(int id)
         {
-            Contract.Ensures(id > 0);
+            Contract.Requires(id > 0);
 
             return Db.Set<T>().FirstOrDefault(e => e.Id == id);
         }
 
         public virtual IEnumerable<T> GetBy(int skip = 0, int take = Numbers.MaxGetCount)
         {
-            Contract.Ensures(take > 0);
+            Contract.Requires(take > 0);
 
             return Db.Set<T>().OrderByDescending(e => e.CreatedAt).Skip(skip).Take(take);
         }

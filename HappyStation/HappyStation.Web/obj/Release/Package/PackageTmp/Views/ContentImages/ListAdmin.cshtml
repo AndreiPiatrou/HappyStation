@@ -18,7 +18,7 @@
                     enctype = "multipart/form-data"
                 }))
                 {
-                    <input type="file" name="images" multiple accept="image/*" />
+                    <input type="file" name="images" multiple />
                     <input type="submit" value="@Strings.Upload" />
                 }
             </div>
@@ -29,8 +29,19 @@
                     <tr>
                         <td width="50%">
                             <div class="service-main">
-                                <img src="@image.Path" class="photo-album" alt="image" />
+
+                                @if (image.IsImageFile)
+                                {
+                                    <img src="@image.Path" class="photo-album" alt="image" />
+                                }
+                                else
+                                {
+                                    <img src="@Url.Content("~/Content/images/file.png")" class="photo-album" alt="image" />
+                                }
                             </div>
+                        </td>
+                        <td width="25%">
+                            <a href="@image.Path" target="_blank">@Strings.Link</a>
                         </td>
                         <td width="25%">
                             @Html.ActionLink(Strings.Delete, "Delete", "ContentImages", new { @id = image.Id }, null)

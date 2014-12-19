@@ -250,6 +250,15 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ссылка.
+        /// </summary>
+        public static string Link {
+            get {
+                return ResourceManager.GetString("Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Войти.
         /// </summary>
         public static string Login {
@@ -259,7 +268,7 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Happy Moments.
+        ///   Looks up a localized string similar to Honey Moments.
         /// </summary>
         public static string Logo {
             get {
@@ -363,6 +372,24 @@ namespace HappyStation.Web.Resources {
         public static string Services {
             get {
                 return ResourceManager.GetString("Services", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Honey Moments - огранизация, проработка, координация и сопровождение свадьбы. Организация эфектного предложения. Незабываемый девичник. В Минске и других городах Беларуси.
+        /// </summary>
+        public static string SiteDescription {
+            get {
+                return ResourceManager.GetString("SiteDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Honey Moments, Свадебный организатор, свадебный распорядитель, организация свадьбы, Минск, Беларусь, девичник, мальчишник.
+        /// </summary>
+        public static string SiteKeywords {
+            get {
+                return ResourceManager.GetString("SiteKeywords", resourceCulture);
             }
         }
         

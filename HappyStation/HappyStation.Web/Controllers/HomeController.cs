@@ -36,7 +36,7 @@ namespace HappyStation.Web.Controllers
             ViewBag.Events = eventsRepository.GetBy();
 
             var pageContent = pageContentRepository.GetByType(PageContentType.About);
-            ViewBag.AboutUs = pageContent != null ? pageContent.Text : null;
+            ViewBag.AboutUs = pageContent != null ? pageContent.Text : string.Empty;
             
             return View();
         }
