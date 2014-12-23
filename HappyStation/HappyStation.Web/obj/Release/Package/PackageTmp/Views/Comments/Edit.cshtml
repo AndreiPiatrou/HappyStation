@@ -19,15 +19,15 @@
             <fieldset>
                 <ol>
                     <li>
-                        @Html.LabelFor(m => m.Text)
+                        @Html.LabelFor(m => m.Text, new { @class = "field-description" })
                         @Html.EditorFor(m => m.Text)
                     </li>
                     <li>
-                        @Html.LabelFor(m => m.UserName)
-                        @Html.EditorFor(m => m.UserName)
+                        @Html.LabelFor(m => m.UserName, new { @class = "field-description" })
+                        @Html.TextBoxFor(m => m.UserName, new { @class = "field-editor" })
                     </li>
                     <li>
-                        @Html.LabelFor(m => m.IsAccepted)
+                        @Html.LabelFor(m => m.IsAccepted, new { @class = "field-description" })
                         @Html.EditorFor(m => m.IsAccepted)
 
                     </li>
@@ -37,4 +37,3 @@
         }
     </div>
 </div>
-

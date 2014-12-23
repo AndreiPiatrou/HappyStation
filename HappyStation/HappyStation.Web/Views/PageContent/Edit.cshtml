@@ -19,11 +19,11 @@
             <fieldset>
                 <ol>
                     <li>
-                        @Html.LabelFor(m => m.Type)
+                        @Html.LabelFor(m => m.Type, new { @class = "field-description" })
                         @Html.EnumDropDownListFor(model => model.Type)
                     </li>
                     <li>
-                        @Html.LabelFor(m => m.Text)
+                        @Html.LabelFor(m => m.Text, new { @class = "field-description" })
                         @Html.EditorFor(m => m.Text)
                     </li>
                 </ol>

@@ -1,16 +1,16 @@
-2014/12/18-20:36:56.301 2af0 Recovering log #90
-2014/12/18-20:36:56.333 2af0 Level-0 table #95: started
-2014/12/18-20:36:56.353 2af0 Level-0 table #95: 3805018 bytes OK
-2014/12/18-20:36:56.369 2af0 Delete type=0 #90
-2014/12/18-20:36:56.370 2af0 Delete type=3 #88
-2014/12/18-21:04:55.675 26c0 Moved #95 to level-1 3805018 bytes OK: files[ 0 1 3 0 0 0 0 ]
-2014/12/18-21:04:58.958 26c0 Compacting 1@1 + 3@2 files
-2014/12/18-21:04:58.989 26c0 Generated table #97: 1280 keys, 2207724 bytes
-2014/12/18-21:04:59.005 26c0 Generated table #98: 23 keys, 3016214 bytes
-2014/12/18-21:04:59.020 26c0 Generated table #99: 14 keys, 38442 bytes
-2014/12/18-21:04:59.020 26c0 Compacted 1@1 + 3@2 files => 5262380 bytes
-2014/12/18-21:04:59.020 26c0 Delete type=2 #91
-2014/12/18-21:04:59.020 26c0 Delete type=2 #92
-2014/12/18-21:04:59.020 26c0 Delete type=2 #93
-2014/12/18-21:04:59.020 26c0 Delete type=2 #95
-2014/12/18-21:04:59.020 26c0 compacted to: files[ 0 0 3 0 0 0 0 ]
+2014/12/20-14:33:06.773 1904 Recovering log #102
+2014/12/20-14:33:06.789 1904 Level-0 table #107: started
+2014/12/20-14:33:06.805 1904 Level-0 table #107: 3219568 bytes OK
+2014/12/20-14:33:06.820 1904 Delete type=0 #102
+2014/12/20-14:33:06.820 1904 Delete type=3 #100
+2014/12/20-14:33:58.433 22cc Moved #107 to level-1 3219568 bytes OK: files[ 0 1 3 0 0 0 0 ]
+2014/12/20-14:35:19.981 22cc Compacting 1@1 + 3@2 files
+2014/12/20-14:35:20.012 22cc Generated table #109: 1302 keys, 2257371 bytes
+2014/12/20-14:35:20.044 22cc Generated table #110: 31 keys, 3016702 bytes
+2014/12/20-14:35:20.044 22cc Generated table #111: 11 keys, 38259 bytes
+2014/12/20-14:35:20.044 22cc Compacted 1@1 + 3@2 files => 5312332 bytes
+2014/12/20-14:35:20.044 22cc Delete type=2 #103
+2014/12/20-14:35:20.044 22cc Delete type=2 #104
+2014/12/20-14:35:20.044 22cc Delete type=2 #105
+2014/12/20-14:35:20.044 22cc Delete type=2 #107
+2014/12/20-14:35:20.044 22cc compacted to: files[ 0 0 3 0 0 0 0 ]

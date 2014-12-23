@@ -23,8 +23,8 @@
             <fieldset>
                 <ol>
                     <li>
-                        @Html.LabelFor(m => m.Title)
-                        @Html.EditorFor(m => m.Title)
+                        @Html.LabelFor(m => m.Title, new { @class = "field-description" })
+                        @Html.TextBoxFor(m => m.Title, new { @class = "field-editor" })
                     </li>
                     <li>
                         <ul class="horizontal-list">
@@ -32,7 +32,7 @@
                             {
                                 <li>
                                     <div class="service-main">
-                                        <img class="photo-album" src="@photo.Path" alt="@photo.Title" />
+                                        <img class="photo-album-admin" src="@photo.Path" alt="@photo.Title" />
                                         @Html.ActionLink(Strings.Delete, "DeletePhoto", "Gallery", new { @id = photo.Id, @albumId = Model.Id }, null)
                                     </div>
                                 </li>

@@ -17,27 +17,27 @@
             <fieldset>
                 <ol>
                     <li>
-                        @Html.LabelFor(m => m.Title)
-                        @Html.EditorFor(m => m.Title)
+                        @Html.LabelFor(m => m.Title, new { @class = "field-description" })
+                        @Html.TextBoxFor(m => m.Title, new { @class = "field-editor" })
                     </li>
                     <li>
-                        @Html.LabelFor(m => m.ShortDescription)
-                        @Html.EditorFor(m => m.ShortDescription)
+                        @Html.LabelFor(m => m.ShortDescription, new { @class = "field-description" })
+                        @Html.TextBoxFor(m => m.ShortDescription, new { @class = "field-editor" })
                     </li>
                     <li>
-                        @Html.LabelFor(m => m.Description)
+                        @Html.LabelFor(m => m.Description, new { @class = "field-description" })
                         @Html.EditorFor(m => m.Description)
                     </li>
                     <li>
-                        @Html.LabelFor(m => m.IsHot)
+                        @Html.LabelFor(m => m.IsHot, new { @class = "field-description" })
                         @Html.EditorFor(m => m.IsHot)
                     </li>
                     <li>
-                        @Html.LabelFor(m => m.Order)
+                        @Html.LabelFor(m => m.Order, new { @class = "field-description" })
                         @Html.EditorFor(m => m.Order)
                     </li>
                     <li>
-                        @Html.LabelFor(m => m.Image)
+                        @Html.LabelFor(m => m.Image, new { @class = "field-description" })
                         @if (!string.IsNullOrEmpty(Model.Image))
                         {
                             <div class="service-main">
@@ -49,7 +49,7 @@
 
                     </li>
                     <li>
-                        @Html.LabelFor(m => m.Price)
+                        @Html.LabelFor(m => m.Price, new { @class = "field-description" })
                         @Html.EditorFor(m => m.Price)
                     </li>
                 </ol>

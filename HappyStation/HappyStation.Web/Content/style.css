@@ -2056,9 +2056,10 @@ ul.style5 {
             outline: 0;
             color: #333;
         }
-        #nav > ul > li > a:hover {
-            color: #e95d3c;
-        }
+
+            #nav > ul > li > a:hover {
+                color: #e95d3c;
+            }
 
     #nav li.active a {
         background: #e95d3c;
@@ -2066,10 +2067,10 @@ ul.style5 {
         color: #FFF;
     }
 
-    #nav li.active a:hover {
-        background: #de3d27;
-        color: #FFF;
-    }
+        #nav li.active a:hover {
+            background: #de3d27;
+            color: #FFF;
+        }
 
     #nav > ul > li > ul {
         display: none;
@@ -2252,6 +2253,10 @@ tr:nth-child(even) {
     width: auto;
     height: 100%;
 }
+.photo-album-admin {
+    max-width: 200px;
+    max-height: 150px;
+}
 
 .grow img {
     -webkit-transition: all 1s ease;
@@ -2381,4 +2386,19 @@ tr:nth-child(even) {
 .news-preview {
     max-height: 80px;
     max-width: 80px;
+}
+
+
+/*********************************************************************************/
+/* Edit styles                                                                   */
+/*********************************************************************************/
+
+.field-description {
+    display: inline-block;
+    width: 200px;
+}
+
+.field-editor {
+    display: inline;
+    width: 500px;
 }

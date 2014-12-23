@@ -19,19 +19,19 @@
             <fieldset>
                 <ol>
                     <li>
-                        @Html.LabelFor(m => m.Title)
-                        @Html.EditorFor(m => m.Title)
+                        @Html.LabelFor(m => m.Title, new { @class = "field-description" })
+                        @Html.TextBoxFor(m => m.Title, new { @class = "field-editor" })
                     </li>
                     <li>
-                        @Html.LabelFor(m => m.Description)
-                        @Html.EditorFor(m => m.Description)
+                        @Html.LabelFor(m => m.Description, new { @class = "field-description" })
+                        @Html.TextBoxFor(m => m.Description, new { @class = "field-editor" })
                     </li>
                     <li>
-                        @Html.LabelFor(m => m.Text)
+                        @Html.LabelFor(m => m.Text, new { @class = "field-description" })
                         @Html.EditorFor(m => m.Text)
                     </li>
                     <li>
-                        @Html.LabelFor(m => m.Type)
+                        @Html.LabelFor(m => m.Type, new { @class = "field-description" })
                         @Html.EnumDropDownListFor(model => model.Type)
                     </li>
                     <li>
