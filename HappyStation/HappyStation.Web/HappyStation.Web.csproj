@@ -792,6 +792,7 @@
     <Content Include="Views\Home\Price.cshtml" />
     <Content Include="Views\PageContent\ListAdmin.cshtml" />
     <Content Include="Views\PageContent\Edit.cshtml" />
+    <None Include="Views\Contacts\ShareThis.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

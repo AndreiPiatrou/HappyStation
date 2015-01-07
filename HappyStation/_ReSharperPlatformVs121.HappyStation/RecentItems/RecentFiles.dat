@@ -1,66 +1,66 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:ListAdmin.cshtml" caret="0" fromTop="0" />
-    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Entities/f:News.cs" caret="505" fromTop="22" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:ViewModels/f:NewsViewModel.cs" caret="551" fromTop="23" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:PreviewList.cshtml" caret="64" fromTop="5" />
-    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Migrations/f:Configuration.cs" caret="584" fromTop="20" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:List.cshtml" caret="979" fromTop="23" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Controllers/f:NewsController.cs" caret="4636" fromTop="31" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Layout.cshtml" caret="599" fromTop="12" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.config" caret="2795" fromTop="20" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Home/f:Admin.cshtml" caret="522" fromTop="21" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:Contacts.cshtml" caret="419" fromTop="18" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:site/f:main.js" caret="205" fromTop="5" />
-    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/f:App.config" caret="1154" fromTop="18" />
     <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/f:packages.config" caret="0" fromTop="0" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.Debug.config" caret="956" fromTop="20" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:robots.txt" caret="67" fromTop="3" />
     <File id="81D458BB-CF1B-4A6A-99B9-1FE104B08F75/f:ef.txt/s:..?ef.txt" caret="328" fromTop="3" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:ViewModels/f:CommentVewModel.cs" caret="317" fromTop="12" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/d:EditorTemplates/f:Html.cshtml" caret="112" fromTop="0" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:Error.cshtml" caret="301" fromTop="16" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:ckeditor/f:config.js" caret="1000" fromTop="23" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:PageContent/f:Edit.cshtml" caret="841" fromTop="25" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Edit.cshtml" caret="1661" fromTop="19" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="2140" fromTop="20" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Comments/f:Edit.cshtml" caret="626" fromTop="0" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Properties/d:PublishProfiles/f:happymoments.pubxml" caret="2072" fromTop="22" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.Release.config" caret="0" fromTop="0" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:EditAlbum.cshtml" caret="1466" fromTop="40" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="36427" fromTop="23" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Controllers/f:ServicesController.cs" caret="0" fromTop="0" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Edit.cshtml" caret="1661" fromTop="19" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:PreviewList.cshtml" caret="341" fromTop="14" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:Contacts.cshtml" caret="419" fromTop="18" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:App_Start/f:IocConfig.cs" caret="0" fromTop="0" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Global.asax.cs" caret="0" fromTop="0" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:Error.cshtml" caret="52" fromTop="5" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.Release.config" caret="845" fromTop="15" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.config" caret="407" fromTop="8" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Controllers/f:ContactsController.cs" caret="1376" fromTop="13" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:ShareThis.cshtml" caret="134" fromTop="8" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:WeInSocialNetworks.cshtml" caret="0" fromTop="0" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/f:Web.config" caret="1471" fromTop="22" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Layout.cshtml" caret="2882" fromTop="16" />
+    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Extensions/f:ObjectExtensions.cs" caret="289" fromTop="12" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Service.cshtml" caret="282" fromTop="9" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:News.cshtml" caret="295" fromTop="11" />
   </RecentFiles>
   <RecentEdits>
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="39659" fromTop="24" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="39659" fromTop="28" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="39659" fromTop="22" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="39659" fromTop="11" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:site/f:main.js" caret="555" fromTop="23" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:site/f:main.js" caret="555" fromTop="31" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:site/f:main.js" caret="555" fromTop="14" />
-    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/f:App.config" caret="1154" fromTop="18" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="39659" fromTop="27" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Comments/f:Edit.cshtml" caret="828" fromTop="25" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="39649" fromTop="24" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="39539" fromTop="17" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/d:EditorTemplates/f:Html.cshtml" caret="112" fromTop="0" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Comments/f:Edit.cshtml" caret="620" fromTop="15" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Comments/f:Edit.cshtml" caret="825" fromTop="19" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Comments/f:Edit.cshtml" caret="1067" fromTop="23" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:ckeditor/f:config.js" caret="1000" fromTop="23" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Comments/f:Edit.cshtml" caret="1244" fromTop="28" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:EditAlbum.cshtml" caret="746" fromTop="20" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Edit.cshtml" caret="1134" fromTop="23" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Edit.cshtml" caret="1332" fromTop="21" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:PageContent/f:Edit.cshtml" caret="625" fromTop="21" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:PageContent/f:Edit.cshtml" caret="841" fromTop="25" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="1160" fromTop="24" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="1366" fromTop="25" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="1566" fromTop="29" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="1766" fromTop="24" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="2328" fromTop="28" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:EditAlbum.cshtml" caret="1127" fromTop="16" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="36427" fromTop="23" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Controllers/f:ContactsController.cs" caret="1372" fromTop="31" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:ShareThis.cshtml" caret="47" fromTop="5" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:News.cshtml" caret="640" fromTop="21" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:ShareThis.cshtml" caret="42" fromTop="4" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Layout.cshtml" caret="443" fromTop="8" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Layout.cshtml" caret="3155" fromTop="21" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:ShareThis.cshtml" caret="77" fromTop="7" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Layout.cshtml" caret="2231" fromTop="7" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Service.cshtml" caret="195" fromTop="5" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Service.cshtml" caret="188" fromTop="7" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Layout.cshtml" caret="2691" fromTop="13" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Layout.cshtml" caret="2891" fromTop="17" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Service.cshtml" caret="159" fromTop="6" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.Release.config" caret="845" fromTop="15" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.config" caret="3594" fromTop="20" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Service.cshtml" caret="307" fromTop="12" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Service.cshtml" caret="773" fromTop="27" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Service.cshtml" caret="773" fromTop="27" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:ShareThis.cshtml" caret="77" fromTop="6" />
+    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Extensions/f:ObjectExtensions.cs" caret="676" fromTop="10" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Service.cshtml" caret="132" fromTop="6" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/f:Web.config" caret="1471" fromTop="22" />
+    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Extensions/f:ObjectExtensions.cs" caret="517" fromTop="18" />
+    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Extensions/f:ObjectExtensions.cs" caret="726" fromTop="24" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Service.cshtml" caret="132" fromTop="4" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:News.cshtml" caret="167" fromTop="4" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:News.cshtml" caret="20" fromTop="0" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:News.cshtml" caret="237" fromTop="9" />
   </RecentEdits>
 </RecentFiles>

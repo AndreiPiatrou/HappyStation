@@ -42,6 +42,11 @@ namespace HappyStation.Web.Controllers
             return View();
         }
 
+        public ActionResult ShareThis()
+        {
+            return View();
+        }
+
         private readonly InstagramService instagramService;
         private readonly ApplicationSettings settings;
     }

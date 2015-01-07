@@ -1,4 +1,6 @@
-﻿using HappyStation.Core.Entities;
+﻿using System.Text.RegularExpressions;
+
+using HappyStation.Core.Entities;
 
 namespace HappyStation.Core.Extensions
 {
@@ -8,5 +10,18 @@ namespace HappyStation.Core.Extensions
         {
             return entity.Id < 1;
         }
+
+        /// <summary>
+        /// Remove HTML from string with Regex.
+        /// </summary>
+        public static string StripTags(this string source)
+        {
+            return HtmlRegex.Replace(source, string.Empty).Replace("&nbsp;", " ");
+        }
+
+        /// <summary>
+        /// Compiled regular expression for performance.
+        /// </summary>
+        private static readonly Regex HtmlRegex = new Regex("<.*?>", RegexOptions.Compiled);
     }
 }

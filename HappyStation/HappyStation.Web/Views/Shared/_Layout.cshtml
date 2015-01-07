@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="@Strings.SiteDescription" />
+    <meta name="description" content="@(string.IsNullOrEmpty(ViewBag.PageDescription) ? Strings.SiteDescription: ViewBag.PageDescription)" />
     <meta name="keywords" content="@Strings.SiteKeywords" />
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
 
@@ -32,6 +32,16 @@
             <link rel="stylesheet" href="/Content/style.css" />
             <link rel="stylesheet" href="/Content/style-desktop.css" />*@
     </noscript>
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <meta property="og:title" content="@ViewBag.ShareTitle" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="@Strings.Logo" />
+    <meta property="og:description" content="@ViewBag.ShareDescription" />
+    <meta property="og:image" content="@(Request.Url.Scheme + "://" + Request.Url.Authority + Url.Content("~/content/favicon.ico"))" />
+    <meta property="og:url" content="@Request.Url" />
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54ad57955217e560" async="async"></script>
+
 </head>
 <body>
 

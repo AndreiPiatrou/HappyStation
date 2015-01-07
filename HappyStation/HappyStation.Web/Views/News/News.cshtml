@@ -1,9 +1,11 @@
 ﻿@model NewsViewModel
 @{
     ViewBag.Title = Model.Title;
+    ViewBag.ShareTitle = Model.Title;
+    ViewBag.PageDescription = ViewBag.ShareDescription = Model.Text.StripTags(); ;
+
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 
 <div id="main" class="container">
     <div class="row">
@@ -18,6 +20,9 @@
                 <div>
                     @Html.Raw(Model.Text)
                 </div>
+
+                @Html.Action("ShareThis", "Contacts")
+
             </section>
         </div>
     </div>
