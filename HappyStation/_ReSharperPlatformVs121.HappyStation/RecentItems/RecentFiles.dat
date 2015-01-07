@@ -15,10 +15,8 @@
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:site/f:main.js" caret="205" fromTop="5" />
     <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/f:App.config" caret="1154" fromTop="18" />
     <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/f:packages.config" caret="0" fromTop="0" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.Release.config" caret="1415" fromTop="30" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.Debug.config" caret="956" fromTop="20" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:robots.txt" caret="67" fromTop="3" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Properties/d:PublishProfiles/f:happymoments.pubxml" caret="3217" fromTop="37" />
     <File id="81D458BB-CF1B-4A6A-99B9-1FE104B08F75/f:ef.txt/s:..?ef.txt" caret="328" fromTop="3" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:ViewModels/f:CommentVewModel.cs" caret="317" fromTop="12" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/d:EditorTemplates/f:Html.cshtml" caret="112" fromTop="0" />
@@ -27,9 +25,11 @@
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:PageContent/f:Edit.cshtml" caret="841" fromTop="25" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Edit.cshtml" caret="1661" fromTop="19" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="2140" fromTop="20" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="36427" fromTop="23" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Comments/f:Edit.cshtml" caret="626" fromTop="0" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:EditAlbum.cshtml" caret="1466" fromTop="22" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Properties/d:PublishProfiles/f:happymoments.pubxml" caret="2072" fromTop="22" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.Release.config" caret="0" fromTop="0" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:EditAlbum.cshtml" caret="1466" fromTop="40" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="36427" fromTop="23" />
   </RecentFiles>
   <RecentEdits>
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="39659" fromTop="24" />

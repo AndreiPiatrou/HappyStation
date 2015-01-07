@@ -148,7 +148,7 @@
     <value>Контент</value>
   </data>
   <data name="CreateNews" xml:space="preserve">
-    <value>Создание новости</value>
+    <value>Создание статьи</value>
   </data>
   <data name="CreateService" xml:space="preserve">
     <value>Создание услуги</value>
@@ -160,7 +160,7 @@
     <value>Редактировать</value>
   </data>
   <data name="EditNews" xml:space="preserve">
-    <value>Редактирование новости</value>
+    <value>Редактирование статьи</value>
   </data>
   <data name="EditService" xml:space="preserve">
     <value>Редактирование услуги</value>
@@ -178,7 +178,7 @@
     <value>Последний комментарий</value>
   </data>
   <data name="LastNews" xml:space="preserve">
-    <value>Последние новости</value>
+    <value>Последние статьи</value>
   </data>
   <data name="Link" xml:space="preserve">
     <value>Ссылка</value>
@@ -196,7 +196,7 @@
     <value>Больше</value>
   </data>
   <data name="News" xml:space="preserve">
-    <value>Новости</value>
+    <value>Статьи</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Следующая</value>

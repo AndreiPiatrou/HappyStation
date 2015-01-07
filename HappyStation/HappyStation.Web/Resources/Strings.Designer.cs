@@ -151,7 +151,7 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Создание новости.
+        ///   Looks up a localized string similar to Создание статьи.
         /// </summary>
         public static string CreateNews {
             get {
@@ -187,7 +187,7 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Редактирование новости.
+        ///   Looks up a localized string similar to Редактирование статьи.
         /// </summary>
         public static string EditNews {
             get {
@@ -241,7 +241,7 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Последние новости.
+        ///   Looks up a localized string similar to Последние статьи.
         /// </summary>
         public static string LastNews {
             get {
@@ -295,7 +295,7 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Новости.
+        ///   Looks up a localized string similar to Статьи.
         /// </summary>
         public static string News {
             get {
