@@ -18,7 +18,10 @@
 
         partialContantsLoading();
 
-        $(".fancybox").fancybox();
+        $(".fancybox").fancybox({
+            nextSpeed: 350,
+            prevSpeed: 350
+        });
     });
 
 })(jQuery);

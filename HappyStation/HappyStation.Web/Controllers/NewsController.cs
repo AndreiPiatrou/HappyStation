@@ -46,8 +46,8 @@ namespace HappyStation.Web.Controllers
             return View(mapper.Map<NewsViewModel>(news));
         }
 
-        [HttpGet, Route("hottestnews/{count=4}")]
-        public ActionResult HottestNews(int count = 4)
+        [HttpGet, Route("hottestnews/{count=5}")]
+        public ActionResult HottestNews(int count = 5)
         {
             return View(newsRepository.GetHottest(count).Select(n => mapper.Map<NewsViewModel>(n)));
         }
