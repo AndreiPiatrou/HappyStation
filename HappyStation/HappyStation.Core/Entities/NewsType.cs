@@ -3,6 +3,7 @@
     public enum NewsType
     {
         News,
-        Handmade
+        Handmade,
+        Action
     }
 }

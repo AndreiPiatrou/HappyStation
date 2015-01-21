@@ -34,7 +34,7 @@ namespace HappyStation.Web.Controllers
             this.settings = settings;
         }
 
-        [HttpGet, Route("news/{id}")]
+        [HttpGet, Route("article/{id}"), Route("news/{id}")]
         public ActionResult News(int id)
         {
             var news = newsRepository.Get(id);
@@ -56,6 +56,21 @@ namespace HappyStation.Web.Controllers
         public ActionResult Handmade(int count = 20)
         {
             return View(newsRepository.GetLastHandMade(count).Select(n => mapper.Map<NewsViewModel>(n)));
+        }
+
+        [HttpGet, Route("actions/{pageNum=1}")]
+        public ActionResult Actions(int pageNum = 1)
+        {
+            var skip = (pageNum - 1) * settings.ItemsPerPage;
+            var news = newsRepository.GetActions(skip, settings.ItemsPerPage + 1).Select(n => mapper.Map<NewsViewModel>(n)).ToList();
+
+            ViewData.Model = news.Take(settings.ItemsPerPage);
+            ViewBag.HasPrevPage = pageNum > 1;
+            ViewBag.HasNextPage = news.Count > settings.ItemsPerPage;
+            ViewBag.PreviosPage = pageNum - 1;
+            ViewBag.NextPage = pageNum + 1;
+
+            return View();
         }
 
         [HttpGet, Authorize, Route("news/admin/{pagenum=1}")]

@@ -1,9 +1,5 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.Debug.config" caret="956" fromTop="20" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:robots.txt" caret="67" fromTop="3" />
-    <File id="81D458BB-CF1B-4A6A-99B9-1FE104B08F75/f:ef.txt/s:..?ef.txt" caret="328" fromTop="3" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:ViewModels/f:CommentVewModel.cs" caret="317" fromTop="12" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/d:EditorTemplates/f:Html.cshtml" caret="112" fromTop="0" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:ckeditor/f:config.js" caret="1000" fromTop="23" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:PageContent/f:Edit.cshtml" caret="841" fromTop="25" />
@@ -19,7 +15,6 @@
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:App_Start/f:IocConfig.cs" caret="0" fromTop="0" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Global.asax.cs" caret="0" fromTop="0" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:Error.cshtml" caret="52" fromTop="5" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.config" caret="407" fromTop="8" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Controllers/f:ContactsController.cs" caret="1376" fromTop="13" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:ShareThis.cshtml" caret="134" fromTop="8" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:WeInSocialNetworks.cshtml" caret="0" fromTop="0" />
@@ -27,13 +22,16 @@
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Layout.cshtml" caret="2882" fromTop="16" />
     <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Extensions/f:ObjectExtensions.cs" caret="289" fromTop="12" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Service.cshtml" caret="282" fromTop="9" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:site/f:main.js" caret="611" fromTop="22" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:News.cshtml" caret="295" fromTop="11" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:site/f:main.js" caret="633" fromTop="24" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Controllers/f:NewsController.cs" caret="1614" fromTop="18" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/d:images/f:toggle.svg" caret="352" fromTop="4" />
+    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Services/d:Implementations/f:NewsRepository.cs" caret="814" fromTop="24" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.Release.config" caret="1450" fromTop="29" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.Debug.config" caret="0" fromTop="0" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.config" caret="4761" fromTop="10" />
   </RecentFiles>
   <RecentEdits>
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Controllers/f:ContactsController.cs" caret="1372" fromTop="31" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:ShareThis.cshtml" caret="47" fromTop="5" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:News.cshtml" caret="640" fromTop="21" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:ShareThis.cshtml" caret="42" fromTop="4" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Layout.cshtml" caret="443" fromTop="8" />
@@ -62,5 +60,7 @@
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:News.cshtml" caret="237" fromTop="9" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:site/f:main.js" caret="577" fromTop="21" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:site/f:main.js" caret="611" fromTop="22" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Controllers/f:NewsController.cs" caret="1497" fromTop="15" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.config" caret="5707" fromTop="30" />
   </RecentEdits>
 </RecentFiles>
