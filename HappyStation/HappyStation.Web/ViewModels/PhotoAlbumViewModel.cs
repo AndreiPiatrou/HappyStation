@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace HappyStation.Web.ViewModels
 {
@@ -9,6 +10,7 @@ namespace HappyStation.Web.ViewModels
             Photos = new List<PhotoViewModel>();
         }
 
+        [Required]
         public string Title { get; set; }
 
         public int Id { get; set; }

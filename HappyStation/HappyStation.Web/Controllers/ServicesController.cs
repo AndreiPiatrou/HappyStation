@@ -41,9 +41,17 @@ namespace HappyStation.Web.Controllers
         }
 
         [Route("service/{id}")]
-        public ActionResult Service(int id)
+        public ActionResult Service(string id)
         {
-            ViewData.Model = mapper.Map<ServiceViewModel>(servicesRepository.Get(id));
+            var service = servicesRepository.Get(id);
+            if (service == null)
+            {
+                return HttpNotFound();
+            }
+
+            var mappedModel = mapper.Map<ServiceViewModel>(service);
+            ViewData.Model = mappedModel;
+            // ViewBag.ShareImageSrc = mappedModel.Description.TryFindFirstImage();
 
             return View();
         }

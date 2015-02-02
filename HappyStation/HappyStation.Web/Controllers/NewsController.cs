@@ -7,6 +7,7 @@ using AutoMapper;
 
 using HappyStation.Core.Constants;
 using HappyStation.Core.Entities;
+using HappyStation.Core.Extensions;
 using HappyStation.Core.Services.Implementations;
 using HappyStation.Web.ControllerServices;
 using HappyStation.Web.Extensions;
@@ -35,7 +36,7 @@ namespace HappyStation.Web.Controllers
         }
 
         [HttpGet, Route("article/{id}"), Route("news/{id}")]
-        public ActionResult News(int id)
+        public ActionResult News(string id)
         {
             var news = newsRepository.Get(id);
             if (news == null)
@@ -43,7 +44,10 @@ namespace HappyStation.Web.Controllers
                 return HttpNotFound();
             }
 
-            return View(mapper.Map<NewsViewModel>(news));
+            var mappedModel = mapper.Map<NewsViewModel>(news);
+            // ViewBag.ShareImageSrc = mappedModel.Text.TryFindFirstImage();
+
+            return View(mappedModel);
         }
 
         [HttpGet, Route("hottestnews/{count=5}")]

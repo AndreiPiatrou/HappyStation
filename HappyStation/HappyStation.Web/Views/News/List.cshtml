@@ -29,13 +29,13 @@
                                 </header>
                                 <p class="subtitle">@Html.Raw(news.Description)</p>
                                 <p>
-                                    <a href="@Url.Action("News", new { id = news.Id })">
+                                    <a href="@Url.Action("News", new { id = news.Url })">
                                         <div class="service-main">
                                             <img src="@news.Image" alt="@news.Title" />
                                         </div>
                                     </a>
                                 </p>
-                                <a href="@Url.Action("News", new { id = news.Id })" class="button">@Strings.More</a>
+                                <a href="@Url.Action("News", new { id = news.Url })" class="button">@Strings.More</a>
                             </section>
                         </li>
                     }

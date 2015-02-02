@@ -21,7 +21,7 @@
                 {
                     <tr>
                         <td width="50%">
-                            @Html.ActionLink(album.Title, "Album", "Gallery", new { @id = album.Id }, null)
+                            @Html.ActionLink(string.IsNullOrEmpty(album.Title) ? album.Id.ToString() : album.Title, "Album", "Gallery", new { @id = album.Id }, null)
                         </td>
                         <td width="25%">
                             @Html.ActionLink(Strings.Edit, "EditAlbum", "Gallery", new { @id = album.Id }, null)

@@ -22,5 +22,15 @@ namespace HappyStation.Web.ViewModels
 
         [AllowHtml, Required]
         public string Description { get; set; }
+
+        public string Alias { get; set; }
+
+        public string Url
+        {
+            get
+            {
+                return string.IsNullOrEmpty(Alias) ? Id.ToString() : Alias;
+            }
+        }
     }
 }

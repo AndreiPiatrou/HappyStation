@@ -20,5 +20,7 @@ namespace HappyStation.Core.Entities
         public bool IsHot { get; set; }
 
         public int? Order { get; set; }
+
+        public string Alias { get; set; }
     }
 }

@@ -21,6 +21,10 @@
                         @Html.TextBoxFor(m => m.Title, new { @class = "field-editor" })
                     </li>
                     <li>
+                        @Html.LabelFor(m => m.Alias, new { @class = "field-description" })
+                        @Html.TextBoxFor(m => m.Alias, new { @class = "field-editor" })
+                    </li>
+                    <li>
                         @Html.LabelFor(m => m.ShortDescription, new { @class = "field-description" })
                         @Html.TextBoxFor(m => m.ShortDescription, new { @class = "field-editor" })
                     </li>

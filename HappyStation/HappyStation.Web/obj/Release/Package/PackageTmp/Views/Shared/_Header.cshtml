@@ -5,19 +5,17 @@
 
         <!-- Logo -->
         <div id="logo">
-            <h1><a href="@Url.Action("Index", "Home")">@Strings.Logo</a></h1>z
+            <h1><a href="@Url.Action("Index", "Home")">@Strings.Logo</a></h1>
         </div>
 
         <!-- Nav -->
         <nav id="nav">
             <ul>
-                @*@Html.MenuLink(Strings.MainPage, "Index", "Home")*@
                 @Html.MenuLink(Strings.News, "List", "News")
                 @Html.MenuLink(Strings.Services, "List", "Services")
                 @Html.MenuLink(Strings.Actions, "Actions", "News")
                 @Html.MenuLink(Strings.Gallery, "List", "Gallery")
                 @Html.MenuLink(Strings.Price, "Price", "Home")
-                @*@Html.MenuLink(Strings.About, "About", "Home")*@
 
                 @if (Request.IsAuthenticated)
                 {

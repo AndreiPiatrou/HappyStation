@@ -23,5 +23,7 @@ namespace HappyStation.Core.Entities
 
         [Required]
         public string Description { get; set; }
+
+        public string Alias { get; set; }
     }
 }

@@ -12,16 +12,25 @@
         <ul class="style1">
             @foreach (var news in Model)
             {
-                if (Request.Url != null && Request.Url.AbsolutePath == Url.Action("News", "News", new
-                 {
-                     @id = news.Id
-                 }))
+                if (Request.Url != null &&
+                    (Request.Url.AbsolutePath == Url.Action("News", "News", new
+                {
+                    @id = news.Alias
+                }) || Request.Url.AbsolutePath == Url.Action("News", "News", new
+                {
+                    @id = news.Id
+                })))
                 {
                     <li>@news.Title</li>
                 }
                 else
                 {
-                    <li>@Html.ActionLink(news.Title, "News", "News", new { @id = news.Id }, null)</li>
+                    <li>
+                        @Html.ActionLink(news.Title, "News", "News", new
+                        {
+                            @id = news.Url
+                        }, null)
+                </li>
                 }
             }
         </ul>

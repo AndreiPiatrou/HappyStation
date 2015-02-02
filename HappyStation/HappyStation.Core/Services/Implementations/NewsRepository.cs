@@ -37,5 +37,11 @@ namespace HappyStation.Core.Services.Implementations
 
             return Db.News.Where(n => n.Type == NewsType.News).OrderByDescending(e => e.CreatedAt).Skip(skip).Take(take);
         }
+
+        public News Get(string id)
+        {
+            int realId;
+            return int.TryParse(id, out realId) ? Get(realId) : Db.News.FirstOrDefault(n => n.Alias == id);
+        }
     }
 }

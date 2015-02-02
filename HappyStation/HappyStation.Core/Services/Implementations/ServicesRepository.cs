@@ -22,5 +22,12 @@ namespace HappyStation.Core.Services.Implementations
         {
             return base.GetBy(skip, take).OrderBy(s => s.Order);
         }
+
+        public object Get(string id)
+        {
+            int realId;
+
+            return int.TryParse(id, out realId) ? Get(realId) : Db.Services.FirstOrDefault(s => s.Alias == id);
+        }
     }
 }

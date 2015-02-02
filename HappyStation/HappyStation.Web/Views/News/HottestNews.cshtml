@@ -13,7 +13,7 @@
             @foreach (var news in Model)
             {
                 <li>
-                    <a href="@Url.Action("News", "News", new { @id = news.Id })">
+                    <a href="@Url.Action("News", "News", new { @id = news.Url })">
                         <img class="news-preview" src="@news.Image" alt="@news.Title">
                     </a>
                     <p>@news.Title</p>

@@ -5,6 +5,7 @@
             var url = $(item).data("url");
             if (url && url.length > 0) {
                 $.ajax({
+                    async: false,
                     url: url
                 }).done(function (data) {
                     $(item).after(data);
