@@ -1,9 +1,5 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Edit.cshtml" caret="1006" fromTop="12" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Actions.cshtml" caret="1477" fromTop="15" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:ViewModels/f:NewsViewModel.cs" caret="227" fromTop="9" />
-    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Entities/f:News.cs" caret="586" fromTop="26" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:HotestServices.cshtml" caret="599" fromTop="18" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Home/f:Index.cshtml" caret="97" fromTop="6" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:List.cshtml" caret="1189" fromTop="16" />
@@ -24,17 +20,18 @@
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.config" caret="2727" fromTop="9" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:Album.cshtml" caret="662" fromTop="21" />
     <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Services/d:Implementations/f:NewsRepository.cs" caret="907" fromTop="21" />
-    <File id="81D458BB-CF1B-4A6A-99B9-1FE104B08F75/f:ef.txt/s:..?ef.txt" caret="516" fromTop="3" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Properties/d:PublishProfiles/f:happymoments.pubxml" caret="1371" fromTop="24" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:ViewModels/f:PhotoAlbumViewModel.cs" caret="360" fromTop="13" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:EditAlbum.cshtml" caret="0" fromTop="0" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:PreviewList.cshtml" caret="167" fromTop="9" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:ListAdmin.cshtml" caret="237" fromTop="9" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:ListAdmin.cshtml" caret="1558" fromTop="39" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:EditAlbum.cshtml" caret="0" fromTop="0" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Actions.cshtml" caret="189" fromTop="9" />
+    <File id="81D458BB-CF1B-4A6A-99B9-1FE104B08F75/f:ef.txt/s:..?ef.txt" caret="561" fromTop="5" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Handmade.cshtml" caret="433" fromTop="19" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:sitemap.xml" caret="8486" fromTop="17" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:robots.txt" caret="0" fromTop="0" />
   </RecentFiles>
   <RecentEdits>
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Controllers/f:ServicesController.cs" caret="1565" fromTop="16" />
-    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Services/d:Implementations/f:ServicesRepository.cs" caret="816" fromTop="24" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Controllers/f:ServicesController.cs" caret="217" fromTop="9" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="1015" fromTop="28" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="515" fromTop="16" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="954" fromTop="21" />
@@ -62,5 +59,8 @@
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:PreviewList.cshtml" caret="995" fromTop="34" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:ListAdmin.cshtml" caret="766" fromTop="22" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:ViewModels/f:PhotoAlbumViewModel.cs" caret="316" fromTop="12" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Handmade.cshtml" caret="363" fromTop="14" />
+    <File id="81D458BB-CF1B-4A6A-99B9-1FE104B08F75/f:ef.txt/s:..?ef.txt" caret="541" fromTop="5" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:sitemap.xml" caret="9420" fromTop="27" />
   </RecentEdits>
 </RecentFiles>

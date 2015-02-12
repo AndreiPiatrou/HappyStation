@@ -1,5 +1,21 @@
-2015/02/02-10:59:08.154 ee4 Recovering log #157
-2015/02/02-10:59:08.169 ee4 Level-0 table #163: started
-2015/02/02-10:59:08.201 ee4 Level-0 table #163: 2840042 bytes OK
-2015/02/02-10:59:08.201 ee4 Delete type=0 #157
-2015/02/02-10:59:08.201 ee4 Delete type=3 #151
+2015/02/02-15:44:21.879 2018 Recovering log #164
+2015/02/02-15:44:21.910 2018 Level-0 table #166: started
+2015/02/02-15:44:21.941 2018 Level-0 table #166: 3059558 bytes OK
+2015/02/02-15:44:21.957 2018 Delete type=0 #164
+2015/02/02-15:44:21.957 2018 Delete type=3 #162
+2015/02/02-15:54:40.080 34b4 Compacting 2@0 + 0@1 files
+2015/02/02-15:54:40.111 34b4 Generated table #168: 261 keys, 1807350 bytes
+2015/02/02-15:54:40.111 34b4 Compacted 2@0 + 0@1 files => 1807350 bytes
+2015/02/02-15:54:40.111 34b4 Delete type=2 #163
+2015/02/02-15:54:40.111 34b4 Delete type=2 #166
+2015/02/02-15:54:40.111 34b4 compacted to: files[ 0 1 3 0 0 0 0 ]
+2015/02/02-15:54:47.812 34b4 Compacting 1@1 + 3@2 files
+2015/02/02-15:54:47.874 34b4 Generated table #169: 1350 keys, 2292620 bytes
+2015/02/02-15:54:47.890 34b4 Generated table #170: 42 keys, 3075424 bytes
+2015/02/02-15:54:47.890 34b4 Generated table #171: 13 keys, 38381 bytes
+2015/02/02-15:54:47.890 34b4 Compacted 1@1 + 3@2 files => 5406425 bytes
+2015/02/02-15:54:47.890 34b4 Delete type=2 #159
+2015/02/02-15:54:47.890 34b4 Delete type=2 #160
+2015/02/02-15:54:47.905 34b4 Delete type=2 #161
+2015/02/02-15:54:47.905 34b4 Delete type=2 #168
+2015/02/02-15:54:47.905 34b4 compacted to: files[ 0 0 3 0 0 0 0 ]

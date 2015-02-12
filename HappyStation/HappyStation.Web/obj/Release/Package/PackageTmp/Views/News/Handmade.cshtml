@@ -12,7 +12,7 @@
         <ul class="style1">
             @foreach (var news in Model)
             {
-                <li>@Html.ActionLink(news.Title, "News", "News", new { @id = news.Id }, null)</li>
+                <li>@Html.ActionLink(news.Title, "News", "News", new { @id = news.Url }, null)</li>
             }
         </ul>
     </section>
