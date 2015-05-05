@@ -195,6 +195,9 @@
   <data name="MainPage" xml:space="preserve">
     <value>Главная</value>
   </data>
+  <data name="MainTitle" xml:space="preserve">
+    <value>Свадебный распорядитель и организатор в Минске</value>
+  </data>
   <data name="More" xml:space="preserve">
     <value>Больше</value>
   </data>
