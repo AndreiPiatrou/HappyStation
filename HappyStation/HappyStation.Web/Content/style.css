@@ -2402,3 +2402,9 @@ tr:nth-child(even) {
     display: inline;
     width: 500px;
 }
+.field-editor-short {
+    display: inline;
+    width:100%;
+    margin-top: 5px;
+    margin-right: 40px;
+}

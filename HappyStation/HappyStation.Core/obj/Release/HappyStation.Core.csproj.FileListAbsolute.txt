@@ -3,7 +3,6 @@ D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\HappyStation.Core
 D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\HappyStation.Core.pdb
 D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\EntityFramework.dll
 D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\EntityFramework.SqlServer.dll
-D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\Microsoft.Web.Helpers.dll
 D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\Microsoft.Web.Infrastructure.dll
 D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\System.Web.Helpers.dll
 D:\dev\HappyStation\HappyStation\HappyStation.Core\bin\Release\System.Web.Providers.dll

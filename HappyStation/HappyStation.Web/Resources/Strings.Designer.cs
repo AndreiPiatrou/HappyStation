@@ -286,6 +286,15 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Рассылка.
+        /// </summary>
+        public static string Mailing {
+            get {
+                return ResourceManager.GetString("Mailing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Главная.
         /// </summary>
         public static string MainPage {
@@ -408,6 +417,15 @@ namespace HappyStation.Web.Resources {
         public static string SiteKeywords {
             get {
                 return ResourceManager.GetString("SiteKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Подписаться!.
+        /// </summary>
+        public static string Subscribe {
+            get {
+                return ResourceManager.GetString("Subscribe", resourceCulture);
             }
         }
         

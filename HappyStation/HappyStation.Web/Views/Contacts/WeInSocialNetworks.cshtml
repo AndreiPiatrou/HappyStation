@@ -26,5 +26,26 @@
                 </a>
             </li>
         </ul>
-    </section>
-</div>
+
+        <h2 style="padding-bottom: 10px">@Strings.Mailing</h2>
+        <form action="http://momentshoney.justclick.ru/subscribe/process/?rid[0]=all&doneurl=http%3A%2F%2Fohm.by&doneurl2=http%3A%2F%2Fohm.by"
+              method="post"
+              id="form-mailing-subscribe">
+            <input name="lead_name"
+                   type="text"
+                   class="field-editor-short"
+                   onblur=' if (this.value == "") this.value = "Введите ваше имя" '
+                   onfocus=' if (this.value == "Введите ваше имя") this.value = "" '
+                   value="Введите ваше имя" />
+
+            <input name="lead_email"
+                   type="text"
+                   class="field-editor-short"
+                   onblur=' if (this.value == "") this.value = "Введите ваш e-mail" '
+                   onfocus=' if (this.value == "Введите ваш e-mail") this.value = "" '
+                   value="Введите ваш e-mail" />
+            <a class="button" onclick=" document.getElementById('form-mailing-subscribe').submit() ">@Strings.Subscribe</a>
+            </form>
+
+        </section>
+    </div>
