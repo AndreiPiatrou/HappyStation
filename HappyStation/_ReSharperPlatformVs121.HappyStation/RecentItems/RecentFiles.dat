@@ -1,66 +1,38 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:HotestServices.cshtml" caret="599" fromTop="18" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Home/f:Index.cshtml" caret="97" fromTop="6" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:List.cshtml" caret="1189" fromTop="16" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="1015" fromTop="15" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:ViewModels/f:ServiceViewModel.cs" caret="212" fromTop="8" />
-    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Entities/f:Service.cs" caret="520" fromTop="21" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Controllers/f:ServicesController.cs" caret="1283" fromTop="25" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:List.cshtml" caret="367" fromTop="15" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:site/f:main.js" caret="552" fromTop="19" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:site/f:skel-panels.min.js" caret="171" fromTop="1" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:site/f:init.js" caret="907" fromTop="16" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Footer.cshtml" caret="676" fromTop="15" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Header.cshtml" caret="257" fromTop="8" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Layout.cshtml" caret="616" fromTop="10" />
-    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Extensions/f:ObjectExtensions.cs" caret="1120" fromTop="34" />
-    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Migrations/f:Configuration.cs" caret="1326" fromTop="29" />
     <File id="94E5216D-0B54-455C-8C47-3DC2E7C69403/d:HtmlHelpers/f:MenuLink.cs" caret="1112" fromTop="26" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.config" caret="2727" fromTop="9" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:Album.cshtml" caret="662" fromTop="21" />
-    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Services/d:Implementations/f:NewsRepository.cs" caret="907" fromTop="21" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Properties/d:PublishProfiles/f:happymoments.pubxml" caret="1371" fromTop="24" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:ViewModels/f:PhotoAlbumViewModel.cs" caret="360" fromTop="13" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:PreviewList.cshtml" caret="167" fromTop="9" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:ListAdmin.cshtml" caret="1558" fromTop="39" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:EditAlbum.cshtml" caret="0" fromTop="0" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Actions.cshtml" caret="189" fromTop="9" />
-    <File id="81D458BB-CF1B-4A6A-99B9-1FE104B08F75/f:ef.txt/s:..?ef.txt" caret="561" fromTop="5" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Handmade.cshtml" caret="433" fromTop="19" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:sitemap.xml" caret="8486" fromTop="17" />
+    <File id="81D458BB-CF1B-4A6A-99B9-1FE104B08F75/f:ef.txt/s:..?ef.txt" caret="339" fromTop="3" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:sitemap.xml" caret="0" fromTop="0" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:Web.Debug.config" caret="0" fromTop="0" />
     <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:robots.txt" caret="0" fromTop="0" />
+    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:DatabaseContext/f:DatabaseContext.cs" caret="306" fromTop="10" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Scripts/d:ckeditor/d:plugins/d:wsc/d:dialogs/f:wsc.css" caret="401" fromTop="5" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:Contacts.cshtml" caret="311" fromTop="14" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Layout.cshtml" caret="3823" fromTop="30" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_Footer.cshtml" caret="202" fromTop="8" />
+    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Migrations/f:Configuration.cs" caret="1326" fromTop="38" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:WeInSocialNetworks.cshtml" caret="1940" fromTop="24" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Controllers/f:HomeController.cs" caret="1539" fromTop="31" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Shared/f:_AdminLayout.cshtml" caret="0" fromTop="0" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="39762" fromTop="22" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Home/f:Admin.cshtml" caret="708" fromTop="21" />
   </RecentFiles>
   <RecentEdits>
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="1015" fromTop="28" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="515" fromTop="16" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:Edit.cshtml" caret="954" fromTop="21" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:ViewModels/f:ServiceViewModel.cs" caret="773" fromTop="31" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:PreviewList.cshtml" caret="855" fromTop="10" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:List.cshtml" caret="1116" fromTop="12" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:List.cshtml" caret="1500" fromTop="18" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:HotestServices.cshtml" caret="538" fromTop="17" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:HotestServices.cshtml" caret="850" fromTop="23" />
-    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Entities/f:News.cs" caret="617" fromTop="26" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:ViewModels/f:NewsViewModel.cs" caret="784" fromTop="31" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Actions.cshtml" caret="1105" fromTop="9" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Actions.cshtml" caret="1477" fromTop="15" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Edit.cshtml" caret="1028" fromTop="25" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Edit.cshtml" caret="945" fromTop="26" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:HottestNews.cshtml" caret="405" fromTop="15" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:List.cshtml" caret="1102" fromTop="19" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:List.cshtml" caret="1474" fromTop="25" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:PreviewList.cshtml" caret="611" fromTop="20" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:PreviewList.cshtml" caret="338" fromTop="15" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Services/f:PreviewList.cshtml" caret="604" fromTop="14" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Controllers/f:NewsController.cs" caret="1335" fromTop="15" />
-    <File id="CA7688E4-6848-4E74-AFB4-F0B5EC1E553F/d:Services/d:Implementations/f:NewsRepository.cs" caret="1564" fromTop="34" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:PreviewList.cshtml" caret="162" fromTop="9" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:PreviewList.cshtml" caret="995" fromTop="34" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Gallery/f:ListAdmin.cshtml" caret="766" fromTop="22" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:ViewModels/f:PhotoAlbumViewModel.cs" caret="316" fromTop="12" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:News/f:Handmade.cshtml" caret="363" fromTop="14" />
     <File id="81D458BB-CF1B-4A6A-99B9-1FE104B08F75/f:ef.txt/s:..?ef.txt" caret="541" fromTop="5" />
-    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/f:sitemap.xml" caret="9420" fromTop="27" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:WeInSocialNetworks.cshtml" caret="1968" fromTop="34" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:Contacts.cshtml" caret="111" fromTop="9" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:Contacts.cshtml" caret="311" fromTop="0" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:WeInSocialNetworks.cshtml" caret="1968" fromTop="36" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:WeInSocialNetworks.cshtml" caret="1968" fromTop="19" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:WeInSocialNetworks.cshtml" caret="1968" fromTop="12" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:WeInSocialNetworks.cshtml" caret="1968" fromTop="19" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:WeInSocialNetworks.cshtml" caret="1968" fromTop="13" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="39635" fromTop="15" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Content/f:style.css" caret="39762" fromTop="22" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:WeInSocialNetworks.cshtml" caret="875" fromTop="13" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Contacts/f:WeInSocialNetworks.cshtml" caret="1962" fromTop="26" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Home/f:Admin.cshtml" caret="1570" fromTop="36" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Home/f:Admin.cshtml" caret="707" fromTop="21" />
+    <File id="10D27497-D165-401D-B31A-2702B1EAA54F/d:Views/d:Home/f:Admin.cshtml" caret="1086" fromTop="28" />
   </RecentEdits>
 </RecentFiles>

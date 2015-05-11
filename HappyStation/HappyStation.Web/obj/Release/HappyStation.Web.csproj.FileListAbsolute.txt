@@ -80,3 +80,12 @@ D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Release\HappyStation.Web.c
 D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Release\HappyStation.Web.dll
 D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Release\HappyStation.Web.pdb
 D:\dev\HappyStation\HappyStation\HappyStation.Web\obj\Release\HappyStation.Web.csprojResolveAssemblyReference.cache
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\bouncy_castle_hmac_sha_pcl.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\Microsoft.Threading.Tasks.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\Microsoft.Threading.Tasks.Extensions.dll
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\AutoMapper.pdb
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\AutoMapper.Net4.pdb
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\Microsoft.Threading.Tasks.xml
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\Microsoft.Threading.Tasks.Extensions.xml
+D:\dev\HappyStation\HappyStation\HappyStation.Web\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml

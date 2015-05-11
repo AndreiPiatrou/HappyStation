@@ -4,7 +4,7 @@
     <link rel="icon" href="@Url.Content("~/content/favicon.ico")" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <title>@(String.Format("{0} {1}",ViewBag.Title, Strings.MainTitle))</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="@(string.IsNullOrEmpty(ViewBag.PageDescription) ? Strings.SiteDescription: ViewBag.PageDescription)" />
     <meta name="keywords" content="@Strings.SiteKeywords" />

@@ -2,7 +2,6 @@ D:\dev\HappyStation\HappyStation\HappyStation.Common\bin\Release\HappyStation.Co
 D:\dev\HappyStation\HappyStation\HappyStation.Common\bin\Release\HappyStation.Common.dll
 D:\dev\HappyStation\HappyStation\HappyStation.Common\bin\Release\HappyStation.Common.pdb
 D:\dev\HappyStation\HappyStation\HappyStation.Common\bin\Release\System.Web.Mvc.dll
-D:\dev\HappyStation\HappyStation\HappyStation.Common\bin\Release\System.Web.Mvc.xml
 D:\dev\HappyStation\HappyStation\HappyStation.Common\obj\Release\HappyStation.Common.csprojResolveAssemblyReference.cache
 D:\dev\HappyStation\HappyStation\HappyStation.Common\obj\Release\HappyStation.Common.dll
 D:\dev\HappyStation\HappyStation\HappyStation.Common\obj\Release\HappyStation.Common.pdb
