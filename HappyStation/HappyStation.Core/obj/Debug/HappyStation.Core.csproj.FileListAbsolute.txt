@@ -34,19 +34,15 @@ D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\EntityFramework.
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\EntityFramework.SqlServer.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\Microsoft.Web.Infrastructure.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\System.Web.Helpers.dll
-D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\System.Web.Providers.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\System.Web.Razor.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\System.Web.WebPages.Deployment.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\System.Web.WebPages.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\System.Web.WebPages.Razor.dll
-D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\WebGrease.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\WebMatrix.Data.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\WebMatrix.WebData.dll
-D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\Newtonsoft.Json.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\EntityFramework.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\EntityFramework.SqlServer.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\System.Web.Helpers.xml
-D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\System.Web.Providers.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\System.Web.Razor.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\System.Web.WebPages.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\System.Web.WebPages.Deployment.xml
@@ -55,3 +51,4 @@ D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\WebMatrix.Data.x
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\WebMatrix.WebData.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\obj\Debug\HappyStation.Core.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Core\obj\Debug\HappyStation.Core.pdb
+D:\GitHub\HappyStation\HappyStation\HappyStation.Core\bin\Debug\Microsoft.Web.Infrastructure.xml
