@@ -421,11 +421,29 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to свадебное агентство.
+        /// </summary>
+        public static string SubLogo {
+            get {
+                return ResourceManager.GetString("SubLogo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Подписаться!.
         /// </summary>
         public static string Subscribe {
             get {
                 return ResourceManager.GetString("Subscribe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to УНП 192441378.
+        /// </summary>
+        public static string UnpNumber {
+            get {
+                return ResourceManager.GetString("UnpNumber", resourceCulture);
             }
         }
         

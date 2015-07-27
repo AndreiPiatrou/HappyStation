@@ -237,8 +237,14 @@
   <data name="SiteKeywords" xml:space="preserve">
     <value>Honey Moments, Свадебный организатор, свадебный распорядитель, организация свадьбы, Минск, Беларусь, девичник, мальчишник</value>
   </data>
+  <data name="SubLogo" xml:space="preserve">
+    <value>свадебное агентство</value>
+  </data>
   <data name="Subscribe" xml:space="preserve">
     <value>Подписаться!</value>
+  </data>
+  <data name="UnpNumber" xml:space="preserve">
+    <value>УНП 192441378</value>
   </data>
   <data name="Upload" xml:space="preserve">
     <value>Загрузить</value>
