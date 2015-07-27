@@ -169,5 +169,3 @@ D:\GitHub\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.csproj.GenerateResource.Cache
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.pdb
-D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\System.Net.Http.Formatting.dll
-D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\System.Net.Http.Formatting.xml
