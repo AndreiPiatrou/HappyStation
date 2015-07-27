@@ -18,7 +18,7 @@ namespace HappyStation.Web.ViewModels
         {
             get
             {
-                if (Text.Length > 500)
+                if (!string.IsNullOrEmpty(Text) && Text.Length > 500)
                 {
                     return Text.Substring(0, 499) + "...";
                 }

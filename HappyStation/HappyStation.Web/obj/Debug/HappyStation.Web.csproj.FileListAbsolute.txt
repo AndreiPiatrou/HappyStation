@@ -86,7 +86,6 @@ D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\HappyStation.Web.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\HappyStation.Web.pdb
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Antlr3.Runtime.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Autofac.dll
-D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Autofac.Integration.Mvc.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\AutoMapper.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\bouncy_castle_hmac_sha_pcl.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\DotNetOpenAuth.AspNet.dll
@@ -107,7 +106,6 @@ D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Microsoft.Web.Infrastru
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Microsoft.Web.WebPages.OAuth.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Newtonsoft.Json.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\OAuth2.dll
-D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\RestSharp.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\System.Net.Http.Extensions.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\System.Net.Http.Primitives.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\System.Web.Helpers.dll
@@ -129,7 +127,6 @@ D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\HappyStation.Common.pdb
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\HappyStation.Core.pdb
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Antlr3.Runtime.pdb
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Autofac.xml
-D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Autofac.Integration.Mvc.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\AutoMapper.pdb
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\AutoMapper.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\AutoMapper.Net4.pdb
@@ -146,7 +143,6 @@ D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Microsoft.Threading.Tas
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Microsoft.Web.WebPages.OAuth.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Newtonsoft.Json.xml
-D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\RestSharp.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\System.Net.Http.Extensions.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\System.Net.Http.Primitives.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\System.Web.Helpers.xml
@@ -163,9 +159,15 @@ D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\WebMatrix.Data.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\WebMatrix.WebData.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Org.Mentalis.Security.Cryptography.xml
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Mono.Math.xml
-D:\GitHub\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.csproj.App.config
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.csprojResolveAssemblyReference.cache
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.Resources.Strings.resources
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.csproj.GenerateResource.Cache
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.dll
 D:\GitHub\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.pdb
+D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Autofac.Integration.Mvc.dll
+D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\RestSharp.dll
+D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\Autofac.Integration.Mvc.xml
+D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\RestSharp.xml
+D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\System.Net.Http.Formatting.dll
+D:\GitHub\HappyStation\HappyStation\HappyStation.Web\bin\System.Net.Http.Formatting.xml
+D:\GitHub\HappyStation\HappyStation\HappyStation.Web\obj\Debug\HappyStation.Web.csproj.App.config
