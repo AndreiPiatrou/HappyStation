@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="IIS Web Application Name" description="" value="happymoments" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\dev\\HappyStation\\HappyStation\\HappyStation\.Web\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\GitHub\\HappyStation\\HappyStation\\HappyStation\.Web\\obj\\Release\\Package\\PackageTmp$" />
   </parameter>
   <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:y8um1ecv0b.database.windows.net,1433;Initial Catalog=happymoments;User ID=happymoments@y8um1ecv0b;Password=19Kroplya91" tags="">
-    <parameterEntry kind="XmlFile" scope="D:\\dev\\HappyStation\\HappyStation\\HappyStation\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="D:\\GitHub\\HappyStation\\HappyStation\\HappyStation\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
   <parameter name="HappyStation.Core.DatabaseContext.DatabaseContext-Web.config Connection String" description="" value="Data Source=tcp:y8um1ecv0b.database.windows.net,1433;Initial Catalog=happymoments;User ID=happymoments@y8um1ecv0b;Password=19Kroplya91" tags="">
-    <parameterEntry kind="XmlFile" scope="D:\\dev\\HappyStation\\HappyStation\\HappyStation\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='HappyStation.Core.DatabaseContext.DatabaseContext']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="D:\\GitHub\\HappyStation\\HappyStation\\HappyStation\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='HappyStation.Core.DatabaseContext.DatabaseContext']/@connectionString" />
   </parameter>
 </parameters>

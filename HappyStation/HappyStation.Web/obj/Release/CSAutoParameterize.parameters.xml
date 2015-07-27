@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=SQL5006.Smarterasp.net;Initial Catalog=DB_9B7EEC_happymoments;User Id=DB_9B7EEC_happymoments_admin;Password=19Kroplya91;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="D:\\dev\\HappyStation\\HappyStation\\HappyStation\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="D:\\GitHub\\HappyStation\\HappyStation\\HappyStation\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
   <parameter name="HappyStation.Core.DatabaseContext.DatabaseContext-Web.config Connection String" description="HappyStation.Core.DatabaseContext.DatabaseContext Connection String used in web.config by the application to access the database." defaultValue="HappyStation.Core.DatabaseContext.DatabaseContext_ConnectionString" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="D:\\dev\\HappyStation\\HappyStation\\HappyStation\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='HappyStation.Core.DatabaseContext.DatabaseContext']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="D:\\GitHub\\HappyStation\\HappyStation\\HappyStation\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='HappyStation.Core.DatabaseContext.DatabaseContext']/@connectionString" />
   </parameter>
 </parameters>
