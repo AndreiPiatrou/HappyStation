@@ -8,7 +8,7 @@
 <div id="main" class="container">
     <div class="row">
 
-       @Html.Action("PreviewList", "Services")
+        @Html.Action("PreviewList", "Services")
 
         <div class="9u skel-cell-important">
             <section>
@@ -17,6 +17,10 @@
                         @ViewBag.Title
                     </h2>
                 </header>
+                @if (!string.IsNullOrEmpty(Model.Text))
+                {
+                    <div>@Html.Raw(Model.Text)</div>
+                }
             </section>
 
             <div id="marketing" class="row container-secondary">

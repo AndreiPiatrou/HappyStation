@@ -46,7 +46,6 @@ namespace HappyStation.Core.Migrations
 
             WebSecurity.CreateAccount("19graff91@gmail.com", "19happymoments91");
             WebSecurity.CreateAccount("admin@admin.com", "19admin91");
-
         }
     }
 }
