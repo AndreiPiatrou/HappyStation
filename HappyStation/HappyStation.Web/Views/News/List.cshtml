@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<NewsViewModel>
 
 @{
-    ViewBag.Title = Strings.News;
+    ViewBag.Title = string.IsNullOrEmpty(ViewBag.Title) ? Strings.News : ViewBag.Title;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 

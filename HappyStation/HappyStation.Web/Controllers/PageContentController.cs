@@ -12,6 +12,9 @@ namespace HappyStation.Web.Controllers
 {
     public class PageContentController : Controller
     {
+        private readonly PageContentRepository pageContentRepository;
+        private readonly IMappingEngine mapper;
+
         public PageContentController(PageContentRepository pageContentRepository, IMappingEngine mapper)
         {
             Contract.Requires(pageContentRepository != null);
@@ -71,9 +74,5 @@ namespace HappyStation.Web.Controllers
 
             return RedirectToAction("ListAdmin");
         }
-
-        private readonly PageContentRepository pageContentRepository;
-        private readonly IMappingEngine mapper;
-
     }
 }

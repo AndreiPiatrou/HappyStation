@@ -21,7 +21,14 @@ namespace HappyStation.Core.Services.Implementations
 
         public IEnumerable<News> GetLastHandMade(int count = 20)
         {
+            Contract.Requires(count > 0);
+
             return Db.News.Where(n => n.Type == NewsType.Handmade).OrderByDescending(n => n.Id).Take(count);
+        }
+
+        public IEnumerable<News> GetPortfolioOnly(int skip = 0, int take = Numbers.MaxGetCount)
+        {
+            return Db.News.Where(n => n.Type == NewsType.Portfolio).OrderByDescending(e => e.CreatedAt).Skip(skip).Take(take);
         }
 
         public IEnumerable<News> GetActions(int skip = 0, int take = Numbers.MaxGetCount)

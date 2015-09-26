@@ -17,7 +17,7 @@ namespace HappyStation.Web.Controllers
 {
     public class GalleryController : ControllerBase
     {
-        public GalleryController(FileUploadService uploadService,
+        public GalleryController(IFileUploadService uploadService,
             PhotoAlbumService photoAlbumService,
             IMappingEngine mapper,
             ApplicationSettings settings,

@@ -7,7 +7,7 @@ namespace HappyStation.Web.Controllers
 {
     public class ControllerBase : Controller
     {
-        public ControllerBase(FileUploadService uploadService)
+        public ControllerBase(IFileUploadService uploadService)
         {
             this.uploadService = uploadService;
         }
@@ -19,9 +19,10 @@ namespace HappyStation.Web.Controllers
 
         protected bool DeleteFile(string fileName)
         {
-            return uploadService.DeleteFile(Request.MapPath("~" + fileName));
+            fileName = fileName.StartsWith("http") ? fileName : Request.MapPath("~" + fileName);
+            return uploadService.DeleteFile(fileName);
         }
 
-        private readonly FileUploadService uploadService;
+        private readonly IFileUploadService uploadService;
     }
 }

@@ -7,7 +7,7 @@ using HappyStation.Web.Settings;
 
 namespace HappyStation.Web.ControllerServices
 {
-    public class FileUploadService
+    public class FileUploadService : IFileUploadService
     {
         public FileUploadService(ApplicationSettings settings)
         {
@@ -68,7 +68,6 @@ namespace HappyStation.Web.ControllerServices
                 Directory.CreateDirectory(directoryPath);
             }
         }
-
 
         private readonly string rootFilePath;
     }

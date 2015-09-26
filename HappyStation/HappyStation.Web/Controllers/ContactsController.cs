@@ -8,7 +8,7 @@ namespace HappyStation.Web.Controllers
 {
     public class ContactsController : ControllerBase
     {
-        public ContactsController(FileUploadService uploadService,
+        public ContactsController(IFileUploadService uploadService,
             InstagramService instagramService,
             ApplicationSettings settings)
             : base(uploadService)

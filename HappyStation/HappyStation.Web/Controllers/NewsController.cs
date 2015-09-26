@@ -7,10 +7,10 @@ using AutoMapper;
 
 using HappyStation.Core.Constants;
 using HappyStation.Core.Entities;
-using HappyStation.Core.Extensions;
 using HappyStation.Core.Services.Implementations;
 using HappyStation.Web.ControllerServices;
 using HappyStation.Web.Extensions;
+using HappyStation.Web.Resources;
 using HappyStation.Web.Settings;
 using HappyStation.Web.ViewModels;
 
@@ -21,7 +21,7 @@ namespace HappyStation.Web.Controllers
         public NewsController(NewsRepository newsRepository,
             IMappingEngine mapper,
             ApplicationSettings settings,
-            FileUploadService fileUploadService,
+            IFileUploadService fileUploadService,
             InstagramService instagramService)
             : base(fileUploadService)
         {
@@ -60,6 +60,22 @@ namespace HappyStation.Web.Controllers
         public ActionResult Handmade(int count = 20)
         {
             return View(newsRepository.GetLastHandMade(count).Select(n => mapper.Map<NewsViewModel>(n)));
+        }
+
+        [HttpGet, Route("portfolio/{pageNum=1}")]
+        public ActionResult Portfolio(int pageNum = 1)
+        {
+            var skip = (pageNum - 1) * settings.ItemsPerPage;
+            var news = newsRepository.GetPortfolioOnly(skip, settings.ItemsPerPage + 1).Select(n => mapper.Map<NewsViewModel>(n)).ToList();
+
+            ViewData.Model = news.Take(settings.ItemsPerPage);
+            ViewBag.HasPrevPage = pageNum > 1;
+            ViewBag.HasNextPage = news.Count > settings.ItemsPerPage;
+            ViewBag.PreviosPage = pageNum - 1;
+            ViewBag.NextPage = pageNum + 1;
+            ViewBag.Title = Strings.Gallery;
+
+            return View("List");
         }
 
         [HttpGet, Route("actions/{pageNum=1}")]

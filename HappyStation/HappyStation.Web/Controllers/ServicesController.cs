@@ -20,7 +20,7 @@ namespace HappyStation.Web.Controllers
         public ServicesController(ServicesRepository servicesRepository,
             IMappingEngine mapper,
             ApplicationSettings settings,
-            FileUploadService fileUploadService)
+            IFileUploadService fileUploadService)
             : base(fileUploadService)
         {
             Contract.Requires(servicesRepository != null);

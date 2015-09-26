@@ -4,6 +4,7 @@
     {
         News,
         Handmade,
-        Action
+        Action,
+        Portfolio
     }
 }

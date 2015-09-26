@@ -15,7 +15,7 @@ namespace HappyStation.Web.Controllers
 {
     public class ContentImagesController : ControllerBase
     {
-        public ContentImagesController(FileUploadService uploadService,
+        public ContentImagesController(IFileUploadService uploadService,
             ContentImagesService contentImagesService,
             ApplicationSettings settings,
             IMappingEngine mapper)

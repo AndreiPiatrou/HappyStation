@@ -17,8 +17,8 @@ namespace HappyStation.Web.Controllers
     {
         public CommentsController(CommentsRepository commentsRepository,
             IMappingEngine mapper,
-              ApplicationSettings settings,
-            FileUploadService fileUploadService)
+            ApplicationSettings settings,
+            IFileUploadService fileUploadService)
             : base(fileUploadService)
         {
             Contract.Requires(commentsRepository != null);
