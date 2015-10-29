@@ -50,7 +50,7 @@ namespace HappyStation.Web.Controllers
         [Route("aboutus")]
         public ActionResult About()
         {
-            var pageContent = pageContentRepository.GetByType(PageContentType.About);
+            var pageContent = pageContentRepository.GetByType(PageContentType.NewAbout);
 
             return View(pageContent != null ? mapper.Map<PageContentViewModel>(pageContent) : null);
         }

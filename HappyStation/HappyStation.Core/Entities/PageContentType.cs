@@ -3,6 +3,7 @@
     public enum PageContentType
     {
         About,
-        Price
+        Price,
+        NewAbout
     }
 }
