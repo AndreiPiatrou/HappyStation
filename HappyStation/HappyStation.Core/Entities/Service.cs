@@ -22,5 +22,7 @@ namespace HappyStation.Core.Entities
         public int? Order { get; set; }
 
         public string Alias { get; set; }
+
+        public string Keywords { get; set; }
     }
 }

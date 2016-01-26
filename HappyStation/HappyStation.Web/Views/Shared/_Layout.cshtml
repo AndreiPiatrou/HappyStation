@@ -4,36 +4,15 @@
     <link rel="icon" href="@Url.Content("~/content/favicon.ico")" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>@(String.Format("{0} {1}",ViewBag.Title, Strings.MainTitle))</title>
+    <title>@(string.IsNullOrEmpty(ViewBag.Title) ? Strings.MainTitle : ViewBag.Title)</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="@(string.IsNullOrEmpty(ViewBag.PageDescription) ? Strings.SiteDescription: ViewBag.PageDescription)" />
-    <meta name="keywords" content="@Strings.SiteKeywords" />
+    <meta name="keywords" content="@(string.IsNullOrEmpty(ViewBag.Keywords) ? Strings.SiteKeywords : ViewBag.Keywords)" />
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
 
     @if (!Request.IsAuthenticated)
     {
-        <script type="text/javascript">
-            var appInsights = window.appInsights || function (config) {
-                function s(config) {
-                    t[config] = function () {
-                        var i = arguments;
-                        t.queue.push(function () { t[config].apply(t, i) })
-                    }
-                }
-
-                var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u;
-                for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) s("track" + i.pop());
-                return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) {
-                    var s = u && u(config, r, f, e, o);
-                    return s !== !0 && t["_" + i](config, r, f, e, o), s
-                }), t
-            }({
-                instrumentationKey: "fe25a8bc-5ca2-4fb3-8a71-3f081b4a7f0e"
-            });
-
-            window.appInsights = appInsights;
-            appInsights.trackPageView();
-        </script>
+        @Html.Partial("_Metrics")
     }
 
     <!--[if lte IE 8]><script src="/Scripts/site/html5shiv.js"></script><![endif]-->

@@ -42,5 +42,7 @@ namespace HappyStation.Web.ViewModels
                     : Description;
             }
         }
+
+        public string Keywords { get; set; }
     }
 }

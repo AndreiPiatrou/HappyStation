@@ -403,7 +403,7 @@ namespace HappyStation.Web.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Honey Moments - огранизация, проработка, координация и сопровождение свадьбы. Организация эфектного предложения. Незабываемый девичник. В Минске и других городах Беларуси.
+        ///   Looks up a localized string similar to Honey Moments - огранизация, проработка, координация и сопровождение свадьбы. Организация эфектного предложения. Незабываемый девичник. В Минске и других городах Беларуси.  Звоните нам прямо сейчас! &lt;p&gt;Анна +37529-6881385&lt;/p&gt; &lt;p&gt; Екатерина +37544-7435700&lt;/p&gt;..
         /// </summary>
         public static string SiteDescription {
             get {

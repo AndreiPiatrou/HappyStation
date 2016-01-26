@@ -20,5 +20,7 @@ namespace HappyStation.Web.ViewModels
         public int Id { get; set; }
 
         public IEnumerable<PhotoViewModel> Photos { get; set; }
+
+        public string Keywords { get; set; }
     }
 }

@@ -31,6 +31,10 @@
                         @Html.EditorFor(m => m.Text)
                     </li>
                     <li>
+                        @Html.LabelFor(m => m.Keywords, new { @class = "field-description" })
+                        @Html.TextBoxFor(m => m.Keywords, new { @class = "field-editor" })
+                    </li>
+                    <li>
                         <ul class="horizontal-list">
                             @foreach (var photo in Model.Photos)
                             {

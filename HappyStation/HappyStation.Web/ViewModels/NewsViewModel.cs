@@ -25,6 +25,8 @@ namespace HappyStation.Web.ViewModels
 
         public string Alias { get; set; }
 
+        public string Keywords { get; set; }
+
         public string Url
         {
             get

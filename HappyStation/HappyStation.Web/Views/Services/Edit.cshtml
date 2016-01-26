@@ -41,6 +41,10 @@
                         @Html.EditorFor(m => m.Order)
                     </li>
                     <li>
+                        @Html.LabelFor(m => m.Keywords, new { @class = "field-description" })
+                        @Html.TextBoxFor(m => m.Keywords, new { @class = "field-editor" })
+                    </li>
+                    <li>
                         @Html.LabelFor(m => m.Image, new { @class = "field-description" })
                         @if (!string.IsNullOrEmpty(Model.Image))
                         {

@@ -11,5 +11,7 @@ namespace HappyStation.Core.Entities
         
         [Required]
         public PhotoAlbum Album { get; set; }
+
+        public string Keywords { get; set; }
     }
 }

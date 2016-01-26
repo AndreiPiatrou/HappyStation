@@ -829,6 +829,7 @@
     <Content Include="Views\PageContent\Edit.cshtml" />
     <None Include="Views\Contacts\ShareThis.cshtml" />
     <None Include="Views\News\Actions.cshtml" />
+    <Content Include="Views\Shared\_Metrics.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -841,6 +842,7 @@
     <EmbeddedResource Include="Resources\Strings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

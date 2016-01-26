@@ -1,9 +1,10 @@
 ﻿@model ServiceViewModel
 @{
     ViewBag.Title = Model.Title;
+    ViewBag.Keywords = Model.Keywords;
     ViewBag.ShareTitle = Model.Title;
-    ViewBag.PageDescription = ViewBag.ShareDescription = Model.Description.StripTags();
-    
+    ViewBag.PageDescription = ViewBag.ShareDescription = Model.Title + ". " + Model.ShortDescription;
+
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
