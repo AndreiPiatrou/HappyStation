@@ -1,4 +1,9 @@
-﻿User-Agent: *
-Disallow: 
-
+﻿User-agent: *
+Allow: 
+Disallow: /ohm.by/admin/
+Disallow: /?*
 Sitemap: http://www.ohm.by/sitemap.xml
+
+User-agent: Yandex
+Allow: 
+Host: http://ohm.by/
